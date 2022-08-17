@@ -12,10 +12,11 @@ html {
     html {
       font-size: 62.5%; } }
 
-body {
+.main-container {
   background-image: url("../assets/home/background-home-mobile.jpg");
   min-height: 100vh;
-  background-size: cover; }
+  background-size: cover;
+  position: relative; }
 
 .main-header {
   display: flex;
@@ -40,5 +41,12 @@ body {
     width: 2.38rem;
     height: 2.38rem;
     cursor: pointer; }
+  .main-header .header__navmenu {
+    position: absolute;
+    right: 0;
+    width: 32rem;
+    min-height: 100%;
+    top: 0;
+    backdrop-filter: blur(5px); }
 
 /*# sourceMappingURL=styles.css.map */

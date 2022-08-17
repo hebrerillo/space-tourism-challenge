@@ -1,27 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
-</head>
-<body>
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+        <link rel="stylesheet" href="css/styles.css">
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+        <title>Frontend Mentor | Space tourism website</title>
+    </head>
+    <body>
+        <div class="main-container">
+            <header class="main-header">
+                <img class="header__logo" src="assets/shared/logo.svg" alt="logo" />
 
-  So, you want to travel to
-  Space
-  Let’s face it; if you want to go to space, you might as well genuinely go to 
-  outer space and not hover kind of on the edge of it. Well sit back, and relax 
-  because we’ll give you a truly out of this world experience!
+                <input id="checkbox-right-menu" type="checkbox" />
+                <label class="label-icons-container" for="checkbox-right-menu">
+                    <img class="header__open--right-img" src="assets/shared/icon-hamburger.svg" alt="logo" />
+                    <img class="header__close--right-img" src="assets/shared/icon-close.svg" alt="logo" />
+                </label>
+                <nav class="header__navmenu">
 
-  Explore
-
-</body>
+                </nav>
+            </header>
+        </div>
+        <!--
+      00 Home
+      01 Destination
+      02 Crew
+      03 Technology
+    
+      So, you want to travel to
+      Space
+      Let’s face it; if you want to go to space, you might as well genuinely go to 
+      outer space and not hover kind of on the edge of it. Well sit back, and relax 
+      because we’ll give you a truly out of this world experience!
+    
+      Explore
+        -->
+    </body>
 </html>

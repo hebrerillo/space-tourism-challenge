@@ -33,4 +33,13 @@
         height: 2.38rem;
         cursor: pointer;
     }
+    
+    .header__navmenu {
+        position: absolute;
+        right: 0;
+        width: 32rem;
+        min-height: 100%;
+        top: 0;
+        backdrop-filter: blur(5px);
+    }
 }
