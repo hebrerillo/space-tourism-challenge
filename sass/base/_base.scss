@@ -1,0 +1,24 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+
+    font-size: 50%; //1 rem = 8px
+
+    @include respond(desktop) {
+        font-size: 62.5%; //1 rem = 10px
+    }
+}
+
+body {
+    background-image: url("../assets/home/background-home-mobile.jpg");
+    min-height: 100vh;
+    background-size: cover;
+}

@@ -1,0 +1,11 @@
+//1em = 16px
+
+$minWidthDesktop: 90em;
+
+@mixin respond($breakpoint) {
+
+    @if $breakpoint == desktop {
+        @media only screen and (min-width: $minWidthDesktop) { @content };
+    }
+}
+

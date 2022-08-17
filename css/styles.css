@@ -1,0 +1,44 @@
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0; }
+
+html {
+  font-size: 50%; }
+  @media only screen and (min-width: 90em) {
+    html {
+      font-size: 62.5%; } }
+
+body {
+  background-image: url("../assets/home/background-home-mobile.jpg");
+  min-height: 100vh;
+  background-size: cover; }
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem; }
+  .main-header .header__logo {
+    width: 5rem;
+    height: 5rem; }
+  .main-header #checkbox-right-menu {
+    display: none; }
+  .main-header #checkbox-right-menu:checked ~ .label-icons-container .header__open--right-img {
+    display: none; }
+  .main-header #checkbox-right-menu:checked ~ .label-icons-container .header__close--right-img {
+    display: block; }
+  .main-header .header__open--right-img {
+    width: 3rem;
+    height: 2.62rem;
+    cursor: pointer; }
+  .main-header .header__close--right-img {
+    display: none;
+    width: 2.38rem;
+    height: 2.38rem;
+    cursor: pointer; }
+
+/*# sourceMappingURL=styles.css.map */
