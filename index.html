@@ -5,6 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet"> 
+
         <link rel="stylesheet" href="css/styles.css">
 
         <title>Frontend Mentor | Space tourism website</title>
@@ -15,14 +21,27 @@
                 <img class="header__logo" src="assets/shared/logo.svg" alt="logo" />
 
                 <input id="checkbox-right-menu" type="checkbox" />
-                <label class="label-icons-container" for="checkbox-right-menu">
-                    <img class="header__open--right-img" src="assets/shared/icon-hamburger.svg" alt="logo" />
-                    <img class="header__close--right-img" src="assets/shared/icon-close.svg" alt="logo" />
+                <label class="header__label" for="checkbox-right-menu">
+                    <img class="open-right-menu-icon" src="assets/shared/icon-hamburger.svg" alt="logo" />
+                    <img class="close-right-menu-icon" src="assets/shared/icon-close.svg" alt="logo" />
                 </label>
                 <nav class="header__navmenu">
-
+                    <ul class="navmenu_links">
+                        <li><a class="navmenu_link"><h3 class="header-3 navmenu__index__link">00</h3><h3 class="header-3">home</h3></a></li>
+                        <li><a class="navmenu_link"><h3 class="header-3 navmenu__index__link">01</h3><h3 class="header-3">destination</h3></a></li>
+                        <li><a class="navmenu_link"><h3 class="header-3 navmenu__index__link">02</h3><h3 class="header-3">crew</h3></a></li>
+                        <li><a class="navmenu_link"><h3 class="header-3 navmenu__index__link">03</h3><h3 class="header-3">technology</h3></a></li>
+                    </ul>
                 </nav>
             </header>
+            <main class="main-content">
+                <div class="main-content-left">
+                    <h3 class="header-3">So, you want to travel to</h3>
+                </div>
+                <div class="main-content-right">
+                    
+                </div>
+            </main>
         </div>
         <!--
       00 Home
