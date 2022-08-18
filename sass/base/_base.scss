@@ -1,3 +1,7 @@
+:root {
+    --default-transition-time: 0.3s;
+}
+
 html {
     box-sizing: border-box;
 }
@@ -21,9 +25,18 @@ body {
     
 }
 
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 .main-container {
     background-image: url("../assets/home/background-home-mobile.jpg");
     min-height: 100vh;
     background-size: cover;
     position: relative;
+    overflow: hidden;
 }
