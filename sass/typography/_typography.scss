@@ -1,4 +1,5 @@
 .header-1 {
+    font-family: 'Bellefair', sans-serif;
     font-size: 10rem;
 }
 
@@ -12,4 +13,9 @@
 .header-1, .header-3 {
     color: var(--color-white);
     text-transform: uppercase;
+}
+
+.default-paragraph {
+    color: var(--paragraph-color);
+    line-height: 1.7;
 }

@@ -1,6 +1,7 @@
 :root {
   --default-transition-time: 0.3s;
   --color-white: #fff;
+  --paragraph-color: #D0D6F9;
   --barlow-condensed-font-family:'Barlow Condensed', sans-serif; }
 
 html {
@@ -19,7 +20,9 @@ html {
 
 body {
   font-family: 'Barlow', sans-serif;
-  font-size: 1.8rem; }
+  font-size: 1.8rem;
+  text-align: center;
+  line-height: 1; }
 
 ul {
   list-style: none; }
@@ -32,9 +35,14 @@ a {
   min-height: 100vh;
   background-size: cover;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  padding: 3rem; }
+
+.main-content {
+  display: grid; }
 
 .header-1 {
+  font-family: 'Bellefair', sans-serif;
   font-size: 10rem; }
 
 .header-3 {
@@ -47,11 +55,14 @@ a {
   color: var(--color-white);
   text-transform: uppercase; }
 
+.default-paragraph {
+  color: var(--paragraph-color);
+  line-height: 1.7; }
+
 .main-header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 3rem; }
+  align-items: center; }
   .main-header .header__logo {
     width: 5rem;
     height: 5rem; }
@@ -78,7 +89,7 @@ a {
     width: 32rem;
     min-height: 100%;
     top: 0;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(15px);
     z-index: 3;
     transform: translateX(100%);
     transition: transform var(--default-transition-time);
@@ -94,5 +105,25 @@ a {
           margin-right: 1rem; }
   .main-header #checkbox-right-menu:checked ~ .header__navmenu {
     transform: translateX(0); }
+
+.home-content {
+  padding-top: 6.5rem;
+  row-gap: 10.7rem; }
+  .home-content .header-3 {
+    color: var(--paragraph-color);
+    margin-bottom: 4.2rem; }
+  .home-content .header-1 {
+    margin-bottom: 6rem; }
+  .home-content .explore-home-moon {
+    width: 18.75rem;
+    height: 18.75rem;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: #fff;
+    text-transform: uppercase;
+    color: #0B0D17;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
 /*# sourceMappingURL=styles.css.map */

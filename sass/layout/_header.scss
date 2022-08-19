@@ -2,7 +2,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3rem;
 
     .header__logo {
         width: 5rem;
@@ -44,7 +43,7 @@
         width: 32rem;
         min-height: 100%;
         top: 0;
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(15px);
         z-index: 3;
         transform: translateX(100%);
         transition: transform var(--default-transition-time);

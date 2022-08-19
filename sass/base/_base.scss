@@ -1,6 +1,7 @@
 :root {
     --default-transition-time: 0.3s;
     --color-white: #fff;
+    --paragraph-color: #D0D6F9;
     --barlow-condensed-font-family:'Barlow Condensed', sans-serif;
     
 }
@@ -25,6 +26,8 @@ html {
 body {
     font-family: 'Barlow', sans-serif;
     font-size: 1.8rem;
+    text-align: center;
+    line-height: 1;
 }
 
 ul {
@@ -41,4 +44,9 @@ a {
     background-size: cover;
     position: relative;
     overflow: hidden;
+    padding: 3rem;
+}
+
+.main-content {
+    display: grid;
 }
