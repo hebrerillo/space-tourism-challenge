@@ -3,37 +3,15 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
         <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet"> 
-        <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet"> 
 
-        <link rel="stylesheet" href="css/styles.css">
+        <?php include 'head.html'; ?>
 
-        <title>Frontend Mentor | Space tourism website</title>
+        <title>Explore</title>
     </head>
     <body>
         <div class="main-container">
-            <header class="main-header">
-                <img class="header__logo" src="assets/shared/logo.svg" alt="logo" />
-
-                <input id="checkbox-right-menu" type="checkbox" />
-                <label class="header__label" for="checkbox-right-menu">
-                    <img class="open-right-menu-icon" src="assets/shared/icon-hamburger.svg" alt="logo" />
-                    <img class="close-right-menu-icon" src="assets/shared/icon-close.svg" alt="logo" />
-                </label>
-                <nav class="header__navmenu">
-                    <ul class="navmenu_links">
-                        <li><a class="navmenu_link"><h3 class="header-3 navmenu__index__link">00</h3><h3 class="header-3">home</h3></a></li>
-                        <li><a class="navmenu_link"><h3 class="header-3 navmenu__index__link">01</h3><h3 class="header-3">destination</h3></a></li>
-                        <li><a class="navmenu_link"><h3 class="header-3 navmenu__index__link">02</h3><h3 class="header-3">crew</h3></a></li>
-                        <li><a class="navmenu_link"><h3 class="header-3 navmenu__index__link">03</h3><h3 class="header-3">technology</h3></a></li>
-                    </ul>
-                </nav>
-            </header>
+            <?php include 'header.html'; ?>
             <main class="main-content home-content">
                 <div class="main-content-primary">
                     <h3 class="header-3">so, you want to travel to</h3>
@@ -45,19 +23,5 @@
                 </div>
             </main>
         </div>
-        <!--
-      00 Home
-      01 Destination
-      02 Crew
-      03 Technology
-    
-      So, you want to travel to
-      Space
-      Let’s face it; if you want to go to space, you might as well genuinely go to 
-      outer space and not hover kind of on the edge of it. Well sit back, and relax 
-      because we’ll give you a truly out of this world experience!
-    
-      Explore
-        -->
     </body>
 </html>
