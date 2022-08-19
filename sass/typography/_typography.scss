@@ -4,18 +4,54 @@
 }
 
 .header-3 {
-    font-family: 'Barlow Condensed', sans-serif;
     font-size: 2rem;
     font-weight: 400;
     letter-spacing: 2.7px;
+
+    .header-index {
+        margin-right: var(--header-index-margin-right);
+        color: var(--color-white);
+        opacity: 0.25;
+        font-weight: 700;
+    }
 }
 
 .header-1, .header-3 {
     color: var(--color-white);
+}
+
+.header-1, .header-3 , .header-5 {
     text-transform: uppercase;
 }
 
+.header-3, .header-5 {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.header-5 {
+    color: var(--light-grey);
+    font-size: 1.75rem;
+    letter-spacing: 2.36px;
+    font-weight: 400;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid transparent;
+}
+
+a:hover .header-5, .header-5--selected {
+    border-bottom: 3px solid var(--color-white);
+}
+
 .default-paragraph {
-    color: var(--paragraph-color);
+    color: var(--light-grey);
     line-height: 1.7;
+}
+
+.header-title-section {
+    margin-bottom: 4.1rem;
+}
+
+.home-content {
+    .header-title-section {
+        margin-bottom: 4.3rem;
+    }
 }

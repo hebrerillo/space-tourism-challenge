@@ -1,0 +1,16 @@
+.destination-content {
+    .destination-hero {
+        width: 21.2rem;
+        height: 21.2rem;
+    }
+    
+    .destination-links {
+        @include centeredElement;
+        gap: 3.5rem;
+    }
+    
+    .main-content-secondary {
+        padding-top: 4.5rem;
+    }
+    
+}
