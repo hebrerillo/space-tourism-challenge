@@ -5,7 +5,8 @@
   --barlow-condensed-font-family:'Barlow Condensed', sans-serif;
   --header-index-margin-right: 1.3rem;
   /* The margin right that some indexes in headers have.*/
-  --color-separator: #383B4B; }
+  --color-separator: #383B4B;
+  --border-bottom-link-width: 3px; }
 
 html {
   box-sizing: border-box; }
@@ -48,7 +49,7 @@ a {
     font-size: 2rem; }
 
   .main-container {
-    padding: 3rem 5rem; } }
+    padding: 0rem 0rem 0rem 3rem; } }
 .separator {
   height: 1px;
   background-color: var(--color-separator);
@@ -92,10 +93,10 @@ a {
 
 a .header-5 {
   padding-bottom: 1rem;
-  border-bottom: 3px solid transparent; }
+  border-bottom: var(--border-bottom-link-width) solid transparent; }
 
 a:hover .header-5, a .header-5--selected {
-  border-bottom: 3px solid var(--color-white);
+  border-bottom: var(--border-bottom-link-width) solid var(--color-white);
   color: var(--color-white); }
 
 .default-paragraph {
@@ -160,6 +161,35 @@ a:hover .header-5, a .header-5--selected {
           margin-right: var(--header-index-margin-right); }
   .main-header #checkbox-right-menu:checked ~ .header__navmenu {
     transform: translateX(0); }
+  @media only screen and (min-width: 48em) {
+    .main-header .header__logo {
+      width: 6rem;
+      height: 6rem; }
+    .main-header .header__label {
+      display: none; }
+    .main-header .header__navmenu {
+      position: static;
+      width: auto;
+      min-height: auto;
+      backdrop-filter: none;
+      z-index: auto;
+      transform: none;
+      transition: none;
+      background-color: #151923;
+      padding: 0rem 6rem; }
+      .main-header .header__navmenu .navmenu_links {
+        flex-direction: row;
+        column-gap: 4.62rem; }
+        .main-header .header__navmenu .navmenu_links .navmenu_link {
+          padding: 5.25rem 0;
+          border-bottom: var(--border-bottom-link-width) solid transparent; }
+          .main-header .header__navmenu .navmenu_links .navmenu_link .header-3 {
+            font-size: 1.75rem;
+            letter-spacing: 2.36px; }
+          .main-header .header__navmenu .navmenu_links .navmenu_link .navmenu__index__link {
+            display: none; }
+        .main-header .header__navmenu .navmenu_links .navmenu_link:hover {
+          border-bottom: var(--border-bottom-link-width) solid var(--color-white); } }
 
 .main-content {
   padding-top: 3.5rem; }

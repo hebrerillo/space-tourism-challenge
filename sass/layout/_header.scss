@@ -67,4 +67,52 @@
     #checkbox-right-menu:checked ~ .header__navmenu {
         transform: translateX(0);
     }
+
+
+    @media only screen and (min-width: $minWidthTabletPortrait) {
+
+        .header__logo {
+            width: 6rem;
+            height: 6rem;
+        }
+        
+        .header__label
+        {
+            display: none;
+        }
+
+        .header__navmenu {
+            position: static;
+            width: auto;
+            min-height: auto;
+            backdrop-filter: none;
+            z-index: auto;
+            transform: none;
+            transition: none;
+            background-color: #151923;
+            padding: 0rem 6rem;
+            .navmenu_links {
+                flex-direction: row;
+                column-gap: 4.62rem;
+
+                .navmenu_link {
+                    padding: 5.25rem 0;
+                    border-bottom: var(--border-bottom-link-width) solid transparent;
+
+                    .header-3 {
+                        font-size: 1.75rem;
+                        letter-spacing: 2.36px;
+                    }
+
+                    .navmenu__index__link {
+                        display: none;
+                    }
+                }
+
+                .navmenu_link:hover {
+                    border-bottom: var(--border-bottom-link-width) solid var(--color-white);
+                }
+            }
+        }
+    }
 }

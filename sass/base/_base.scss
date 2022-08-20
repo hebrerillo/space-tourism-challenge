@@ -5,6 +5,7 @@
     --barlow-condensed-font-family:'Barlow Condensed', sans-serif;
     --header-index-margin-right: 1.3rem; /* The margin right that some indexes in headers have.*/
     --color-separator: #383B4B;
+    --border-bottom-link-width: 3px;
 
 }
 
@@ -59,9 +60,9 @@ a {
     body {
         font-size: 2rem;
     }
-    
+
     .main-container {
-        padding: 3rem 5rem;
+        padding: 0rem 0rem 0rem 3rem;
     }
 
 }
