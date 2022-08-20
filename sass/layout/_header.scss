@@ -82,6 +82,8 @@
         }
 
         .header__navmenu {
+            display: flex;
+            justify-content: center;
             position: static;
             width: auto;
             min-height: auto;
@@ -90,17 +92,22 @@
             transform: none;
             transition: none;
             background-color: #151923;
-            padding: 0rem 6rem;
+            padding: 0rem;
+            width: 56.25rem;
+            height: 12rem;
 
-            li {
-                padding: 5.25rem 0;
-                position: relative;
-            }
+
 
             .navmenu_links {
+                align-items: stretch;
                 flex-direction: row;
                 column-gap: 4.62rem;
-                align-items: center;
+
+                li {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                }
 
                 .navmenu_link {
 

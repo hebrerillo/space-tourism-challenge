@@ -168,6 +168,8 @@ a:hover .header-5, a .header-5--selected {
     .main-header .header__label {
       display: none; }
     .main-header .header__navmenu {
+      display: flex;
+      justify-content: center;
       position: static;
       width: auto;
       min-height: auto;
@@ -176,14 +178,17 @@ a:hover .header-5, a .header-5--selected {
       transform: none;
       transition: none;
       background-color: #151923;
-      padding: 0rem 6rem; }
-      .main-header .header__navmenu li {
-        padding: 5.25rem 0;
-        position: relative; }
+      padding: 0rem;
+      width: 56.25rem;
+      height: 12rem; }
       .main-header .header__navmenu .navmenu_links {
+        align-items: stretch;
         flex-direction: row;
-        column-gap: 4.62rem;
-        align-items: center; }
+        column-gap: 4.62rem; }
+        .main-header .header__navmenu .navmenu_links li {
+          position: relative;
+          display: flex;
+          align-items: center; }
         .main-header .header__navmenu .navmenu_links .navmenu_link .header-3 {
           font-size: 1.75rem;
           letter-spacing: 2.36px; }
