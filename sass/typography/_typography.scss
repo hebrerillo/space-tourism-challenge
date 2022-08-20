@@ -1,9 +1,10 @@
 .header-1 {
     font-size: 10rem;
+    font-weight: 400;
 }
 
 .header-2 {
-    font-size: 8rem;
+    font-size: 7rem;
     font-weight: 400;
 }
 
@@ -48,8 +49,9 @@ a .header-5 {
     border-bottom: 3px solid transparent;
 }
 
-a:hover .header-5, .header-5--selected {
+a:hover .header-5, a .header-5--selected {
     border-bottom: 3px solid var(--color-white);
+    color: var(--color-white);
 }
 
 .default-paragraph {

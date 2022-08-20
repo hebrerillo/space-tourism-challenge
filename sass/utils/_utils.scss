@@ -3,3 +3,9 @@
     justify-content: center;
     align-items: center;
 }
+
+.separator {
+    height: 1px;
+    background-color: var(--color-separator);
+    margin: 4rem 0;
+}
