@@ -1,23 +1,27 @@
 .home-content {
-    padding-top: 6.5rem;
-    row-gap: 10.7rem;
+    background-image: url("../assets/home/background-home-mobile.jpg");
 
-    .header-3 {
-        color: var(--paragraph-color);
-    }
-    
-    .header-1 {
-        margin-bottom: 6rem;
-    }
-    
-    .explore-home-moon {
-        width: 18.75rem;
-        height: 18.75rem;
-        margin: 0 auto;
-        border-radius: 50%;
-        background-color: #fff;
-        text-transform: uppercase;
-        color: #0B0D17;
-        @include centeredElement;
+    .main-content{
+        padding-top: 6.5rem;
+        row-gap: 10.7rem;
+
+        .header-3 {
+            color: var(--paragraph-color);
+        }
+
+        .header-1 {
+            margin-bottom: 6rem;
+        }
+
+        .explore-home-moon {
+            width: 18.75rem;
+            height: 18.75rem;
+            margin: 0 auto;
+            border-radius: 50%;
+            background-color: #fff;
+            text-transform: uppercase;
+            color: #0B0D17;
+            @include centeredElement;
+        }
     }
 }

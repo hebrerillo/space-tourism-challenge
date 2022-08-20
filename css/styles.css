@@ -4,7 +4,8 @@
   --light-grey: #D0D6F9;
   --barlow-condensed-font-family:'Barlow Condensed', sans-serif;
   --header-index-margin-right: 1.3rem;
-  /* The margin right that some indexes in headers have.*/ }
+  /* The margin right that some indexes in headers have.*/
+  --color-separator: #383B4B; }
 
 html {
   box-sizing: border-box; }
@@ -22,7 +23,7 @@ html {
 
 body {
   font-family: 'Barlow', sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.87rem;
   text-align: center;
   line-height: 1; }
 
@@ -33,7 +34,6 @@ a {
   text-decoration: none; }
 
 .main-container {
-  background-image: url("../assets/home/background-home-mobile.jpg");
   min-height: 100vh;
   background-size: cover;
   position: relative;
@@ -44,8 +44,11 @@ a {
   display: grid; }
 
 .header-1 {
-  font-family: 'Bellefair', sans-serif;
   font-size: 10rem; }
+
+.header-2 {
+  font-size: 8rem;
+  font-weight: 400; }
 
 .header-3 {
   font-size: 2rem;
@@ -57,10 +60,13 @@ a {
     opacity: 0.25;
     font-weight: 700; }
 
-.header-1, .header-3 {
+.header-1, .header-2 {
+  font-family: 'Bellefair', sans-serif; }
+
+.header-1, .header-2, .header-3 {
   color: var(--color-white); }
 
-.header-1, .header-3, .header-5 {
+.header-1, .header-2, .header-3, .header-5 {
   text-transform: uppercase; }
 
 .header-3, .header-5 {
@@ -70,7 +76,9 @@ a {
   color: var(--light-grey);
   font-size: 1.75rem;
   letter-spacing: 2.36px;
-  font-weight: 400;
+  font-weight: 400; }
+
+a .header-5 {
   padding-bottom: 1rem;
   border-bottom: 3px solid transparent; }
 
@@ -138,33 +146,56 @@ a:hover .header-5, .header-5--selected {
   padding-top: 3.5rem; }
 
 .home-content {
-  padding-top: 6.5rem;
-  row-gap: 10.7rem; }
-  .home-content .header-3 {
-    color: var(--paragraph-color); }
-  .home-content .header-1 {
-    margin-bottom: 6rem; }
-  .home-content .explore-home-moon {
-    width: 18.75rem;
-    height: 18.75rem;
-    margin: 0 auto;
-    border-radius: 50%;
-    background-color: #fff;
-    text-transform: uppercase;
-    color: #0B0D17;
+  background-image: url("../assets/home/background-home-mobile.jpg"); }
+  .home-content .main-content {
+    padding-top: 6.5rem;
+    row-gap: 10.7rem; }
+    .home-content .main-content .header-3 {
+      color: var(--paragraph-color); }
+    .home-content .main-content .header-1 {
+      margin-bottom: 6rem; }
+    .home-content .main-content .explore-home-moon {
+      width: 18.75rem;
+      height: 18.75rem;
+      margin: 0 auto;
+      border-radius: 50%;
+      background-color: #fff;
+      text-transform: uppercase;
+      color: #0B0D17;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+
+.destination-content {
+  background-image: url("../assets/destination/background-destination-mobile.jpg"); }
+  .destination-content .main-content-secondary {
+    padding-top: 4.5rem; }
+    .destination-content .main-content-secondary .header-2 {
+      margin-bottom: 3rem; }
+    .destination-content .main-content-secondary .default-paragraph {
+      padding-bottom: 4rem;
+      border-bottom: 1px solid var(--color-separator); }
+    .destination-content .main-content-secondary .destination-info {
+      padding-top: 4rem; }
+  .destination-content .destination-hero {
+    width: 21.2rem;
+    height: 21.2rem; }
+  .destination-content .destination-links {
     display: flex;
     justify-content: center;
-    align-items: center; }
-
-.destination-content .destination-hero {
-  width: 21.2rem;
-  height: 21.2rem; }
-.destination-content .destination-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 3.5rem; }
-.destination-content .main-content-secondary {
-  padding-top: 4.5rem; }
+    align-items: center;
+    gap: 3.5rem;
+    margin-bottom: 3.75rem; }
+  .destination-content .destination-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5.37rem; }
+    .destination-content .destination-info .header-5 {
+      margin-bottom: 2rem; }
+    .destination-content .destination-info .destination-info--value {
+      font-family: 'Bellefair', sans-serif;
+      font-size: 3.5rem;
+      color: var(--color-white);
+      text-transform: uppercase; }
 
 /*# sourceMappingURL=styles.css.map */

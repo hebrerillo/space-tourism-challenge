@@ -4,6 +4,7 @@
     --light-grey: #D0D6F9;
     --barlow-condensed-font-family:'Barlow Condensed', sans-serif;
     --header-index-margin-right: 1.3rem; /* The margin right that some indexes in headers have.*/
+    --color-separator: #383B4B;
     
 }
 
@@ -26,7 +27,7 @@ html {
 
 body {
     font-family: 'Barlow', sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.87rem;
     text-align: center;
     line-height: 1;
 }
@@ -40,7 +41,6 @@ a {
 }
 
 .main-container {
-    background-image: url("../assets/home/background-home-mobile.jpg");
     min-height: 100vh;
     background-size: cover;
     position: relative;
