@@ -212,7 +212,7 @@ a:hover .header-5, a .header-5--selected {
 .home-content {
   background-image: url("../assets/home/background-home-mobile.jpg"); }
   .home-content .main-content {
-    padding-top: 6.5rem;
+    padding-top: 13rem;
     row-gap: 10.7rem; }
     .home-content .main-content .header-3 {
       color: var(--light-grey); }
