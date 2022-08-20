@@ -172,6 +172,9 @@ a:hover .header-5, a .header-5--selected {
       display: flex;
       justify-content: center;
       align-items: center; }
+  @media only screen and (min-width: 48em) {
+    .home-content {
+      background-image: url("../assets/home/background-home-tablet.jpg"); } }
 
 .destination-content {
   background-image: url("../assets/destination/background-destination-mobile.jpg"); }

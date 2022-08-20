@@ -24,4 +24,14 @@
             @include centeredElement;
         }
     }
+
+    @media only screen and (min-width: $minWidthTabletPortrait)
+    {
+
+        background-image: url("../assets/home/background-home-tablet.jpg");
+
+    }
 }
+
+
+
