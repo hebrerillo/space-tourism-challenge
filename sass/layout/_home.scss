@@ -28,8 +28,7 @@
         }
     }
 
-    @media only screen and (min-width: $minWidthTabletPortrait)
-    {
+    @media only screen and (min-width: $minWidthTabletPortrait) {
         background-image: url("../assets/home/background-home-tablet.jpg");
         .main-content-primary {
             display: grid;
@@ -45,6 +44,16 @@
                 height: 30.25rem;
                 font-size: 4rem;
                 letter-spacing: 2px;
+            }
+        }
+    }
+
+    @media only screen and (min-width: $minWidthDesktop) {
+        background-image: url("../assets/home/background-home-desktop.jpg");
+        .main-header {
+            .header__navmenu {
+                background-color: transparent;
+                backdrop-filter: blur(10px);
             }
         }
     }

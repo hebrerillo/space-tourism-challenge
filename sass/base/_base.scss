@@ -20,12 +20,7 @@ html {
 }
 
 html {
-    font-size: 50%;
-    //1 rem = 8px
-    @include respond(desktop) {
-        font-size: 62.5%;
-        //1 rem = 10px
-    }
+    font-size: 50%;  /*1 rem = 8px;*/
 }
 
 body {
@@ -33,6 +28,7 @@ body {
     font-size: 1.87rem;
     text-align: center;
     line-height: 1;
+    background-size: cover;
 }
 
 ul {
@@ -45,7 +41,6 @@ a {
 
 .main-container {
     min-height: 100vh;
-    background-size: cover;
     position: relative;
     overflow: hidden;
     padding: 3rem;
@@ -65,4 +60,23 @@ a {
         padding: 0rem 0rem 0rem 3rem;
     }
 
+}
+
+@media only screen and (min-width: $minWidthDesktop) {
+
+    html {
+        font-size: 62.5%; /*1 rem = 10px*/
+    }
+    
+    body {
+        font-size: 1.8rem;
+    }
+    
+    .main-container {
+        padding: 4rem 0 0 5.5rem;
+    }
+    
+    .main-content {
+        max-width: 144rem;
+    }
 }
