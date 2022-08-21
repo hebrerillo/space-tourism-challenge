@@ -1,3 +1,29 @@
+.main-title {
+    display: flex;
+    justify-content: center;
+    column-gap: 2.37rem;
+    margin-bottom: 4.1rem;
+
+    span {
+        font-family: 'Barlow Condensed', sans-serif;
+        opacity: 0.25;
+        font-weight: 700;
+        font-size: 2rem;
+        letter-spacing: 2.7px;
+        text-transform: uppercase;
+        color: var(--color-white);
+    }
+}
+
+.header-3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+    color: var(--color-white);
+}
+
 .header-1 {
     font-size: 10rem;
     font-weight: 400;
@@ -8,32 +34,19 @@
     font-weight: 400;
 }
 
-.header-3 {
-    font-size: 2rem;
-    font-weight: 400;
-    letter-spacing: 2.7px;
-
-    .header-index {
-        margin-right: var(--header-index-margin-right);
-        color: var(--color-white);
-        opacity: 0.25;
-        font-weight: 700;
-    }
-}
-
 .header-1, .header-2 {
     font-family: 'Bellefair', sans-serif;
 }
 
-.header-1, .header-2, .header-3 {
+.header-1, .header-2 {
     color: var(--color-white);
 }
 
-.header-1, .header-2, .header-3 , .header-5 {
+.header-1, .header-2, .header-5 {
     text-transform: uppercase;
 }
 
-.header-3, .header-5 {
+.header-5 {
     font-family: 'Barlow Condensed', sans-serif;
 }
 
@@ -74,7 +87,7 @@ a:hover .header-5, a .header-5--selected {
     .header-1 {
         font-size: 18.75rem;
     }
-    
+
     .header-3 {
         font-size: 2.5rem;
     }
@@ -85,7 +98,7 @@ a:hover .header-5, a .header-5--selected {
     .header-1 {
         font-size: 15rem;
     }
-    
+
     .header-3 {
         font-size: 2.8rem;
     }

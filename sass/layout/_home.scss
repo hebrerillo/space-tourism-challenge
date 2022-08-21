@@ -1,12 +1,16 @@
 .home-content {
     background-image: url("../assets/home/background-home-mobile.jpg");
 
-    .main-content{
+    .main-content {
         padding-top: 13rem;
         row-gap: 10.7rem;
 
-        .header-3 {
-            color: var(--light-grey);
+        .main-title {
+            margin-bottom: 4.3rem;
+
+            .header-3 {
+                color: var(--light-grey);
+            }
         }
 
         .header-1 {
@@ -51,7 +55,7 @@
     @media only screen and (min-width: $minWidthDesktop) {
         background-image: url("../assets/home/background-home-desktop.jpg");
         .main-header {
-            .header__navmenu {
+            .navigation-menu {
                 background-color: transparent;
                 backdrop-filter: blur(10px);
             }
