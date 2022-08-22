@@ -12,7 +12,7 @@
                 display: flex;
                 column-gap: 2rem;
                 padding-bottom: 1rem;
-                border-bottom: 3px solid transparent;
+                border-bottom: var(--border-bottom-link-width) solid transparent;
 
                 .navigation-text--index {
                     font-weight: 700;
@@ -20,8 +20,16 @@
                 }
             }
 
-            a:hover {
+            a.active-link, a.active-link:hover {
                 border-bottom: var(--border-bottom-link-width) solid var(--color-white);
+            }
+
+            .active-link .navigation-text {
+                color: var(--color-white);
+            }
+
+            a:hover {
+                border-bottom: var(--border-bottom-link-width) solid var(--border-bottom-link-hover-color);
             }
         }
     }

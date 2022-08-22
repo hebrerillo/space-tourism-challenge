@@ -4,7 +4,8 @@
   --light-grey: #D0D6F9;
   --barlow-condensed-font-family:'Barlow Condensed', sans-serif;
   --color-separator: #383B4B;
-  --border-bottom-link-width: 3px; }
+  --border-bottom-link-width: 3px;
+  --border-bottom-link-hover-color: rgba(255, 255, 255, 0.5); }
 
 html {
   box-sizing: border-box; }
@@ -145,12 +146,16 @@ h1, h2, h3, h4, h5, h6, .navigation-text {
       display: flex;
       column-gap: 2rem;
       padding-bottom: 1rem;
-      border-bottom: 3px solid transparent; }
+      border-bottom: var(--border-bottom-link-width) solid transparent; }
       .navigation-menu ul li a .navigation-text--index {
         font-weight: 700;
         font-variant-numeric: tabular-nums; }
-    .navigation-menu ul li a:hover {
+    .navigation-menu ul li a.active-link, .navigation-menu ul li a.active-link:hover {
       border-bottom: var(--border-bottom-link-width) solid var(--color-white); }
+    .navigation-menu ul li .active-link .navigation-text {
+      color: var(--color-white); }
+    .navigation-menu ul li a:hover {
+      border-bottom: var(--border-bottom-link-width) solid var(--border-bottom-link-hover-color); }
 
 .main-header {
   display: flex;
@@ -313,12 +318,8 @@ h1, h2, h3, h4, h5, h6, .navigation-text {
       column-gap: 3.5rem;
       row-gap: 0;
       flex-direction: row; }
-      .destination-content .navigation-menu.navigation-menu--destination ul li .navigation-text {
+      .destination-content .navigation-menu.navigation-menu--destination ul a:not(.active-link) .navigation-text {
         color: var(--light-grey); }
-      .destination-content .navigation-menu.navigation-menu--destination ul li a:hover .navigation-text, .destination-content .navigation-menu.navigation-menu--destination ul li .destination--selected .navigation-text {
-        color: var(--color-white); }
-      .destination-content .navigation-menu.navigation-menu--destination ul li .destination--selected {
-        border-bottom: var(--border-bottom-link-width) solid var(--color-white); }
   .destination-content .destination-info {
     display: flex;
     flex-direction: column;

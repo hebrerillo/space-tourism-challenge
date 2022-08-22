@@ -24,18 +24,9 @@
             row-gap: 0;
             flex-direction: row;
 
-            li {
-
+            a:not(.active-link) {
                 .navigation-text {
                     color: var(--light-grey);
-                }
-
-                a:hover .navigation-text, .destination--selected .navigation-text{
-                    color: var(--color-white);
-                }
-
-                .destination--selected {
-                    border-bottom: var(--border-bottom-link-width) solid var(--color-white);
                 }
             }
         }
