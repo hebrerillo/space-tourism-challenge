@@ -103,13 +103,6 @@ h1, h2, h3, h4, h5, h6, .navigation-text {
   font-family: 'Bellefair', sans-serif;
   color: var(--color-white); }
 
-.heading-4 {
-  font-family: 'Barlow Condensed', sans-serif;
-  color: var(--light-grey);
-  font-size: 1.75rem;
-  letter-spacing: 2.36px;
-  font-weight: 400; }
-
 .default-paragraph {
   color: var(--light-grey);
   line-height: 1.7; }
@@ -123,6 +116,9 @@ h1, h2, h3, h4, h5, h6, .navigation-text {
 @media only screen and (min-width: 48em) {
   .header-1 {
     font-size: 18.75rem; }
+
+  .header-2 {
+    font-size: 10rem; }
 
   .navigation-text {
     letter-spacing: 2.36px; }
