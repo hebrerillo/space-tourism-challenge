@@ -39,8 +39,16 @@
             grid-template-columns: min-content;
             justify-content: center;
         }
+        
+        .main-header {
+            .navigation-menu {
+                a.home-link {
+                    border-bottom: var(--border-bottom-link-width) solid var(--color-white);
+                }
+            }
+        }
 
-        .main-content{
+        .main-content {
             row-gap: 20.5rem;
 
             .explore-home-moon {

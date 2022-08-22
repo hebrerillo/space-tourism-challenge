@@ -143,8 +143,6 @@ h1, h2, h3, h4, h5, h6, .navigation-text {
       .navigation-menu ul li a .navigation-text--index {
         font-weight: 700;
         font-variant-numeric: tabular-nums; }
-    .navigation-menu ul li a.active-link, .navigation-menu ul li a.active-link:hover {
-      border-bottom: var(--border-bottom-link-width) solid var(--color-white); }
     .navigation-menu ul li .active-link .navigation-text {
       color: var(--color-white); }
     .navigation-menu ul li a:hover {
@@ -279,6 +277,8 @@ h1, h2, h3, h4, h5, h6, .navigation-text {
         display: grid;
         grid-template-columns: min-content;
         justify-content: center; }
+      .home-content .main-header .navigation-menu a.home-link {
+        border-bottom: var(--border-bottom-link-width) solid var(--color-white); }
       .home-content .main-content {
         row-gap: 20.5rem; }
         .home-content .main-content .explore-home-moon {
@@ -327,6 +327,8 @@ h1, h2, h3, h4, h5, h6, .navigation-text {
   .destination-content .separator {
     margin: 4rem 0; }
   @media only screen and (min-width: 48em) {
+    .destination-content .main-header .navigation-menu a.destination-link {
+      border-bottom: var(--border-bottom-link-width) solid var(--color-white); }
     .destination-content .navigation-menu.navigation-menu--destination .navigation-text {
       letter-spacing: 2.7px; } }
 

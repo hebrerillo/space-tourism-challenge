@@ -55,6 +55,14 @@
 
     @media only screen and (min-width: $minWidthTabletPortrait) {
 
+        .main-header {
+            .navigation-menu {
+                a.destination-link {
+                    border-bottom: var(--border-bottom-link-width) solid var(--color-white);
+                }
+            }
+        }
+
         .navigation-menu.navigation-menu--destination {
             .navigation-text {
                 letter-spacing: 2.7px;

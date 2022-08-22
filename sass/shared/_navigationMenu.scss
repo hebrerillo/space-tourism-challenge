@@ -20,10 +20,6 @@
                 }
             }
 
-            a.active-link, a.active-link:hover {
-                border-bottom: var(--border-bottom-link-width) solid var(--color-white);
-            }
-
             .active-link .navigation-text {
                 color: var(--color-white);
             }
