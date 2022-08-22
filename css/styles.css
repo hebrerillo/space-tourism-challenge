@@ -39,14 +39,19 @@ a {
   padding: 3rem; }
 
 .main-content {
-  display: grid; }
+  display: grid;
+  padding-top: 3.5rem; }
 
 @media only screen and (min-width: 48em) {
   body {
     font-size: 2rem; }
 
   .main-container {
-    padding: 0rem 0rem 0rem 3rem; } }
+    padding: 0rem 0rem 0rem 3rem; }
+
+  .main-content {
+    display: grid;
+    padding-top: 5rem; } }
 @media only screen and (min-width: 90em) {
   html {
     font-size: 62.5%;
@@ -128,7 +133,8 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
 
 @media only screen and (min-width: 48em) {
   .main-title {
-    justify-content: start; }
+    justify-content: start;
+    margin-bottom: 8rem; }
 
   .heading-1 {
     font-size: 18.75rem; }
@@ -272,9 +278,6 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
       flex-grow: 1;
       transform: translateX(3rem); } }
 
-.main-content {
-  padding-top: 3.5rem; }
-
 .home-content {
   background-image: url("../assets/home/background-home-mobile.jpg"); }
   .home-content .main-content {
@@ -357,6 +360,12 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
     .destination-content .main-header .navigation-menu a.destination-link {
       border-bottom: var(--border-bottom-link-width) solid var(--color-white); }
     .destination-content .navigation-menu.navigation-menu--destination .navigation-text {
-      letter-spacing: 2.7px; } }
+      letter-spacing: 2.7px; }
+    .destination-content .destination-hero {
+      width: 37.5rem;
+      height: 37.5rem; }
+    .destination-content .main-content-secondary {
+      max-width: 75rem;
+      margin: 0 auto; } }
 
 /*# sourceMappingURL=styles.css.map */
