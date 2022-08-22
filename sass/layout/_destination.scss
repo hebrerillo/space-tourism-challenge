@@ -14,25 +14,37 @@
         height: 21.2rem;
     }
 
-    .destination-links {
-        @include flex-centered-items;
-        gap: 3.5rem;
+
+    .navigation-menu.navigation-menu--destination {
         margin-bottom: 3.75rem;
-        
-        .heading-3 {
-            color: var(--light-grey);
+
+        ul {
+            @include flex-centered-items;
+            column-gap: 3.5rem;
+            row-gap: 0;
+            flex-direction: row;
+
+            li {
+                a:hover .heading-4, .destination--selected .heading-4{
+                    color: var(--color-white);
+                }
+                
+                .destination--selected {
+                    border-bottom: var(--border-bottom-link-width) solid var(--color-white);
+                }
+            }
         }
     }
-    
+
     .destination-info {
         display: flex;
         flex-direction: column;
         gap: 5.37rem;
-        
-        .header-5 {
+
+        .heading-4 {
             margin-bottom: 2rem;
         }
-        
+
         .destination-info--value {
             font-family: 'Bellefair', sans-serif;
             font-size: 3.5rem;
@@ -40,7 +52,7 @@
             text-transform: uppercase;
         }
     }
-    
+
     .separator {
         margin: 4rem 0;
     }

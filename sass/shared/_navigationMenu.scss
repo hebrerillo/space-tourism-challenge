@@ -21,7 +21,7 @@
             }
 
             a:hover {
-                border-bottom: 3px solid var(--color-white);
+                border-bottom: var(--border-bottom-link-width) solid var(--color-white);
             }
         }
     }

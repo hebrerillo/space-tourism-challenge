@@ -38,32 +38,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .header-1, .header-2 {
     font-family: 'Bellefair', sans-serif;
-}
-
-.header-1, .header-2 {
     color: var(--color-white);
 }
 
-.header-5 {
+.heading-4 {
     font-family: 'Barlow Condensed', sans-serif;
-}
-
-.header-5 {
     color: var(--light-grey);
     font-size: 1.75rem;
     letter-spacing: 2.36px;
     font-weight: 400;
 }
-/*
-a .heading-3 {
-    padding-bottom: 1rem;
-    border-bottom: var(--border-bottom-link-width) solid transparent;
-}
-
-a:hover .heading-3, a .heading-3--selected {
-    border-bottom: var(--border-bottom-link-width) solid var(--color-white);
-    color: var(--color-white);
-}*/
 
 .default-paragraph {
     color: var(--light-grey);
@@ -88,6 +72,10 @@ a:hover .heading-3, a .heading-3--selected {
 
     .heading-3 {
         font-size: 2.5rem;
+    }
+    
+    .heading-4 {
+        font-size: 2rem;
     }
 }
 

@@ -9,8 +9,8 @@
 
         <title>Destination: Moon</title>
     </head>
-    <body>
-        <div class="main-container destination-content">
+    <body class="destination-content">
+        <div class="main-container">
             <?php include 'header.html'; ?>
             <main class="main-content">
                 <section class="main-content-primary">
@@ -18,22 +18,24 @@
                     <img class="destination-hero" alt="moon" src="assets/destination/image-moon.png" />
                 </section>
                 <section class="main-content-secondary">
-                    <ul class="destination-links">
-                        <li><a href="destination-moon.html"><h3 class="heading-3 heading-3--selected">moon</h3></a></li>
-                        <li><a href="destination-mars.html"><h3 class="heading-3">mars</h3></a></li>
-                        <li><a href="destination-europe.html"><h3 class="heading-3">europe</h3></a></li>
-                        <li><a href="destination-titan.html"><h3 class="heading-3">titan</h3></a></li>
-                    </ul>
+                    <nav class="navigation-menu navigation-menu--destination">
+                        <ul>
+                            <li><a class="destination--selected" href="destination-moon.html"><h4 class="heading-4">moon</h4></a></li>
+                            <li><a href="destination-mars.html"><h4 class="heading-4">mars</h4></a></li>
+                            <li><a href="destination-europe.html"><h4 class="heading-4">europe</h4></a></li>
+                            <li><a href="destination-titan.html"><h4 class="heading-4">titan</h4></a></li>
+                        </ul>
+                    </nav>
                     <h2 class="header-2">moon</h2>
                     <p class="default-paragraph">See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
                     <div class="separator"></div>
                     <div class="destination-info">
                         <div>
-                            <h5 class="header-5">avg. distance</h5>
+                            <h5 class="heading-4">avg. distance</h5>
                             <span class="destination-info--value">384,400 KM</span>
                         </div>
                         <div>
-                            <h5 class="header-5">est. travel time</h5>
+                            <h5 class="heading-4">est. travel time</h5>
                             <span class="destination-info--value">3 days</span>
                         </div>
                     </div>
