@@ -15,7 +15,7 @@
     }
 
     .destination-links {
-        @include centeredElement;
+        @include flex-centered-items;
         gap: 3.5rem;
         margin-bottom: 3.75rem;
         

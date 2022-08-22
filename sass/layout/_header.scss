@@ -81,10 +81,8 @@
         }
 
         .navigation-menu {
-            display: flex;
-            justify-content: center;
+            @include flex-centered-items;
             position: static;
-            width: auto;
             min-height: auto;
             backdrop-filter: none;
             z-index: auto;
@@ -93,44 +91,21 @@
             background-color: #151923;
             padding: 0rem;
             width: 56.25rem;
-            height: 12rem;
 
-            .navigation-menu-links {
-                align-items: stretch;
+            ul {
                 flex-direction: row;
                 column-gap: 4.62rem;
 
-                li {
-                    position: relative;
-                    display: flex;
-                    align-items: center;
-                }
-
-                .navigation-menu-link {
-
-                    .heading-3 {
+                a {
+                    padding: 5.37rem 0;
+                    h3 {
                         font-size: 1.75rem;
                         letter-spacing: 2.36px;
                     }
 
-                    .index-link {
+                    span {
                         display: none;
                     }
-                }
-
-                .navigation-menu-link::after {
-                    content: "";
-                    position: absolute;
-                    width: 100%;
-                    bottom: 0;
-                    left: 0;
-                    height: 3px;
-                    background-color: white;
-                    display: none;
-                }
-
-                .navigation-menu-link:hover::after{
-                    display: block;
                 }
             }
         }
@@ -147,22 +122,19 @@
         .navigation-menu {
             padding: 0 17rem 0 12.2rem;
             width: 83rem;
-            height: 9.6rem;
-            .navigation-menu-links {
-
+            ul {
                 column-gap: 5rem;
                 li {
-                }
+                    a {
+                        column-gap: 1.3rem;
+                        padding: 5.37rem 0;
 
-                .navigation-menu-link {
-
-                    .heading-3 {
-                    }
-
-                    .index-link {
-                        display: block;
-                        font-size: 1.6rem;
-                        letter-spacing: 2.7px;
+                        span {
+                            display: block;
+                            font-size: 1.6rem;
+                            letter-spacing: 2.7px;
+                            font-variant-numeric: normal;
+                        }
                     }
                 }
             }
