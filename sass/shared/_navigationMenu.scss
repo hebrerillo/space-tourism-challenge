@@ -14,12 +14,12 @@
                 padding-bottom: 1rem;
                 border-bottom: 3px solid transparent;
 
-                .index-link {
+                span {
                     font-weight: 700;
                     font-variant-numeric: tabular-nums;
                 }
             }
-            
+
             a:hover {
                 border-bottom: 3px solid var(--color-white);
             }

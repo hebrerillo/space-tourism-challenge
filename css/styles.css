@@ -153,7 +153,7 @@ a:hover .heading-3, a .heading-3--selected {
       column-gap: 2rem;
       padding-bottom: 1rem;
       border-bottom: 3px solid transparent; }
-      .navigation-menu ul li a .index-link {
+      .navigation-menu ul li a span {
         font-weight: 700;
         font-variant-numeric: tabular-nums; }
     .navigation-menu ul li a:hover {
