@@ -64,44 +64,57 @@ a {
   height: 1px;
   background-color: var(--color-separator); }
 
-h1, h2, h3, h4, h5, h6, .navigation-text {
+h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
   text-transform: uppercase; }
 
 .main-title {
   display: flex;
   justify-content: center;
-  column-gap: 2.37rem;
+  align-items: center;
+  column-gap: 2.7rem;
   margin-bottom: 4.1rem; }
-  .main-title span {
-    font-family: 'Barlow Condensed', sans-serif;
-    opacity: 0.25;
-    font-weight: 700;
-    font-size: 2rem;
-    letter-spacing: 2.7px;
-    color: var(--color-white); }
+
+.heading-5, .navigation-text, .subheading-2 {
+  font-family: 'Barlow Condensed', sans-serif; }
 
 .navigation-text {
-  font-family: 'Barlow Condensed', sans-serif;
   font-weight: 400;
   font-size: 2rem;
-  letter-spacing: 2.7px;
-  color: var(--color-white); }
+  letter-spacing: 2.7px; }
 
 .navigation-text--index {
   font-weight: 700;
   font-variant-numeric: tabular-nums; }
 
 .heading-1 {
-  font-size: 10rem;
-  font-weight: 400; }
+  font-size: 10rem; }
 
 .heading-2 {
-  font-size: 7rem;
+  font-size: 7rem; }
+
+.heading-1, .heading-2, .subheading-1 {
+  font-family: 'Bellefair', sans-serif; }
+
+.heading-5 {
+  font-size: 2rem;
+  letter-spacing: 2.7px; }
+
+.heading-5, .heading-1, .heading-2, .navigation-text {
+  color: var(--color-white);
   font-weight: 400; }
 
-.heading-1, .heading-2 {
-  font-family: 'Bellefair', sans-serif;
+.heading-5--index {
+  opacity: 0.25;
+  font-weight: 700; }
+
+.subheading-1 {
+  font-size: 3.5rem;
   color: var(--color-white); }
+
+.subheading-2 {
+  font-size: 1.4rem;
+  letter-spacing: 2.35px;
+  color: var(--light-grey); }
 
 .default-paragraph {
   color: var(--light-grey);
@@ -120,11 +133,25 @@ h1, h2, h3, h4, h5, h6, .navigation-text {
   .heading-2 {
     font-size: 10rem; }
 
+  .heading-5 {
+    font-size: 2.5rem;
+    letter-spacing: 3.38px; }
+
   .navigation-text {
     letter-spacing: 2.36px; } }
 @media only screen and (min-width: 90em) {
   .heading-1 {
     font-size: 15rem; }
+
+  .heading-5 {
+    font-size: 2.8rem;
+    letter-spacing: 4.72px; }
+
+  .subheading-1 {
+    font-size: 2.8rem; }
+
+  .subheading-2 {
+    font-size: 1.4rem; }
 
   .navigation-text {
     font-size: 1.6rem; } }
@@ -252,7 +279,7 @@ h1, h2, h3, h4, h5, h6, .navigation-text {
     row-gap: 10.7rem; }
     .home-content .main-content .main-title {
       margin-bottom: 4.3rem; }
-      .home-content .main-content .main-title .heading-3 {
+      .home-content .main-content .main-title .heading-5 {
         color: var(--light-grey); }
     .home-content .main-content .heading-1 {
       margin-bottom: 6rem; }
@@ -317,13 +344,8 @@ h1, h2, h3, h4, h5, h6, .navigation-text {
     display: flex;
     flex-direction: column;
     gap: 5.37rem; }
-    .destination-content .destination-info .heading-4 {
+    .destination-content .destination-info .subheading-2 {
       margin-bottom: 2rem; }
-    .destination-content .destination-info .destination-info--value {
-      font-family: 'Bellefair', sans-serif;
-      font-size: 3.5rem;
-      color: var(--color-white);
-      text-transform: uppercase; }
   .destination-content .separator {
     margin: 4rem 0; }
   @media only screen and (min-width: 48em) {

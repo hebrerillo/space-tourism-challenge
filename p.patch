@@ -1,0 +1,167 @@
+diff --git a/css/styles.css b/css/styles.css
+index 45b914a..666e052 100755
+--- a/css/styles.css
++++ b/css/styles.css
+@@ -80,28 +80,34 @@ h1, h2, h3, h4, h5, h6, .navigation-text {
+     letter-spacing: 2.7px;
+     color: var(--color-white); }
+ 
++.heading-5, .navigation-text {
++  font-family: 'Barlow Condensed', sans-serif; }
++
+ .navigation-text {
+-  font-family: 'Barlow Condensed', sans-serif;
+   font-weight: 400;
+   font-size: 2rem;
+-  letter-spacing: 2.7px;
+-  color: var(--color-white); }
++  letter-spacing: 2.7px; }
+ 
+ .navigation-text--index {
+   font-weight: 700;
+   font-variant-numeric: tabular-nums; }
+ 
+ .heading-1 {
+-  font-size: 10rem;
+-  font-weight: 400; }
++  font-size: 10rem; }
+ 
+ .heading-2 {
+-  font-size: 7rem;
+-  font-weight: 400; }
++  font-size: 7rem; }
+ 
+ .heading-1, .heading-2 {
+-  font-family: 'Bellefair', sans-serif;
+-  color: var(--color-white); }
++  font-family: 'Bellefair', sans-serif; }
++
++.heading-5 {
++  font-size: 2rem;
++  letter-spacing: 2.7px; }
++
++.heading-5, .heading-1, .heading-2, .navigation-text {
++  color: var(--color-white);
++  font-weight: 400; }
+ 
+ .default-paragraph {
+   color: var(--light-grey);
+@@ -120,12 +126,20 @@ h1, h2, h3, h4, h5, h6, .navigation-text {
+   .heading-2 {
+     font-size: 10rem; }
+ 
++  .heading-5 {
++    font-size: 2.5rem;
++    letter-spacing: 3.38px; }
++
+   .navigation-text {
+     letter-spacing: 2.36px; } }
+ @media only screen and (min-width: 90em) {
+   .heading-1 {
+     font-size: 15rem; }
+ 
++  .heading-5 {
++    font-size: 2.8rem;
++    letter-spacing: 4.72px; }
++
+   .navigation-text {
+     font-size: 1.6rem; } }
+ .navigation-menu ul {
+diff --git a/destination-moon.html b/destination-moon.html
+index b8c0cbf..03fae8d 100755
+--- a/destination-moon.html
++++ b/destination-moon.html
+@@ -14,7 +14,7 @@
+             <?php include 'header.html'; ?>
+             <main class="main-content">
+                 <section class="main-content-primary">
+-                    <div class="main-title"><span>01</span><h3 class="heading-3">pick your destination</h3></div>
++                    <div class="main-title"><h5 class="heading-5 heading-5--index">01</h5><h5 class="heading-5">pick your destination</h5></div>
+                     <img class="destination-hero" alt="moon" src="assets/destination/image-moon.png" />
+                 </section>
+                 <section class="main-content-secondary">
+diff --git a/index.html b/index.html
+index db29ff9..2ffd9f3 100755
+--- a/index.html
++++ b/index.html
+@@ -15,7 +15,7 @@
+             <main class="main-content">
+                 <div class="main-content-primary">
+                     <div class="main-title">
+-                        <h3 class="heading-3">so, you want to travel to</h3>
++                        <h5 class="heading-5">so, you want to travel to</h5>
+                     </div><!-- TODO check -->
+                     <h1 class="heading-1">space</h1>
+                     <p class="default-paragraph">Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!</p>
+diff --git a/sass/shared/_typography.scss b/sass/shared/_typography.scss
+index 318ceeb..720502a 100644
+--- a/sass/shared/_typography.scss
++++ b/sass/shared/_typography.scss
+@@ -18,12 +18,14 @@ h1, h2, h3, h4, h5, h6, .navigation-text {
+     }
+ }
+ 
+-.navigation-text {
++.heading-5, .navigation-text  {
+     font-family: 'Barlow Condensed', sans-serif;
++}
++
++.navigation-text {
+     font-weight: 400;
+     font-size: 2rem;
+     letter-spacing: 2.7px;
+-    color: var(--color-white);
+ }
+ 
+ .navigation-text--index {
+@@ -33,17 +35,24 @@ h1, h2, h3, h4, h5, h6, .navigation-text {
+ 
+ .heading-1 {
+     font-size: 10rem;
+-    font-weight: 400;
+ }
+ 
+ .heading-2 {
+     font-size: 7rem;
+-    font-weight: 400;
+ }
+ 
+ .heading-1, .heading-2 {
+     font-family: 'Bellefair', sans-serif;
++}
++
++.heading-5 {
++    font-size: 2rem;
++    letter-spacing: 2.7px;
++}
++
++.heading-5, .heading-1, .heading-2, .navigation-text {
+     color: var(--color-white);
++    font-weight: 400;
+ }
+ 
+ .default-paragraph {
+@@ -70,6 +79,11 @@ h1, h2, h3, h4, h5, h6, .navigation-text {
+     .heading-2 {
+         font-size: 10rem;
+     }
++
++    .heading-5 {
++        font-size: 2.5rem;
++        letter-spacing: 3.38px;
++    }
+     
+     .navigation-text {
+         letter-spacing: 2.36px;
+@@ -82,6 +96,11 @@ h1, h2, h3, h4, h5, h6, .navigation-text {
+         font-size: 15rem;
+     }
+ 
++    .heading-5 {
++        font-size: 2.8rem;
++        letter-spacing: 4.72px;
++    }
++
+     .navigation-text {
+         font-size: 1.6rem;
+     }
