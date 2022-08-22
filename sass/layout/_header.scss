@@ -57,26 +57,6 @@
         transform: translateX(100%);
         transition: transform var(--default-transition-time);
         padding: 15rem 0 0 3rem;
-
-        .navigation-menu-links {
-            display: flex;
-            flex-direction: column;
-            gap: 4.2rem;
-
-            .navigation-menu-link-container {
-                display: flex;
-                justify-content: start;
-            }
-
-            .navigation-menu-link {
-                display: flex;
-                column-gap: 1.23rem;
-
-                .index-link {
-                    font-weight: 700;
-                }
-            }
-        }
     }
 
     #checkbox-right-menu:checked ~ .navigation-menu {

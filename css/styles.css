@@ -109,14 +109,16 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 2.36px;
   font-weight: 400; }
 
+/*
 a .heading-3 {
-  padding-bottom: 1rem;
-  border-bottom: var(--border-bottom-link-width) solid transparent; }
+    padding-bottom: 1rem;
+    border-bottom: var(--border-bottom-link-width) solid transparent;
+}
 
 a:hover .heading-3, a .heading-3--selected {
-  border-bottom: var(--border-bottom-link-width) solid var(--color-white);
-  color: var(--color-white); }
-
+    border-bottom: var(--border-bottom-link-width) solid var(--color-white);
+    color: var(--color-white);
+}*/
 .default-paragraph {
   color: var(--light-grey);
   line-height: 1.7; }
@@ -139,6 +141,24 @@ a:hover .heading-3, a .heading-3--selected {
 
   .heading-3 {
     font-size: 2.8rem; } }
+.navigation-menu ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3.75rem; }
+  .navigation-menu ul li {
+    display: flex;
+    justify-content: start; }
+    .navigation-menu ul li a {
+      display: flex;
+      column-gap: 2rem;
+      padding-bottom: 1rem;
+      border-bottom: 3px solid transparent; }
+      .navigation-menu ul li a .index-link {
+        font-weight: 700;
+        font-variant-numeric: tabular-nums; }
+    .navigation-menu ul li a:hover {
+      border-bottom: 3px solid var(--color-white); }
+
 .main-header {
   display: flex;
   justify-content: space-between;
@@ -179,18 +199,6 @@ a:hover .heading-3, a .heading-3--selected {
     transform: translateX(100%);
     transition: transform var(--default-transition-time);
     padding: 15rem 0 0 3rem; }
-    .main-header .navigation-menu .navigation-menu-links {
-      display: flex;
-      flex-direction: column;
-      gap: 4.2rem; }
-      .main-header .navigation-menu .navigation-menu-links .navigation-menu-link-container {
-        display: flex;
-        justify-content: start; }
-      .main-header .navigation-menu .navigation-menu-links .navigation-menu-link {
-        display: flex;
-        column-gap: 1.23rem; }
-        .main-header .navigation-menu .navigation-menu-links .navigation-menu-link .index-link {
-          font-weight: 700; }
   .main-header #checkbox-right-menu:checked ~ .navigation-menu {
     transform: translateX(0); }
   @media only screen and (min-width: 48em) {
