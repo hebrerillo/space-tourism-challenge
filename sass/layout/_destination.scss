@@ -25,10 +25,15 @@
             flex-direction: row;
 
             li {
-                a:hover .heading-4, .destination--selected .heading-4{
+
+                .navigation-text {
+                    color: var(--light-grey);
+                }
+
+                a:hover .navigation-text, .destination--selected .navigation-text{
                     color: var(--color-white);
                 }
-                
+
                 .destination--selected {
                     border-bottom: var(--border-bottom-link-width) solid var(--color-white);
                 }
@@ -55,5 +60,15 @@
 
     .separator {
         margin: 4rem 0;
+    }
+
+    @media only screen and (min-width: $minWidthTabletPortrait) {
+
+        .navigation-menu.navigation-menu--destination {
+            .navigation-text {
+                letter-spacing: 2.7px;
+            }
+        }
+
     }
 }
