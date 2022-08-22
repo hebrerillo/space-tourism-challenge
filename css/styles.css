@@ -127,6 +127,9 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
   margin-bottom: 4.3rem; }
 
 @media only screen and (min-width: 48em) {
+  .main-title {
+    justify-content: start; }
+
   .heading-1 {
     font-size: 18.75rem; }
 
@@ -308,6 +311,8 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
         border-bottom: var(--border-bottom-link-width) solid var(--color-white); }
       .home-content .main-content {
         row-gap: 20.5rem; }
+        .home-content .main-content .main-title {
+          justify-content: center; }
         .home-content .main-content .explore-home-moon {
           width: 30.25rem;
           height: 30.25rem;

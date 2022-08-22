@@ -39,7 +39,7 @@
             grid-template-columns: min-content;
             justify-content: center;
         }
-        
+
         .main-header {
             .navigation-menu {
                 a.home-link {
@@ -50,6 +50,10 @@
 
         .main-content {
             row-gap: 20.5rem;
+
+            .main-title {
+                justify-content: center;
+            }
 
             .explore-home-moon {
                 width: 30.25rem;
