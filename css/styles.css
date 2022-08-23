@@ -24,7 +24,8 @@ body {
   font-size: 1.87rem;
   text-align: center;
   line-height: 1;
-  background-size: cover; }
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 ul {
   list-style: none; }
@@ -327,10 +328,13 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
           border-color: rgba(255, 255, 255, 0.1); } }
   @media only screen and (min-width: 90em) {
     .home-content {
-      background-image: url("../assets/home/background-home-desktop.jpg"); }
+      background-image: url("../assets/home/background-home-desktop.jpg");
+      background-position: center center; }
       .home-content .main-header .navigation-menu {
         background-color: transparent;
-        backdrop-filter: blur(10px); } }
+        backdrop-filter: blur(10px); }
+      .home-content .main-content {
+        padding-top: 31.25rem; } }
 
 .destination-content {
   background-image: url("../assets/destination/background-destination-mobile.jpg"); }

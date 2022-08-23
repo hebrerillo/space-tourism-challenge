@@ -72,11 +72,16 @@
 
     @media only screen and (min-width: $minWidthDesktop) {
         background-image: url("../assets/home/background-home-desktop.jpg");
+        background-position: center center;
         .main-header {
             .navigation-menu {
                 background-color: transparent;
                 backdrop-filter: blur(10px);
             }
+        }
+
+        .main-content {
+            padding-top: 31.25rem;
         }
     }
 }
