@@ -40,11 +40,9 @@
             justify-content: center;
         }
 
-        .main-header {
-            .navigation-menu {
-                a.home-link {
-                    border-bottom: var(--border-bottom-link-width) solid var(--color-white);
-                }
+        .navigation-menu.navigation-menu--header {
+            a.home-link {
+                border-bottom: var(--border-bottom-link-width) solid var(--color-white);
             }
         }
 
@@ -73,12 +71,11 @@
     @media only screen and (min-width: $minWidthDesktop) {
         background-image: url("../assets/home/background-home-desktop.jpg");
         background-position: center center;
-        .main-header {
-            .navigation-menu {
-                ul {
-                    background-color: transparent;
-                    backdrop-filter: blur(10px);
-                }
+
+        .navigation-menu.navigation-menu--header {
+            ul {
+                background-color: transparent;
+                backdrop-filter: blur(10px);
             }
         }
 

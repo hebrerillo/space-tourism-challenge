@@ -321,7 +321,7 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
         display: grid;
         grid-template-columns: min-content;
         justify-content: center; }
-      .home-content .main-header .navigation-menu a.home-link {
+      .home-content .navigation-menu.navigation-menu--header a.home-link {
         border-bottom: var(--border-bottom-link-width) solid var(--color-white); }
       .home-content .main-content {
         row-gap: 20.5rem; }
@@ -340,7 +340,7 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
     .home-content {
       background-image: url("../assets/home/background-home-desktop.jpg");
       background-position: center center; }
-      .home-content .main-header .navigation-menu ul {
+      .home-content .navigation-menu.navigation-menu--header ul {
         background-color: transparent;
         backdrop-filter: blur(10px); }
       .home-content .main-content {
@@ -376,7 +376,7 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
   .destination-content .separator {
     margin: 4rem 0; }
   @media only screen and (min-width: 48em) {
-    .destination-content .main-header .navigation-menu a.destination-link {
+    .destination-content .navigation-menu.navigation-menu--header a.destination-link {
       border-bottom: var(--border-bottom-link-width) solid var(--color-white); }
     .destination-content .navigation-menu.navigation-menu--destination .navigation-text {
       letter-spacing: 2.7px; }
