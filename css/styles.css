@@ -317,10 +317,14 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
         .home-content .main-content .main-title {
           justify-content: center; }
         .home-content .main-content .explore-home-moon {
-          width: 30.25rem;
-          height: 30.25rem;
+          width: 56.25rem;
+          height: 56.25rem;
           font-size: 4rem;
-          letter-spacing: 2px; } }
+          letter-spacing: 2px;
+          border: 10.8rem solid transparent;
+          background-clip: padding-box; }
+        .home-content .main-content .explore-home-moon:hover {
+          border-color: rgba(255, 255, 255, 0.1); } }
   @media only screen and (min-width: 90em) {
     .home-content {
       background-image: url("../assets/home/background-home-desktop.jpg"); }

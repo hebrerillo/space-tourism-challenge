@@ -56,10 +56,16 @@
             }
 
             .explore-home-moon {
-                width: 30.25rem;
-                height: 30.25rem;
+                width: 56.25rem;
+                height: 56.25rem;
                 font-size: 4rem;
                 letter-spacing: 2px;
+                border: 10.8rem solid transparent;
+                background-clip: padding-box;
+            }
+
+            .explore-home-moon:hover {
+                border-color: rgba(255, 255, 255, 0.1);
             }
         }
     }
