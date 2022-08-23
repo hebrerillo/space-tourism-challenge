@@ -334,6 +334,7 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
         background-color: transparent;
         backdrop-filter: blur(10px); }
       .home-content .main-content {
+        row-gap: 0;
         padding-top: 31.25rem; } }
 
 .destination-content {
