@@ -75,8 +75,10 @@
         background-position: center center;
         .main-header {
             .navigation-menu {
-                background-color: transparent;
-                backdrop-filter: blur(10px);
+                ul {
+                    background-color: transparent;
+                    backdrop-filter: blur(10px);
+                }
             }
         }
 

@@ -42,9 +42,7 @@
         cursor: pointer;
     }
 
-    .separator {
-        display: none;
-    }
+
 
     .navigation-menu {
         position: absolute;
@@ -57,6 +55,10 @@
         transform: translateX(100%);
         transition: transform var(--default-transition-time);
         padding: 15rem 0 0 3rem;
+
+        .separator {
+            display: none;
+        }
     }
 
     #checkbox-right-menu:checked ~ .navigation-menu {
@@ -88,17 +90,19 @@
             z-index: auto;
             transform: none;
             transition: none;
-            background-color: #151923;
             padding: 0rem;
-            width: 56.25rem;
+            width: auto;
 
             ul {
+                width: 56.25rem;
+                background-color: #151923;
                 flex-direction: row;
-                column-gap: 4.62rem;
+                justify-content: space-evenly;
+                row-gap: 0;
 
                 a {
                     padding: 5.37rem 0;
-                    
+
                     .navigation-text {
                         font-size: 1.75rem;
                     }
@@ -120,14 +124,25 @@
         }
 
         .navigation-menu {
-            padding: 0 17rem 0 12.2rem;
-            width: 83rem;
+
+            .separator {
+                display: block;
+                width: 47.3rem;
+            }
+
             ul {
+                padding: 0 17rem 0 12.2rem;
+                width: 83rem;
                 column-gap: 5rem;
+                justify-content: center;
                 li {
                     a {
                         column-gap: 1.3rem;
-                        padding: 5.37rem 0;
+                        padding: 4.3rem 0;
+
+                        .navigation-text--index {
+                            display: initial;
+                        }
 
                         .navigation-text {
                             font-size: 1.6rem;
@@ -139,10 +154,6 @@
             }
         }
 
-        .separator {
-            display: block;
-            flex-grow: 1;
-            transform: translateX(3rem);
-        }
+
     }
 }
