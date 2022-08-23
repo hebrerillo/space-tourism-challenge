@@ -56,7 +56,7 @@
         transition: transform var(--default-transition-time);
         padding: 15rem 0 0 3rem;
 
-        .separator {
+        .header-separator {
             display: none;
         }
     }
@@ -124,10 +124,16 @@
         }
 
         .navigation-menu {
-
-            .separator {
+            .header-separator {
                 display: block;
                 width: 47.3rem;
+                position: relative;
+                .separator {
+                    width: 100%;
+                    position: absolute;
+                    left: 3rem;
+                    z-index: 2;
+                }
             }
 
             ul {

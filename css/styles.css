@@ -223,7 +223,7 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
     transform: translateX(100%);
     transition: transform var(--default-transition-time);
     padding: 15rem 0 0 3rem; }
-    .main-header .navigation-menu .separator {
+    .main-header .navigation-menu .header-separator {
       display: none; }
   .main-header #checkbox-right-menu:checked ~ .navigation-menu {
     transform: translateX(0); }
@@ -264,9 +264,15 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
       width: 4.8rem;
       height: 4.8rem;
       margin-right: 3rem; }
-    .main-header .navigation-menu .separator {
+    .main-header .navigation-menu .header-separator {
       display: block;
-      width: 47.3rem; }
+      width: 47.3rem;
+      position: relative; }
+      .main-header .navigation-menu .header-separator .separator {
+        width: 100%;
+        position: absolute;
+        left: 3rem;
+        z-index: 2; }
     .main-header .navigation-menu ul {
       padding: 0 17rem 0 12.2rem;
       width: 83rem;
