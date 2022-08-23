@@ -272,7 +272,8 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
         width: 100%;
         position: absolute;
         left: 3rem;
-        z-index: 2; }
+        z-index: 2;
+        margin: 0; }
     .main-header .navigation-menu ul {
       padding: 0 17rem 0 12.2rem;
       width: 83rem;
