@@ -34,8 +34,10 @@
 
     .destination-info {
         display: flex;
-        flex-direction: column;
         gap: 5.37rem;
+        flex-wrap: wrap;
+        padding: 0 3rem;
+        justify-content: center;
 
         .subheading-2 {
             margin-bottom: 2rem;
@@ -69,6 +71,10 @@
         .main-content-secondary {
             max-width: 75rem;
             margin: 0 auto;
+
+            .destination-info {
+                gap: 12.5rem;
+            }
         }
     }
 
@@ -82,9 +88,14 @@
                 width: 44.5rem;
                 height: 44.5rem;
             }
-            
+
             .main-content-secondary {
                 padding-top: 7.3rem;
+                .destination-info {
+                    gap: 7.7rem;
+                    padding: 0;
+                    justify-content: start;
+                }
             }
         }
     }

@@ -398,8 +398,10 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
         color: var(--light-grey); }
   .destination-content .destination-info {
     display: flex;
-    flex-direction: column;
-    gap: 5.37rem; }
+    gap: 5.37rem;
+    flex-wrap: wrap;
+    padding: 0 3rem;
+    justify-content: center; }
     .destination-content .destination-info .subheading-2 {
       margin-bottom: 2rem; }
   .destination-content .separator {
@@ -416,7 +418,9 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
         height: 37.5rem; }
       .destination-content .main-content-secondary {
         max-width: 75rem;
-        margin: 0 auto; } }
+        margin: 0 auto; }
+        .destination-content .main-content-secondary .destination-info {
+          gap: 12.5rem; } }
   @media only screen and (min-width: 90em) {
     .destination-content {
       background-image: url("../assets/destination/background-destination-desktop.jpg"); }
@@ -427,6 +431,10 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
           width: 44.5rem;
           height: 44.5rem; }
         .destination-content .main-content .main-content-secondary {
-          padding-top: 7.3rem; } }
+          padding-top: 7.3rem; }
+          .destination-content .main-content .main-content-secondary .destination-info {
+            gap: 7.7rem;
+            padding: 0;
+            justify-content: start; } }
 
 /*# sourceMappingURL=styles.css.map */
