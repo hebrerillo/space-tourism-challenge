@@ -40,38 +40,38 @@
 
         .main-container {
             row-gap: 13.5rem;
-        }
 
-        .main-content-primary {
-            display: grid;
-            grid-template-columns: min-content;
-            justify-content: center;
-        }
-
-        .navigation-menu.navigation-menu--header {
-            a.home-link {
-                border-bottom: var(--border-bottom-link-width) solid var(--color-white);
-            }
-        }
-
-        .main-content {
-            row-gap: 20.5rem;
-
-            .main-title {
-                justify-content: center;
+            .navigation-menu.navigation-menu--header {
+                a.home-link {
+                    border-bottom: var(--border-bottom-link-width) solid var(--color-white);
+                }
             }
 
-            .explore-home-moon {
-                width: 56.25rem;
-                height: 56.25rem;
-                font-size: 4rem;
-                letter-spacing: 2px;
-                border: 10.8rem solid transparent;
-                background-clip: padding-box;
-            }
+            .main-content {
+                row-gap: 20.5rem;
 
-            .explore-home-moon:hover {
-                border-color: rgba(255, 255, 255, 0.1);
+                .main-title {
+                    justify-content: center;
+                }
+
+                .explore-home-moon {
+                    width: 56.25rem;
+                    height: 56.25rem;
+                    font-size: 4rem;
+                    letter-spacing: 2px;
+                    border: 10.8rem solid transparent;
+                    background-clip: padding-box;
+                }
+
+                .explore-home-moon:hover {
+                    border-color: rgba(255, 255, 255, 0.1);
+                }
+
+                .main-content-primary {
+                    display: grid;
+                    grid-template-columns: min-content;
+                    justify-content: center;
+                }
             }
         }
     }
@@ -82,21 +82,35 @@
 
         .main-container {
             row-gap: 24.8rem;
-        }
 
-        .navigation-menu.navigation-menu--header {
-            ul {
-                background-color: transparent;
-                backdrop-filter: blur(10px);
+            .navigation-menu.navigation-menu--header {
+                ul {
+                    background-color: transparent;
+                    backdrop-filter: blur(10px);
+                }
             }
-        }
 
-        .main-content {
-            row-gap: 0;
-            .explore-home-moon {
-                width: 49.05rem;
-                height: 49.05rem;
-                font-size: 3.2rem;
+            .main-content {
+                row-gap: 0;
+                .explore-home-moon {
+                    width: 49.05rem;
+                    height: 49.05rem;
+                    font-size: 3.2rem;
+                }
+
+                .main-content-primary {
+                    text-align: left;
+                    justify-content: start;
+                    align-content: start;
+
+                    .main-title {
+                        justify-content: start;
+                    }
+                    
+                    .heading-1 {
+                        margin-bottom: 3.5rem;
+                    }
+                }
             }
         }
     }

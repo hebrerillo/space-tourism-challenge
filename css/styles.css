@@ -348,40 +348,48 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
       background-image: url("../assets/home/background-home-tablet.jpg"); }
       .home-content .main-container {
         row-gap: 13.5rem; }
-      .home-content .main-content-primary {
-        display: grid;
-        grid-template-columns: min-content;
-        justify-content: center; }
-      .home-content .navigation-menu.navigation-menu--header a.home-link {
-        border-bottom: var(--border-bottom-link-width) solid var(--color-white); }
-      .home-content .main-content {
-        row-gap: 20.5rem; }
-        .home-content .main-content .main-title {
-          justify-content: center; }
-        .home-content .main-content .explore-home-moon {
-          width: 56.25rem;
-          height: 56.25rem;
-          font-size: 4rem;
-          letter-spacing: 2px;
-          border: 10.8rem solid transparent;
-          background-clip: padding-box; }
-        .home-content .main-content .explore-home-moon:hover {
-          border-color: rgba(255, 255, 255, 0.1); } }
+        .home-content .main-container .navigation-menu.navigation-menu--header a.home-link {
+          border-bottom: var(--border-bottom-link-width) solid var(--color-white); }
+        .home-content .main-container .main-content {
+          row-gap: 20.5rem; }
+          .home-content .main-container .main-content .main-title {
+            justify-content: center; }
+          .home-content .main-container .main-content .explore-home-moon {
+            width: 56.25rem;
+            height: 56.25rem;
+            font-size: 4rem;
+            letter-spacing: 2px;
+            border: 10.8rem solid transparent;
+            background-clip: padding-box; }
+          .home-content .main-container .main-content .explore-home-moon:hover {
+            border-color: rgba(255, 255, 255, 0.1); }
+          .home-content .main-container .main-content .main-content-primary {
+            display: grid;
+            grid-template-columns: min-content;
+            justify-content: center; } }
   @media only screen and (min-width: 90em) {
     .home-content {
       background-image: url("../assets/home/background-home-desktop.jpg");
       background-position: center center; }
       .home-content .main-container {
         row-gap: 24.8rem; }
-      .home-content .navigation-menu.navigation-menu--header ul {
-        background-color: transparent;
-        backdrop-filter: blur(10px); }
-      .home-content .main-content {
-        row-gap: 0; }
-        .home-content .main-content .explore-home-moon {
-          width: 49.05rem;
-          height: 49.05rem;
-          font-size: 3.2rem; } }
+        .home-content .main-container .navigation-menu.navigation-menu--header ul {
+          background-color: transparent;
+          backdrop-filter: blur(10px); }
+        .home-content .main-container .main-content {
+          row-gap: 0; }
+          .home-content .main-container .main-content .explore-home-moon {
+            width: 49.05rem;
+            height: 49.05rem;
+            font-size: 3.2rem; }
+          .home-content .main-container .main-content .main-content-primary {
+            text-align: left;
+            justify-content: start;
+            align-content: start; }
+            .home-content .main-container .main-content .main-content-primary .main-title {
+              justify-content: start; }
+            .home-content .main-container .main-content .main-content-primary .heading-1 {
+              margin-bottom: 3.5rem; } }
 
 .destination-content {
   background-image: url("../assets/destination/background-destination-mobile.jpg"); }
