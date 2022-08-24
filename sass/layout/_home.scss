@@ -83,16 +83,21 @@
         .main-container {
             row-gap: 24.8rem;
         }
-        
+
         .navigation-menu.navigation-menu--header {
             ul {
                 background-color: transparent;
                 backdrop-filter: blur(10px);
             }
         }
-        
+
         .main-content {
             row-gap: 0;
+            .explore-home-moon {
+                width: 49.05rem;
+                height: 49.05rem;
+                font-size: 3.2rem;
+            }
         }
     }
 }

@@ -377,7 +377,11 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
         background-color: transparent;
         backdrop-filter: blur(10px); }
       .home-content .main-content {
-        row-gap: 0; } }
+        row-gap: 0; }
+        .home-content .main-content .explore-home-moon {
+          width: 49.05rem;
+          height: 49.05rem;
+          font-size: 3.2rem; } }
 
 .destination-content {
   background-image: url("../assets/destination/background-destination-mobile.jpg"); }
