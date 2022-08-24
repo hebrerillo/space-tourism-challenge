@@ -49,7 +49,7 @@ a {
     grid-template-columns: auto auto;
     grid-template-rows: min-content auto;
     grid-template-areas: "logo        menuButton"
-        "mainContent mainContent";
+                         "mainContent mainContent";
     row-gap: 3.5rem;
 
     .header__logo {
@@ -78,9 +78,9 @@ a {
     .main-container {
         padding: 0rem 0rem 0rem 3rem;
         grid-template-areas: "logo        nav"
-            "mainContent mainContent";
+                             "mainContent mainContent";
         row-gap: 4.87rem;
-        .navigation-menu {
+        .navigation-menu.navigation-menu--header {
             grid-area: nav;
         }
     }
@@ -98,13 +98,22 @@ a {
 
     .main-container {
         padding: 4rem 0 0 5.5rem;
-        grid-template-columns: auto min-content;
+        grid-template-columns: auto auto;
         grid-template-areas: "logo        nav"
-            ".           mainContent";
+                             ".           mainContent";
+
+        .header__logo {
+            margin-right: 3rem;
+        }
+
+        .navigation-menu {
+            .header-separator {
+                flex-grow: 1;
+            }
+        }
 
         row-gap: 8.2rem;
         .main-content {
-            max-width: 144rem;
             grid-template-columns: auto auto;
 
             .main-content-primary {

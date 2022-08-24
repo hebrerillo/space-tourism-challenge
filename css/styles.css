@@ -62,7 +62,7 @@ a {
     padding: 0rem 0rem 0rem 3rem;
     grid-template-areas: "logo        nav" "mainContent mainContent";
     row-gap: 4.87rem; }
-    .main-container .navigation-menu {
+    .main-container .navigation-menu.navigation-menu--header {
       grid-area: nav; } }
 @media only screen and (min-width: 90em) {
   html {
@@ -74,11 +74,14 @@ a {
 
   .main-container {
     padding: 4rem 0 0 5.5rem;
-    grid-template-columns: auto min-content;
+    grid-template-columns: auto auto;
     grid-template-areas: "logo        nav" ".           mainContent";
     row-gap: 8.2rem; }
+    .main-container .header__logo {
+      margin-right: 3rem; }
+    .main-container .navigation-menu .header-separator {
+      flex-grow: 1; }
     .main-container .main-content {
-      max-width: 144rem;
       grid-template-columns: auto auto; }
       .main-container .main-content .main-content-primary {
         padding-left: 3rem; }
@@ -431,7 +434,10 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
           width: 44.5rem;
           height: 44.5rem; }
         .destination-content .main-content .main-content-secondary {
-          padding-top: 7.3rem; }
+          padding: 7.3rem 16rem 0 0;
+          text-align: left; }
+          .destination-content .main-content .main-content-secondary .navigation-menu.navigation-menu--destination ul {
+            justify-content: start; }
           .destination-content .main-content .main-content-secondary .destination-info {
             gap: 7.7rem;
             padding: 0;
