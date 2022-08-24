@@ -1,8 +1,11 @@
 .home-content {
     background-image: url("../assets/home/background-home-mobile.jpg");
 
+    .main-container {
+        row-gap: 13rem;
+    }
+
     .main-content {
-        padding-top: 13rem;
         row-gap: 10.7rem;
 
         .main-title {
@@ -34,6 +37,11 @@
 
     @media only screen and (min-width: $minWidthTabletPortrait) {
         background-image: url("../assets/home/background-home-tablet.jpg");
+
+        .main-container {
+            row-gap: 13.5rem;
+        }
+
         .main-content-primary {
             display: grid;
             grid-template-columns: min-content;
@@ -72,16 +80,19 @@
         background-image: url("../assets/home/background-home-desktop.jpg");
         background-position: center center;
 
+        .main-container {
+            row-gap: 24.8rem;
+        }
+        
         .navigation-menu.navigation-menu--header {
             ul {
                 background-color: transparent;
                 backdrop-filter: blur(10px);
             }
         }
-
+        
         .main-content {
             row-gap: 0;
-            padding-top: 31.25rem;
         }
     }
 }

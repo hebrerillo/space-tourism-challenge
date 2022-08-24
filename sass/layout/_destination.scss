@@ -47,6 +47,7 @@
     }
 
     @media only screen and (min-width: $minWidthTabletPortrait) {
+        background-image: url("../assets/destination/background-destination-tablet.jpg");
 
         .navigation-menu.navigation-menu--header {
             a.destination-link {
@@ -68,6 +69,23 @@
         .main-content-secondary {
             max-width: 75rem;
             margin: 0 auto;
+        }
+    }
+
+    @media only screen and (min-width: $minWidthDesktop) {
+        background-image: url("../assets/destination/background-destination-desktop.jpg");
+        .main-content {
+            column-gap: 15.7rem;
+
+            .destination-hero {
+                margin-left: 6rem;
+                width: 44.5rem;
+                height: 44.5rem;
+            }
+            
+            .main-content-secondary {
+                padding-top: 7.3rem;
+            }
         }
     }
 }
