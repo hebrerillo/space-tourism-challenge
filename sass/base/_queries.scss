@@ -2,11 +2,5 @@
 
 $minWidthDesktop: 90em;
 $minWidthTabletPortrait : 48em;
-
-@mixin respond($breakpoint) {
-
-    @if $breakpoint == desktop {
-        @media only screen and (min-width: $minWidthDesktop) { @content };
-    }
-}
+$minWidthBigDesktop: 112.5em;
 

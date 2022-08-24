@@ -106,4 +106,23 @@
             }
         }
     }
+    
+    @media only screen and (min-width: $minWidthBigDesktop) {
+        
+        .main-content {
+            
+            .main-content-secondary {
+                text-align: center;
+                .navigation-menu.navigation-menu--destination {
+                    ul {
+                        justify-content: center;
+                    }
+                }
+
+                .destination-info {
+                    justify-content: center;
+                }
+            }
+        }
+    }
 }

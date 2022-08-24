@@ -454,5 +454,12 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
             gap: 7.7rem;
             padding: 0;
             justify-content: start; } }
+  @media only screen and (min-width: 112.5em) {
+    .destination-content .main-content .main-content-secondary {
+      text-align: center; }
+      .destination-content .main-content .main-content-secondary .navigation-menu.navigation-menu--destination ul {
+        justify-content: center; }
+      .destination-content .main-content .main-content-secondary .destination-info {
+        justify-content: center; } }
 
 /*# sourceMappingURL=styles.css.map */
