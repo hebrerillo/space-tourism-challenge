@@ -98,7 +98,7 @@ a {
 
     .main-container {
         padding: 4rem 0 0 5.5rem;
-        grid-template-columns: auto auto;
+        grid-template-columns: min-content auto;
         grid-template-areas: "logo        nav"
                              ".           mainContent";
 

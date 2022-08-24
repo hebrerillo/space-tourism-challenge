@@ -106,7 +106,7 @@
                     .main-title {
                         justify-content: start;
                     }
-                    
+
                     .heading-1 {
                         margin-bottom: 3.5rem;
                     }
@@ -114,7 +114,26 @@
             }
         }
     }
+
+    @media only screen and (min-width: $minWidthBigDesktop) {
+        .main-container {
+            .main-content {
+                grid-template-columns: min-content 1fr;
+                .main-content-primary {
+                    grid-template-columns: auto;
+                    justify-items: center;
+                    text-align: center;
+                    
+                    .main-title {
+                        justify-content: center;
+                    }
+                    
+                    .default-paragraph {
+                        min-width: 60rem;
+                    }
+                }
+            }
+        }
+    }
 }
-
-
 
