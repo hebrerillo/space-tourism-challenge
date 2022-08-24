@@ -79,8 +79,9 @@ a {
     row-gap: 8.2rem; }
     .main-container .main-content {
       max-width: 144rem;
-      padding-left: 3rem;
       grid-template-columns: auto auto; }
+      .main-container .main-content .main-content-primary {
+        padding-left: 3rem; }
       .main-container .main-content .main-content-secondary {
         max-width: none; } }
 .separator {
