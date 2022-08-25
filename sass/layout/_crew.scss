@@ -17,6 +17,9 @@
             .main-content-secondary {
                 display: grid;
                 justify-items: center;
+                grid-template-rows: min-content min-content;
+                row-gap: 3.87rem;
+
                 .navigation-menu.navigation-menu--crew {
                     ul {
                         row-gap: 0;
@@ -36,6 +39,17 @@
                                 background-color: var(--color-bullets-hover);
                             }
                         }
+                    }
+                }
+                
+                .crew-member-section {
+                    .heading-4--crew-member-title {
+                        opacity: 0.5;
+                        margin-bottom: 1.25rem;
+                    }
+                    
+                    .heading-3 {
+                        margin-bottom: 2.5rem;
                     }
                 }
             }
