@@ -80,47 +80,51 @@
 
     @media only screen and (min-width: $minWidthDesktop) {
         background-image: url("../assets/destination/background-destination-desktop.jpg");
-        .main-content {
-            column-gap: 15.7rem;
+        .main-container {
 
-            .destination-hero {
-                margin-left: 6rem;
-                width: 44.5rem;
-                height: 44.5rem;
-            }
+            .main-content {
+                column-gap: 15.7rem;
 
-            .main-content-secondary {
-                padding: 7.3rem 16rem 0 0;
-                text-align: left;
-                .navigation-menu.navigation-menu--destination {
-                    ul {
+                .destination-hero {
+                    margin-left: 6rem;
+                    width: 44.5rem;
+                    height: 44.5rem;
+                }
+
+                .main-content-secondary {
+                    padding: 0rem 16rem 0 0;
+                    text-align: left;
+                    align-self: end;
+                    .navigation-menu.navigation-menu--destination {
+                        ul {
+                            justify-content: start;
+                        }
+                    }
+
+                    .destination-info {
+                        gap: 7.7rem;
+                        padding: 0;
                         justify-content: start;
                     }
-                }
-                
-                .destination-info {
-                    gap: 7.7rem;
-                    padding: 0;
-                    justify-content: start;
                 }
             }
         }
     }
-    
+
     @media only screen and (min-width: $minWidthBigDesktop) {
-        
-        .main-content {
-            
-            .main-content-secondary {
-                text-align: center;
-                .navigation-menu.navigation-menu--destination {
-                    ul {
+        .main-container {
+            .main-content {
+                .main-content-secondary {
+                    text-align: center;
+                    .navigation-menu.navigation-menu--destination {
+                        ul {
+                            justify-content: center;
+                        }
+                    }
+
+                    .destination-info {
                         justify-content: center;
                     }
-                }
-
-                .destination-info {
-                    justify-content: center;
                 }
             }
         }

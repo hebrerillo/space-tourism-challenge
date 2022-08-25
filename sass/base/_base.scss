@@ -99,6 +99,7 @@ a {
     .main-container {
         padding: 4rem 0 0 5.5rem;
         grid-template-columns: min-content auto;
+        grid-template-rows: min-content min-content;
         grid-template-areas: "logo        nav"
                              ".           mainContent";
 
