@@ -6,13 +6,45 @@
             width: 22.14rem;
             height: 27,75rem;
         }
-        
+
         .main-content {
+            row-gap: 4.25rem;
+
             .main-content-primary {
                 border-bottom: 1px solid var(--color-separator);
             }
-        }
-        
-    }
 
+            .main-content-secondary {
+                display: grid;
+                justify-items: center;
+                .navigation-menu.navigation-menu--crew {
+                    ul {
+                        row-gap: 0;
+                        column-gap: 2rem;
+                        flex-direction: row;
+                        li {
+                            a {
+                                padding: 0;
+                                border: none;
+                                width: 1.25rem;
+                                height: 1.25rem;
+                                background-color: var(--color-bullets);
+                                border-radius: 50%;
+                            }
+
+                            a:hover {
+                                background-color: var(--color-bullets-hover);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .commander-content {
+            .commander-link {
+                background-color: var(--color-white) !important;
+            }
+        }
+    }
 }
