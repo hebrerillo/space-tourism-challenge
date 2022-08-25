@@ -82,6 +82,7 @@
         background-image: url("../assets/destination/background-destination-desktop.jpg");
         .main-container {
 
+            grid-template-rows: min-content min-content;
             .main-content {
                 column-gap: 15.7rem;
 

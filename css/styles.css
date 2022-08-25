@@ -75,7 +75,6 @@ a {
   .main-container {
     padding: 4rem 0 0 5.5rem;
     grid-template-columns: min-content auto;
-    grid-template-rows: min-content min-content;
     grid-template-areas: "logo        nav" ".           mainContent";
     row-gap: 8.2rem; }
     .main-container .header__logo {
@@ -451,22 +450,24 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
   @media only screen and (min-width: 90em) {
     .destination-content {
       background-image: url("../assets/destination/background-destination-desktop.jpg"); }
-      .destination-content .main-container .main-content {
-        column-gap: 15.7rem; }
-        .destination-content .main-container .main-content .destination-hero {
-          margin-left: 6rem;
-          width: 44.5rem;
-          height: 44.5rem; }
-        .destination-content .main-container .main-content .main-content-secondary {
-          padding: 0rem 16rem 0 0;
-          text-align: left;
-          align-self: end; }
-          .destination-content .main-container .main-content .main-content-secondary .navigation-menu.navigation-menu--destination ul {
-            justify-content: start; }
-          .destination-content .main-container .main-content .main-content-secondary .destination-info {
-            gap: 7.7rem;
-            padding: 0;
-            justify-content: start; } }
+      .destination-content .main-container {
+        grid-template-rows: min-content min-content; }
+        .destination-content .main-container .main-content {
+          column-gap: 15.7rem; }
+          .destination-content .main-container .main-content .destination-hero {
+            margin-left: 6rem;
+            width: 44.5rem;
+            height: 44.5rem; }
+          .destination-content .main-container .main-content .main-content-secondary {
+            padding: 0rem 16rem 0 0;
+            text-align: left;
+            align-self: end; }
+            .destination-content .main-container .main-content .main-content-secondary .navigation-menu.navigation-menu--destination ul {
+              justify-content: start; }
+            .destination-content .main-container .main-content .main-content-secondary .destination-info {
+              gap: 7.7rem;
+              padding: 0;
+              justify-content: start; } }
   @media only screen and (min-width: 112.5em) {
     .destination-content .main-container .main-content .main-content-secondary {
       text-align: center; }
