@@ -50,6 +50,8 @@ a {
     grid-template-rows: min-content auto;
     grid-template-areas: "logo        menuButton"
                          "mainContent mainContent";
+
+    align-content: start;
     row-gap: 3.5rem;
 
     .header__logo {
@@ -66,6 +68,7 @@ a {
     .main-content {
         display: grid;
         grid-area: mainContent;
+        align-content: start;
     }
 }
 
@@ -78,7 +81,7 @@ a {
     .main-container {
         padding: 0rem 0rem 0rem 3rem;
         grid-template-areas: "logo        nav"
-                             "mainContent mainContent";
+            "mainContent mainContent";
         row-gap: 4.87rem;
         .navigation-menu.navigation-menu--header {
             grid-area: nav;
@@ -100,7 +103,7 @@ a {
         padding: 4rem 0 0 5.5rem;
         grid-template-columns: min-content auto;
         grid-template-areas: "logo        nav"
-                             ".           mainContent";
+            ".           mainContent";
 
         .header__logo {
             margin-right: 3rem;
