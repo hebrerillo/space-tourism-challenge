@@ -106,6 +106,7 @@ a {
         grid-template-columns: min-content auto;
         grid-template-areas: "logo        nav"
             ".           mainContent";
+        row-gap: 8.2rem;
 
         .header__logo {
             margin-right: 3rem;
@@ -117,10 +118,7 @@ a {
             }
         }
 
-        row-gap: 8.2rem;
         .main-content {
-            grid-template-columns: auto auto;
-
             .main-content-primary {
                 padding-left: 3rem;
             }
