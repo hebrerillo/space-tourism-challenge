@@ -51,7 +51,7 @@ a {
     grid-template-columns: auto auto;
     grid-template-rows: min-content auto;
     grid-template-areas: "logo        menuButton"
-                         "mainContent mainContent";
+        "mainContent mainContent";
 
     align-content: start;
     row-gap: 3.5rem;
