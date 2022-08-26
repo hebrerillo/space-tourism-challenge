@@ -1,22 +1,21 @@
 .crew-content {
-    background-image: url("../assets/crew/background-crew-desktop.jpg");
+    background-image: url("../assets/crew/background-crew-mobile.jpg");
 
     .main-container {
-        .crew-hero {
-            width: 22.14rem;
-            height: 27,75rem;
-        }
-
         .main-content {
-
             .main-content-primary {
                 border-bottom: 1px solid var(--color-separator);
+                margin-bottom: 4rem;
+                .crew-hero {
+                    width: 22.14rem;
+                    height: 27,75rem;
+                }
+
             }
 
             .main-content-secondary {
                 display: grid;
                 justify-items: center;
-                grid-template-rows: min-content min-content;
                 row-gap: 3.87rem;
 
                 .navigation-menu.navigation-menu--crew {
@@ -40,13 +39,13 @@
                         }
                     }
                 }
-                
-                .crew-member-section {
+
+                .crew-member-description {
                     .heading-4--crew-member-title {
                         opacity: 0.5;
                         margin-bottom: 1.25rem;
                     }
-                    
+
                     .heading-3 {
                         margin-bottom: 2.5rem;
                     }
@@ -57,6 +56,54 @@
         .commander-content {
             .commander-link {
                 background-color: var(--color-white) !important;
+            }
+        }
+    }
+
+    @media only screen and (min-width: $minWidthTabletPortrait) {
+        background-image: url("../assets/crew/background-crew-tablet.jpg");
+        
+        .main-container {
+            .main-content {
+                grid-template-areas: "title"
+                    "crewTextAndNav"
+                    "crewImage";
+
+                .main-title {
+                    grid-area: title;
+                }
+
+                .main-content-primary {
+                    grid-area: crewImage;
+                    margin-bottom: 0;
+                    border-bottom: none;
+
+                    .crew-hero {
+                        height: 71.5rem;
+                    }
+                }
+
+                .main-content-secondary {
+                    grid-area: crewTextAndNav;
+                    grid-template-rows: auto auto;
+                    grid-template-areas: "crewText"
+                        "nav";
+                    margin-bottom: 5rem;
+                    row-gap: 0;
+
+                    .navigation-menu.navigation-menu--crew {
+                        grid-area: nav;
+                    }
+
+                    .crew-member-description {
+                        grid-area: crewText;
+                        margin-bottom: 5.5rem;
+                    }
+                }
+                
+                .main-content-secondary .crew-member-description, .main-content-primary .crew-hero {
+                    width: 57rem;
+                }
             }
         }
     }
