@@ -540,7 +540,9 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
     .crew-content {
       background-image: url("../assets/crew/background-crew-tablet.jpg"); }
       .crew-content .main-container .main-content {
-        grid-template-areas: "title" "crewTextAndNav" "crewImage"; }
+        grid-template-rows: auto auto auto;
+        grid-template-columns: auto min-content auto;
+        grid-template-areas: "title title title" ". crewTextAndNav ." ". crewImage ."; }
         .crew-content .main-container .main-content .main-title {
           grid-area: title; }
         .crew-content .main-container .main-content .main-content-primary {
@@ -548,6 +550,7 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
           margin-bottom: 0;
           border-bottom: none; }
           .crew-content .main-container .main-content .main-content-primary .crew-hero {
+            width: 57rem;
             height: 71.5rem; }
         .crew-content .main-container .main-content .main-content-secondary {
           grid-area: crewTextAndNav;
@@ -559,8 +562,6 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
             grid-area: nav; }
           .crew-content .main-container .main-content .main-content-secondary .crew-member-description {
             grid-area: crewText;
-            margin-bottom: 5.5rem; }
-        .crew-content .main-container .main-content .main-content-secondary .crew-member-description, .crew-content .main-container .main-content .main-content-primary .crew-hero {
-          width: 57rem; } }
+            margin-bottom: 5.5rem; } }
 
 /*# sourceMappingURL=styles.css.map */

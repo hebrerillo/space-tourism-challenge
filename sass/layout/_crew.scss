@@ -65,9 +65,11 @@
         
         .main-container {
             .main-content {
-                grid-template-areas: "title"
-                    "crewTextAndNav"
-                    "crewImage";
+                grid-template-rows: auto auto auto;
+                grid-template-columns: auto min-content auto;
+                grid-template-areas: "title title title"
+                                     ". crewTextAndNav ."
+                                     ". crewImage .";
 
                 .main-title {
                     grid-area: title;
@@ -79,6 +81,7 @@
                     border-bottom: none;
 
                     .crew-hero {
+                        width: 57rem;
                         height: 71.5rem;
                     }
                 }
@@ -99,10 +102,6 @@
                         grid-area: crewText;
                         margin-bottom: 5.5rem;
                     }
-                }
-                
-                .main-content-secondary .crew-member-description, .main-content-primary .crew-hero {
-                    width: 57rem;
                 }
             }
         }
