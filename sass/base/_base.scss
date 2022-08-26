@@ -59,6 +59,7 @@ a {
     .header__logo {
         grid-area: logo;
         align-self: center;
+        justify-self: start;
     }
 
     .header__label {
@@ -81,10 +82,15 @@ a {
     }
 
     .main-container {
-        padding: 0rem 0rem 0rem 3rem;
+        padding: 0rem 0rem 0rem 0rem;
         grid-template-areas: "logo        nav"
             "mainContent mainContent";
         row-gap: 4.87rem;
+
+        .header__logo, .main-content .main-title {
+            margin-left: 3rem;
+        }
+
         .navigation-menu.navigation-menu--header {
             grid-area: nav;
         }
@@ -102,14 +108,16 @@ a {
     }
 
     .main-container {
-        padding: 4rem 0 0 5.5rem;
+        padding: 4rem 0 0 0;
         grid-template-columns: min-content auto;
         grid-template-areas: "logo        nav"
             ".           mainContent";
         row-gap: 8.2rem;
+        column-gap: 2.5rem;
 
         .header__logo {
-            margin-right: 3rem;
+            padding: 0;
+            margin-left: 5.5rem;
         }
 
         .navigation-menu {
@@ -121,6 +129,11 @@ a {
         .main-content {
             grid-template-columns: auto auto;
             grid-template-rows: auto auto;
+
+            .main-title {
+                margin-left: 3rem;
+            }
+
             .main-content-primary {
                 padding-left: 3rem;
             }

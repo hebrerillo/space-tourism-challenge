@@ -48,7 +48,8 @@ a {
   row-gap: 3.5rem; }
   .main-container .header__logo {
     grid-area: logo;
-    align-self: center; }
+    align-self: center;
+    justify-self: start; }
   .main-container .header__label {
     grid-area: menuButton;
     justify-self: end;
@@ -63,9 +64,11 @@ a {
     font-size: 2rem; }
 
   .main-container {
-    padding: 0rem 0rem 0rem 3rem;
+    padding: 0rem 0rem 0rem 0rem;
     grid-template-areas: "logo        nav" "mainContent mainContent";
     row-gap: 4.87rem; }
+    .main-container .header__logo, .main-container .main-content .main-title {
+      margin-left: 3rem; }
     .main-container .navigation-menu.navigation-menu--header {
       grid-area: nav; } }
 @media only screen and (min-width: 90em) {
@@ -77,17 +80,21 @@ a {
     font-size: 1.8rem; }
 
   .main-container {
-    padding: 4rem 0 0 5.5rem;
+    padding: 4rem 0 0 0;
     grid-template-columns: min-content auto;
     grid-template-areas: "logo        nav" ".           mainContent";
-    row-gap: 8.2rem; }
+    row-gap: 8.2rem;
+    column-gap: 2.5rem; }
     .main-container .header__logo {
-      margin-right: 3rem; }
+      padding: 0;
+      margin-left: 5.5rem; }
     .main-container .navigation-menu .header-separator {
       flex-grow: 1; }
     .main-container .main-content {
       grid-template-columns: auto auto;
       grid-template-rows: auto auto; }
+      .main-container .main-content .main-title {
+        margin-left: 3rem; }
       .main-container .main-content .main-content-primary {
         padding-left: 3rem; }
       .main-container .main-content .main-content-secondary {
