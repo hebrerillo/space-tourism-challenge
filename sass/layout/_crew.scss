@@ -62,44 +62,47 @@
 
     @media only screen and (min-width: $minWidthTabletPortrait) {
         background-image: url("../assets/crew/background-crew-tablet.jpg");
-
+        
         .main-container {
             .main-content {
-                .crew-member-info-container {
-                    display: grid;
-                    grid-template-areas: "memberTextAndNav"
-                                         "memberHero";
-                    grid-template-columns: min-content;
-                    justify-content: center;
+                grid-template-areas: "title"
+                    "crewTextAndNav"
+                    "crewImage";
 
-                    .main-content-primary {
-                        grid-area: memberHero;
-                        margin-bottom: 0;
-                        border-bottom: none;
+                .main-title {
+                    grid-area: title;
+                }
 
-                        .crew-hero {
-                            height: 71.5rem;
-                            width: 57rem;
-                        }
+                .main-content-primary {
+                    grid-area: crewImage;
+                    margin-bottom: 0;
+                    border-bottom: none;
+
+                    .crew-hero {
+                        height: 71.5rem;
+                    }
+                }
+
+                .main-content-secondary {
+                    grid-area: crewTextAndNav;
+                    grid-template-rows: auto auto;
+                    grid-template-areas: "crewText"
+                        "nav";
+                    margin-bottom: 5rem;
+                    row-gap: 0;
+
+                    .navigation-menu.navigation-menu--crew {
+                        grid-area: nav;
                     }
 
-                    .main-content-secondary {
-                        grid-area: memberTextAndNav;
-                        grid-template-rows: auto auto;
-                        grid-template-areas: "memberText"
-                            "nav";
-                        margin-bottom: 5rem;
-                        row-gap: 0;
-
-                        .navigation-menu.navigation-menu--crew {
-                            grid-area: nav;
-                        }
-
-                        .crew-member-description {
-                            grid-area: memberText;
-                            margin-bottom: 5.5rem;
-                        }
+                    .crew-member-description {
+                        grid-area: crewText;
+                        margin-bottom: 5.5rem;
                     }
+                }
+                
+                .main-content-secondary .crew-member-description, .main-content-primary .crew-hero {
+                    width: 57rem;
                 }
             }
         }
