@@ -84,10 +84,8 @@
 
             grid-template-rows: min-content min-content;
             .main-content {
-                grid-template-columns: auto auto;
-                grid-template-rows: auto auto;
                 grid-template-areas: "titleDest ."
-                    "heroDest  destinationText";
+                                     "heroDest  destinationText";
 
                 column-gap: 15.7rem;
                 align-items: start;
