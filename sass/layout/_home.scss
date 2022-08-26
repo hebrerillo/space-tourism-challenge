@@ -47,10 +47,15 @@
             }
 
             .main-content {
-                row-gap: 20.5rem;
-
                 .main-title {
                     justify-content: center;
+                }
+
+                .main-content-primary {
+                    display: grid;
+                    grid-template-columns: min-content;
+                    justify-content: center;
+                    margin-bottom: 20.5rem;
                 }
 
                 .explore-home-moon {
@@ -64,12 +69,6 @@
 
                 .explore-home-moon:hover {
                     border-color: rgba(255, 255, 255, 0.1);
-                }
-
-                .main-content-primary {
-                    display: grid;
-                    grid-template-columns: min-content;
-                    justify-content: center;
                 }
             }
         }
