@@ -487,7 +487,7 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
             grid-area: titleDest; }
           .destination-content .main-container .main-content .main-content-primary {
             grid-area: heroDest;
-            align-self: end; }
+            padding-top: 2rem; }
             .destination-content .main-container .main-content .main-content-primary .destination-hero {
               margin-left: 6rem;
               width: 44.5rem;
@@ -495,8 +495,7 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
           .destination-content .main-container .main-content .main-content-secondary {
             grid-area: destinationText;
             padding: 0rem 16rem 0 0;
-            text-align: left;
-            align-self: end; }
+            text-align: left; }
             .destination-content .main-container .main-content .main-content-secondary .navigation-menu.navigation-menu--destination ul {
               justify-content: start; }
             .destination-content .main-container .main-content .main-content-secondary .destination-info {

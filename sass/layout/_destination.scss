@@ -96,7 +96,7 @@
 
                 .main-content-primary {
                     grid-area: heroDest;
-                    align-self: end;
+                    padding-top: 2rem;
                     .destination-hero {
                         margin-left: 6rem;
                         width: 44.5rem;
@@ -108,7 +108,6 @@
                     grid-area: destinationText;
                     padding: 0rem 16rem 0 0;
                     text-align: left;
-                    align-self: end;
                     .navigation-menu.navigation-menu--destination {
                         ul {
                             justify-content: start;
