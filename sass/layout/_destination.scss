@@ -127,4 +127,16 @@
             }
         }
     }
+
+    @media only screen and (min-width: $minWidthBigDesktop) {
+        .main-container {
+            .main-content {
+                column-gap: 30rem;
+                
+                .main-content-secondary {
+                    width: 80%;
+                }
+            }
+        }
+    }
 }
