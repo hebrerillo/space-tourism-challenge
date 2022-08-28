@@ -25,6 +25,7 @@
                 margin: 0 3rem;
 
                 .navigation-menu.navigation-menu--tech {
+                    margin-bottom: 3rem;
                     ul {
                         flex-direction: row;
                         column-gap: 2rem;
@@ -48,9 +49,21 @@
                         }
                     }
                 }
+
+                .tech-description {
+                    .navigation-text {
+                        letter-spacing: 2.36px;
+                        color: var(--light-grey);
+                        margin-bottom: 1.62rem;
+                    }
+
+                    .heading-3 {
+                        margin-bottom: 3rem;
+                    }
+                }
             }
         }
-        
+
         .vehicle-content .vehicle-link {
             background-color: var(--color-white);
             border: 1px solid var(--color-white) !important;
