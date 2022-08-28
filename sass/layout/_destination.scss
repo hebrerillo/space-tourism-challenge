@@ -87,8 +87,6 @@
                 grid-template-areas: "titleDest ."
                                      "heroDest  destinationText";
 
-                column-gap: 15.7rem;
-
                 .main-title {
                     grid-area: titleDest;
                 }
@@ -108,8 +106,11 @@
                 }
 
                 .main-content-secondary {
+                    width: 65%;
+                    justify-self: center;
                     grid-area: destinationText;
-                    padding: 0rem 16rem 0 0;
+                    padding: 0;
+                    margin:0;
                     text-align: left;
                     .navigation-menu.navigation-menu--destination {
                         ul {
@@ -121,25 +122,6 @@
                         gap: 7.7rem;
                         padding: 0;
                         justify-content: start;
-                    }
-                }
-            }
-        }
-    }
-
-    @media only screen and (min-width: $minWidthBigDesktop) {
-        .main-container {
-            .main-content {
-                .main-content-secondary {
-                    text-align: center;
-                    .navigation-menu.navigation-menu--destination {
-                        ul {
-                            justify-content: center;
-                        }
-                    }
-
-                    .destination-info {
-                        justify-content: center;
                     }
                 }
             }
