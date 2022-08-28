@@ -121,6 +121,7 @@ a {
         .main-content {
             grid-template-columns: auto auto;
             grid-template-rows: auto auto;
+            align-items: start;
 
             .main-content-secondary {
                 max-width: none;

@@ -115,7 +115,6 @@
                 grid-template-columns: min-content auto;
                 grid-template-areas: "title              crewImage"
                                      "crewTextAndNav     crewImage";
-                align-items: start; /*TODO check to place this instruction in the base.scss*/
                 column-gap: 12rem;
 
                 .main-title {
