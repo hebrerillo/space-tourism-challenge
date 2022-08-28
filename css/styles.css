@@ -92,7 +92,8 @@ a {
       flex-grow: 1; }
     .main-container .main-content {
       grid-template-columns: auto auto;
-      grid-template-rows: auto auto; }
+      grid-template-rows: auto auto;
+      align-items: start; }
       .main-container .main-content .main-title {
         margin-left: 3rem; }
       .main-container .main-content .main-content-primary {
@@ -197,6 +198,12 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
 @media only screen and (min-width: 90em) {
   .heading-1 {
     font-size: 15rem; }
+
+  .heading-3 {
+    font-size: 5.6rem; }
+
+  .heading-4 {
+    font-size: 3.2rem; }
 
   .heading-5 {
     font-size: 2.8rem;
@@ -416,7 +423,9 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
             .home-content .main-container .main-content .main-content-secondary .explore-home-moon {
               width: 27.4rem;
               height: 27.4rem;
-              font-size: 3.2rem; } }
+              font-size: 3.2rem; }
+          .home-content .main-container .main-content .main-title, .home-content .main-container .main-content .main-content-primary {
+            margin-left: 3rem; } }
   @media only screen and (min-width: 112.5em) {
     .home-content .main-container .main-content {
       grid-template-columns: min-content 1fr; }
@@ -481,8 +490,7 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
         grid-template-rows: min-content min-content; }
         .destination-content .main-container .main-content {
           grid-template-areas: "titleDest ." "heroDest  destinationText";
-          column-gap: 15.7rem;
-          align-items: start; }
+          column-gap: 15.7rem; }
           .destination-content .main-container .main-content .main-title {
             grid-area: titleDest; }
           .destination-content .main-container .main-content .main-content-primary {
@@ -492,6 +500,8 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
               margin-left: 6rem;
               width: 44.5rem;
               height: 44.5rem; }
+          .destination-content .main-container .main-content .main-title, .destination-content .main-container .main-content .main-content-primary {
+            margin-left: 3rem; }
           .destination-content .main-container .main-content .main-content-secondary {
             grid-area: destinationText;
             padding: 0rem 16rem 0 0;
@@ -517,7 +527,7 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
     margin-bottom: 4rem; }
     .crew-content .main-container .main-content .main-content-primary .crew-hero {
       width: 22.14rem;
-      height: 27,75rem; }
+      height: 27.75rem; }
   .crew-content .main-container .main-content .main-content-secondary {
     display: grid;
     justify-items: center;
@@ -569,5 +579,37 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
           .crew-content .main-container .main-content .main-content-secondary .crew-member-description {
             grid-area: crewText;
             margin-bottom: 5.5rem; } }
+  @media only screen and (min-width: 90em) {
+    .crew-content {
+      background-image: url("../assets/crew/background-crew-desktop.jpg"); }
+      .crew-content .main-container .main-content {
+        width: 90%;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto auto;
+        grid-template-areas: "title              crewImage" "crewTextAndNav     crewImage";
+        column-gap: 12rem; }
+        .crew-content .main-container .main-content .main-title {
+          margin-bottom: 16rem; }
+        .crew-content .main-container .main-content .main-content-primary {
+          grid-area: crewImage;
+          justify-self: center; }
+          .crew-content .main-container .main-content .main-content-primary .crew-hero {
+            width: 52.8rem;
+            height: 71.2rem; }
+        .crew-content .main-container .main-content .main-content-secondary {
+          grid-area: crewTextAndNav;
+          text-align: left;
+          justify-items: start; }
+          .crew-content .main-container .main-content .main-content-secondary .crew-member-description {
+            margin-bottom: 12.5rem; }
+            .crew-content .main-container .main-content .main-content-secondary .crew-member-description .heading-4 {
+              margin-bottom: 1.8rem; }
+            .crew-content .main-container .main-content .main-content-secondary .crew-member-description .heading-3 {
+              margin-bottom: 3.2rem;
+              white-space: nowrap; }
+            .crew-content .main-container .main-content .main-content-secondary .crew-member-description .default-paragraph {
+              width: 90%; }
+        .crew-content .main-container .main-content .main-title, .crew-content .main-container .main-content .main-content-secondary {
+          margin-left: 3rem; } }
 
 /*# sourceMappingURL=styles.css.map */

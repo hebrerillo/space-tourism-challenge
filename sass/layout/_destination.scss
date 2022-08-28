@@ -88,7 +88,6 @@
                                      "heroDest  destinationText";
 
                 column-gap: 15.7rem;
-                align-items: start;
 
                 .main-title {
                     grid-area: titleDest;
@@ -102,6 +101,10 @@
                         width: 44.5rem;
                         height: 44.5rem;
                     }
+                }
+
+                .main-title, .main-content-primary {
+                    margin-left: 3rem;
                 }
 
                 .main-content-secondary {
