@@ -65,7 +65,7 @@ a {
     font-size: 2rem; }
 
   .main-container {
-    padding: 0rem 0rem 0rem 0rem;
+    padding: 0rem 0rem 6rem 0rem;
     grid-template-areas: "logo        nav" "mainContent mainContent";
     row-gap: 4.87rem; }
     .main-container .header__logo, .main-container .main-content .main-title {
@@ -81,7 +81,7 @@ a {
     font-size: 1.8rem; }
 
   .main-container {
-    padding: 4rem 0 0 0;
+    padding: 4rem 0 7rem 0;
     grid-template-columns: min-content auto;
     grid-template-areas: "logo        nav" ".           mainContent";
     row-gap: 8.2rem;
