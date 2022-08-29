@@ -87,7 +87,6 @@ a {
     row-gap: 8.2rem;
     column-gap: 2.5rem; }
     .main-container .header__logo {
-      padding: 0;
       margin-left: 5.5rem; }
     .main-container .navigation-menu .header-separator {
       flex-grow: 1; }
