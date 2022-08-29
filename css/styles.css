@@ -556,6 +556,8 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
   @media only screen and (min-width: 48em) {
     .crew-content {
       background-image: url("../assets/crew/background-crew-tablet.jpg"); }
+      .crew-content .main-container .navigation-menu.navigation-menu--header a.crew-link {
+        border-bottom: var(--border-bottom-link-width) solid var(--color-white); }
       .crew-content .main-container .main-content {
         grid-template-rows: auto auto auto;
         grid-template-columns: auto min-content auto;
@@ -659,6 +661,8 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
   @media only screen and (min-width: 48em) {
     .tech-content {
       background-image: url("../assets/technology/background-technology-tablet.jpg"); }
+      .tech-content .main-container .navigation-menu.navigation-menu--header a.tech-link {
+        border-bottom: var(--border-bottom-link-width) solid var(--color-white); }
       .tech-content .main-container .main-content .main-content-primary {
         margin-bottom: 6.7rem; }
         .tech-content .main-container .main-content .main-content-primary .tech-hero {

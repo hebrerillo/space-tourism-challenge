@@ -74,6 +74,13 @@
     @media only screen and (min-width: $minWidthTabletPortrait) {
         background-image: url("../assets/technology/background-technology-tablet.jpg");
         .main-container {
+
+            .navigation-menu.navigation-menu--header {
+                a.tech-link {
+                    border-bottom: var(--border-bottom-link-width) solid var(--color-white);
+                }
+            }
+
             .main-content {
                 .main-content-primary {
                     margin-bottom: 6.7rem;
