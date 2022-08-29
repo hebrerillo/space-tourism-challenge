@@ -683,7 +683,7 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
       background-image: url("../assets/technology/background-technology-desktop.jpg"); }
       .tech-content .main-container .main-content {
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: 1fr auto;
         grid-template-rows: auto auto;
         grid-template-areas: "title       title" "navAndText  techImg"; }
         .tech-content .main-container .main-content .main-title {
@@ -697,6 +697,7 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
             width: 51.5rem;
             height: 52.7rem; }
         .tech-content .main-container .main-content .main-content-secondary {
+          max-width: 110rem;
           margin-left: 3rem;
           align-self: center;
           justify-self: start;
