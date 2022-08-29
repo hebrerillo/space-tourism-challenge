@@ -142,6 +142,7 @@
                     grid-area: crewTextAndNav;
                     text-align: left;
                     justify-items: start;
+                    padding-left: 3rem;
                     .crew-member-description {
                         margin-bottom: 12.5rem;
 
@@ -158,10 +159,6 @@
                             width: 90%;
                         }
                     }
-                }
-                
-                .main-title, .main-content-secondary {
-                    margin-left: 3rem;
                 }
             }
         }

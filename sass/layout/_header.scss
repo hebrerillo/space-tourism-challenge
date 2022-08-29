@@ -1,11 +1,6 @@
-.header__logo {
-        width: 5rem;
-        height: 5rem;
-
-    img {
-        width: 100%;
-        height: 100%;
-    }
+.header__logo img{
+    width: 5rem;
+    height: 5rem;    
 }
 
 #checkbox-right-menu {
@@ -61,7 +56,7 @@
 
 @media only screen and (min-width: $minWidthTabletPortrait) {
 
-    .header__logo {
+    .header__logo img{
         width: 6rem;
         height: 6rem;
     }
@@ -111,7 +106,7 @@
 
 @media only screen and (min-width: $minWidthDesktop) {
 
-    .header__logo {
+    .header__logo img{
         width: 4.8rem;
         height: 4.8rem;
     }

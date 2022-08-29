@@ -69,7 +69,7 @@ a {
     grid-template-areas: "logo        nav" "mainContent mainContent";
     row-gap: 4.87rem; }
     .main-container .header__logo, .main-container .main-content .main-title {
-      margin-left: 3rem; }
+      padding-left: 3rem; }
     .main-container .navigation-menu.navigation-menu--header {
       grid-area: nav; } }
 @media only screen and (min-width: 90em) {
@@ -94,8 +94,6 @@ a {
       grid-template-columns: auto auto;
       grid-template-rows: auto auto;
       align-items: start; }
-      .main-container .main-content .main-title {
-        margin-left: 3rem; }
       .main-container .main-content .main-content-primary {
         padding-left: 3rem; }
       .main-container .main-content .main-content-secondary {
@@ -237,12 +235,9 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
     .navigation-menu ul li a:hover {
       border-bottom: var(--border-bottom-link-width) solid var(--border-bottom-link-hover-color); }
 
-.header__logo {
+.header__logo img {
   width: 5rem;
   height: 5rem; }
-  .header__logo img {
-    width: 100%;
-    height: 100%; }
 
 #checkbox-right-menu {
   display: none; }
@@ -285,7 +280,7 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
   transform: translateX(0); }
 
 @media only screen and (min-width: 48em) {
-  .header__logo {
+  .header__logo img {
     width: 6rem;
     height: 6rem; }
 
@@ -321,7 +316,7 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
         .navigation-menu.navigation-menu--header ul a .navigation-text--index {
           display: none; } }
 @media only screen and (min-width: 90em) {
-  .header__logo {
+  .header__logo img {
     width: 4.8rem;
     height: 4.8rem; }
 
@@ -499,8 +494,6 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
               margin-left: 6rem;
               width: 44.5rem;
               height: 44.5rem; }
-          .destination-content .main-container .main-content .main-title, .destination-content .main-container .main-content .main-content-primary {
-            margin-left: 3rem; }
           .destination-content .main-container .main-content .main-content-secondary {
             width: 65%;
             justify-self: center;
@@ -601,7 +594,8 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
         .crew-content .main-container .main-content .main-content-secondary {
           grid-area: crewTextAndNav;
           text-align: left;
-          justify-items: start; }
+          justify-items: start;
+          padding-left: 3rem; }
           .crew-content .main-container .main-content .main-content-secondary .crew-member-description {
             margin-bottom: 12.5rem; }
             .crew-content .main-container .main-content .main-content-secondary .crew-member-description .heading-4 {
@@ -610,9 +604,7 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
               margin-bottom: 3.2rem;
               white-space: nowrap; }
             .crew-content .main-container .main-content .main-content-secondary .crew-member-description .default-paragraph {
-              width: 90%; }
-        .crew-content .main-container .main-content .main-title, .crew-content .main-container .main-content .main-content-secondary {
-          margin-left: 3rem; } }
+              width: 90%; } }
 
 .tech-content {
   background-image: url("../assets/technology/background-technology-mobile.jpg"); }
@@ -620,16 +612,16 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
     padding-left: 0;
     padding-right: 0; }
     .tech-content .main-container .header__logo {
-      margin-left: 3rem; }
+      padding-left: 3rem; }
     .tech-content .main-container .header__label {
-      margin-right: 3rem; }
+      padding-right: 3rem; }
     .tech-content .main-container .main-content .main-content-primary {
       margin-bottom: 4.12rem; }
       .tech-content .main-container .main-content .main-content-primary .tech-hero {
         width: 100%;
         height: 45vw; }
     .tech-content .main-container .main-content .main-content-secondary {
-      margin: 0 3rem; }
+      padding: 0 3rem; }
       .tech-content .main-container .main-content .main-content-secondary .navigation-menu.navigation-menu--tech {
         margin-bottom: 3rem; }
         .tech-content .main-container .main-content .main-content-secondary .navigation-menu.navigation-menu--tech ul {

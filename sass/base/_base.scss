@@ -89,7 +89,7 @@ a {
         row-gap: 4.87rem;
 
         .header__logo, .main-content .main-title {
-            margin-left: 3rem;
+            padding-left: 3rem;
         }
 
         .navigation-menu.navigation-menu--header {
@@ -130,10 +130,6 @@ a {
             grid-template-columns: auto auto;
             grid-template-rows: auto auto;
             align-items: start;
-
-            .main-title {
-                margin-left: 3rem;
-            }
 
             .main-content-primary {
                 padding-left: 3rem;
