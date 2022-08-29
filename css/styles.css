@@ -626,7 +626,7 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
       margin-bottom: 4.12rem; }
       .tech-content .main-container .main-content .main-content-primary .tech-hero {
         width: 100%;
-        height: 21.25rem; }
+        height: 45vw; }
     .tech-content .main-container .main-content .main-content-secondary {
       margin: 0 3rem; }
       .tech-content .main-container .main-content .main-content-secondary .navigation-menu.navigation-menu--tech {
@@ -656,5 +656,20 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
       background-color: var(--color-white);
       border: 1px solid var(--color-white) !important;
       color: var(--color-black) !important; }
+  @media only screen and (min-width: 48em) {
+    .tech-content {
+      background-image: url("../assets/technology/background-technology-tablet.jpg"); }
+      .tech-content .main-container .main-content .main-content-primary {
+        margin-bottom: 6.7rem; }
+        .tech-content .main-container .main-content .main-content-primary .tech-hero {
+          height: 40vw; }
+      .tech-content .main-container .main-content .main-content-secondary {
+        margin: 0;
+        padding: 0 20rem; }
+        .tech-content .main-container .main-content .main-content-secondary .navigation-menu.navigation-menu--tech {
+          margin-bottom: 5rem; }
+        .tech-content .main-container .main-content .main-content-secondary .tech-description .navigation-text {
+          letter-spacing: 2.7px;
+          margin-bottom: 2rem; } }
 
 /*# sourceMappingURL=styles.css.map */
