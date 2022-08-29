@@ -131,9 +131,6 @@
             .main-content {
                 grid-template-columns: min-content 1fr;
                 .main-content-primary {
-                    grid-template-columns: auto;
-                    justify-items: center;
-                    text-align: center;
 
                     .main-title {
                         justify-content: center;

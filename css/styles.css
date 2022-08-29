@@ -433,14 +433,10 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
   @media only screen and (min-width: 112.5em) {
     .home-content .main-container .main-content {
       grid-template-columns: min-content 1fr; }
-      .home-content .main-container .main-content .main-content-primary {
-        grid-template-columns: auto;
-        justify-items: center;
-        text-align: center; }
-        .home-content .main-container .main-content .main-content-primary .main-title {
-          justify-content: center; }
-        .home-content .main-container .main-content .main-content-primary .default-paragraph {
-          min-width: 60rem; } }
+      .home-content .main-container .main-content .main-content-primary .main-title {
+        justify-content: center; }
+      .home-content .main-container .main-content .main-content-primary .default-paragraph {
+        min-width: 60rem; } }
 
 .destination-content {
   background-image: url("../assets/destination/background-destination-mobile.jpg"); }
