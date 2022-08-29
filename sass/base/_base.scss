@@ -9,7 +9,7 @@
     --border-bottom-link-hover-color: rgba(255, 255, 255, 0.5);
     --color-bullets: #464950;
     --color-bullets-hover: #85868b;
-
+    --padding-main-elements: 3rem; /* The padding that the main elements (header, main...) will have*/
 }
 
 html {
@@ -47,36 +47,23 @@ a {
     min-height: 100vh;
     position: relative;
     overflow: hidden;
-    padding: 3rem;
     display: grid;
-    grid-template-columns: auto auto;
     grid-template-rows: min-content auto;
-    grid-template-areas: "logo        menuButton"
-        "mainContent mainContent";
 
     align-content: start;
-    row-gap: 3.5rem;
-
-    .header__logo {
-        grid-area: logo;
-        align-self: center;
-        justify-self: start;
-    }
-
-    .header__label {
-        grid-area: menuButton;
-        justify-self: end;
-        align-self: center;
-    }
 
     .main-content {
         display: grid;
-        grid-area: mainContent;
         align-content: start;
+        padding: 0 var(--padding-main-elements);
     }
 }
 
 @media only screen and (min-width: $minWidthTabletPortrait) {
+
+    :root {
+        --padding-main-elements: 5rem; 
+    }
 
     body {
         font-size: 2rem;
@@ -84,17 +71,7 @@ a {
 
     .main-container {
         padding: 0rem 0rem 6rem 0rem;
-        grid-template-areas: "logo        nav"
-            "mainContent mainContent";
         row-gap: 4.87rem;
-
-        .header__logo, .main-content .main-title {
-            padding-left: 3rem;
-        }
-
-        .navigation-menu.navigation-menu--header {
-            grid-area: nav;
-        }
     }
 }
 
@@ -115,10 +92,6 @@ a {
             ".           mainContent";
         row-gap: 8.2rem;
         column-gap: 2.5rem;
-
-        .header__logo {
-            margin-left: 5.5rem;
-        }
 
         .navigation-menu {
             .header-separator {

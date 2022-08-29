@@ -4,15 +4,8 @@
         padding-left: 0;
         padding-right: 0;
 
-        .header__logo {
-            padding-left: 3rem;
-        }
-
-        .header__label {
-            padding-right: 3rem;
-        }
-
         .main-content {
+            padding: 0;
             .main-content-primary {
                 margin-bottom: 4.12rem;
                 .tech-hero {
@@ -22,7 +15,6 @@
             }
 
             .main-content-secondary {
-                padding: 0 3rem;
 
                 .navigation-menu.navigation-menu--tech {
                     margin-bottom: 3rem;
@@ -61,6 +53,10 @@
                         margin-bottom: 3rem;
                     }
                 }
+            }
+            
+            .main-content-secondary, .main-title {
+                padding: 0 var(--padding-main-elements);
             }
         }
 

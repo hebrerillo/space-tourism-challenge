@@ -2,36 +2,35 @@
     background-image: url("../assets/home/background-home-mobile.jpg");
 
     .main-container {
-        row-gap: 13rem;
-    }
+        row-gap: 3rem;
+        .main-content {
+            .main-title {
+                margin-bottom: 4.3rem;
 
-    .main-content {
-        .main-title {
-            margin-bottom: 4.3rem;
-
-            .heading-5 {
-                color: var(--light-grey);
+                .heading-5 {
+                    color: var(--light-grey);
+                }
             }
-        }
 
-        .main-content-primary {
-            margin-bottom: 10.7rem;
-            .heading-1 {
-                margin-bottom: 6rem;
+            .main-content-primary {
+                margin-bottom: 10.7rem;
+                .heading-1 {
+                    margin-bottom: 6rem;
+                }
             }
-        }
-        .explore-home-moon {
-            width: 18.75rem;
-            height: 18.75rem;
-            margin: 0 auto;
-            border-radius: 50%;
-            background-color: #fff;
-            text-transform: uppercase;
-            color: #0B0D17;
-            letter-spacing: 1.25px;
-            font-size: 2.5rem;
-            font-family: 'Bellefair', sans-serif;
-            @include flex-centered-items;
+            .explore-home-moon {
+                width: 18.75rem;
+                height: 18.75rem;
+                margin: 0 auto;
+                border-radius: 50%;
+                background-color: #fff;
+                text-transform: uppercase;
+                color: #0B0D17;
+                letter-spacing: 1.25px;
+                font-size: 2.5rem;
+                font-family: 'Bellefair', sans-serif;
+                @include flex-centered-items;
+            }
         }
     }
 
@@ -39,6 +38,7 @@
         background-image: url("../assets/home/background-home-tablet.jpg");
 
         .main-container {
+            row-gap: 15rem;
 
             .navigation-menu.navigation-menu--header {
                 a.home-link {
@@ -67,7 +67,8 @@
                 }
 
                 .explore-home-moon:hover {
-                    box-shadow: 0 0 0 10.8rem rgba(255, 255, 255, 0.1);;
+                    box-shadow: 0 0 0 10.8rem rgba(255, 255, 255, 0.1);
+                    ;
                 }
             }
         }
@@ -90,7 +91,7 @@
 
             .main-content {
                 grid-template-areas: "title     ."
-                                     "text       hero";
+                    "text       hero";
                 row-gap: 0;
                 .main-title {
                     grid-area: title;
@@ -117,7 +118,7 @@
                         font-size: 3.2rem;
                     }
                 }
-                
+
                 .main-title, .main-content-primary {
                     margin-left: 3rem;
                     padding: 0;
