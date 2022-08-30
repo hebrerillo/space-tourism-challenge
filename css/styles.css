@@ -9,7 +9,8 @@
   --color-bullets: #464950;
   --color-bullets-hover: #85868b;
   --padding-main-elements: 3rem;
-  /* The padding that the main elements (header, main...) will have*/ }
+  /* The horizontal padding that the main elements (header, main...) will have*/
+  --padding-bottom-main-container: 3rem; }
 
 html {
   box-sizing: border-box;
@@ -42,6 +43,7 @@ a {
   overflow: hidden;
   display: grid;
   grid-template-rows: auto 1fr;
+  padding-bottom: var(--padding-bottom-main-container);
   align-content: start; }
   .main-container .main-content {
     display: grid;
@@ -50,13 +52,13 @@ a {
 
 @media only screen and (min-width: 48em) {
   :root {
-    --padding-main-elements: 5rem; }
+    --padding-main-elements: 5rem;
+    --padding-bottom-main-container: 6rem; }
 
   body {
     font-size: 2rem; }
 
   .main-container {
-    padding: 0rem 0rem 6rem 0rem;
     row-gap: 4.87rem; } }
 @media only screen and (min-width: 90em) {
   :root {

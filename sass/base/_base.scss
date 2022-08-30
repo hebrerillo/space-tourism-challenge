@@ -8,7 +8,8 @@
     --border-bottom-link-hover-color: rgba(255, 255, 255, 0.5);
     --color-bullets: #464950;
     --color-bullets-hover: #85868b;
-    --padding-main-elements: 3rem; /* The padding that the main elements (header, main...) will have*/
+    --padding-main-elements: 3rem; /* The horizontal padding that the main elements (header, main...) will have*/
+    --padding-bottom-main-container: 3rem;
 }
 
 html {
@@ -46,7 +47,7 @@ a {
     overflow: hidden;
     display: grid;
     grid-template-rows: auto 1fr;
-
+    padding-bottom: var(--padding-bottom-main-container);
     align-content: start;
 
     .main-content {
@@ -60,6 +61,7 @@ a {
 
     :root {
         --padding-main-elements: 5rem;
+        --padding-bottom-main-container: 6rem;
     }
 
     body {
@@ -67,7 +69,6 @@ a {
     }
 
     .main-container {
-        padding: 0rem 0rem 6rem 0rem;
         row-gap: 4.87rem;
     }
 }
