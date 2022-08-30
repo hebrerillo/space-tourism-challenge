@@ -566,6 +566,11 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
             row-gap: 0; }
             .crew-content .main-container .main-content .main-content-secondary .navigation-menu.navigation-menu--crew {
               grid-area: nav; }
+              .crew-content .main-container .main-content .main-content-secondary .navigation-menu.navigation-menu--crew ul {
+                column-gap: 4rem; }
+                .crew-content .main-container .main-content .main-content-secondary .navigation-menu.navigation-menu--crew ul li a {
+                  width: 2rem;
+                  height: 2rem; }
             .crew-content .main-container .main-content .main-content-secondary .crew-member-description {
               grid-area: crewText;
               margin-bottom: 5.5rem; } }
@@ -596,6 +601,13 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
             grid-area: crewTextAndNav;
             text-align: left;
             justify-items: start; }
+            .crew-content .main-container .main-content .main-content-secondary .navigation-menu.navigation-menu--crew {
+              grid-area: nav; }
+              .crew-content .main-container .main-content .main-content-secondary .navigation-menu.navigation-menu--crew ul {
+                column-gap: 3rem; }
+                .crew-content .main-container .main-content .main-content-secondary .navigation-menu.navigation-menu--crew ul li a {
+                  width: 1.6rem;
+                  height: 1.6rem; }
             .crew-content .main-container .main-content .main-content-secondary .crew-member-description {
               margin-bottom: 12.5rem; }
               .crew-content .main-container .main-content .main-content-secondary .crew-member-description .heading-4 {

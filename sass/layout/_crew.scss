@@ -103,6 +103,15 @@
 
                     .navigation-menu.navigation-menu--crew {
                         grid-area: nav;
+                        ul {
+                            column-gap: 4rem;
+                            li {
+                                a {
+                                    width: 2rem;
+                                    height: 2rem;
+                                }
+                            }
+                        }
                     }
 
                     .crew-member-description {
@@ -147,6 +156,20 @@
                     grid-area: crewTextAndNav;
                     text-align: left;
                     justify-items: start;
+                    
+                    .navigation-menu.navigation-menu--crew {
+                        grid-area: nav;
+                        ul {
+                            column-gap: 3rem;
+                            li {
+                                a {
+                                    width: 1.6rem;
+                                    height: 1.6rem;
+                                }
+                            }
+                        }
+                    }
+
                     .crew-member-description {
                         margin-bottom: 12.5rem;
 
