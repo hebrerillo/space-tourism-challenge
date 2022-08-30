@@ -6,7 +6,6 @@
         .main-content {
             .main-title {
                 margin-bottom: 4.3rem;
-
                 .heading-5 {
                     color: var(--light-grey);
                 }
@@ -68,7 +67,6 @@
 
                 .explore-home-moon:hover {
                     box-shadow: 0 0 0 10.8rem rgba(255, 255, 255, 0.1);
-                    ;
                 }
             }
         }
@@ -91,7 +89,7 @@
 
             .main-content {
                 grid-template-areas: "title     ."
-                    "text       hero";
+                                     "text       hero";
                 row-gap: 0;
                 .main-title {
                     grid-area: title;

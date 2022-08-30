@@ -593,45 +593,42 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
 
 .tech-content {
   background-image: url("../assets/technology/background-technology-mobile.jpg"); }
-  .tech-content .main-container {
-    padding-left: 0;
-    padding-right: 0; }
-    .tech-content .main-container .main-content {
-      padding: 0; }
-      .tech-content .main-container .main-content .main-content-primary {
-        margin-bottom: 4.12rem; }
-        .tech-content .main-container .main-content .main-content-primary .tech-hero {
-          width: 100%;
-          height: 45vw; }
-      .tech-content .main-container .main-content .main-content-secondary .navigation-menu.navigation-menu--tech {
-        margin-bottom: 3rem; }
-        .tech-content .main-container .main-content .main-content-secondary .navigation-menu.navigation-menu--tech ul {
-          flex-direction: row;
-          column-gap: 2rem;
-          justify-content: center; }
-          .tech-content .main-container .main-content .main-content-secondary .navigation-menu.navigation-menu--tech ul li a {
-            padding: 0;
-            justify-content: center;
-            align-items: center;
-            color: var(--color-white);
-            border: 1px solid rgba(255, 255, 255, 0.25);
-            border-radius: 50%;
-            width: 5rem;
-            height: 5rem; }
-          .tech-content .main-container .main-content .main-content-secondary .navigation-menu.navigation-menu--tech ul li a:hover {
-            border-color: var(--color-white); }
-      .tech-content .main-container .main-content .main-content-secondary .tech-description .navigation-text {
-        letter-spacing: 2.36px;
-        color: var(--light-grey);
-        margin-bottom: 1.62rem; }
-      .tech-content .main-container .main-content .main-content-secondary .tech-description .heading-3 {
-        margin-bottom: 3rem; }
-      .tech-content .main-container .main-content .main-content-secondary, .tech-content .main-container .main-content .main-title {
-        padding: 0 var(--padding-main-elements); }
-    .tech-content .main-container .vehicle-content .vehicle-link {
-      background-color: var(--color-white);
-      border: 1px solid var(--color-white) !important;
-      color: var(--color-black) !important; }
+  .tech-content .main-container .main-content {
+    padding: 0; }
+    .tech-content .main-container .main-content .main-content-primary {
+      margin-bottom: 4.12rem; }
+      .tech-content .main-container .main-content .main-content-primary .tech-hero {
+        width: 100%;
+        height: 45vw; }
+    .tech-content .main-container .main-content .main-content-secondary .navigation-menu.navigation-menu--tech {
+      margin-bottom: 3rem; }
+      .tech-content .main-container .main-content .main-content-secondary .navigation-menu.navigation-menu--tech ul {
+        flex-direction: row;
+        column-gap: 2rem;
+        justify-content: center; }
+        .tech-content .main-container .main-content .main-content-secondary .navigation-menu.navigation-menu--tech ul li a {
+          padding: 0;
+          justify-content: center;
+          align-items: center;
+          color: var(--color-white);
+          border: 1px solid rgba(255, 255, 255, 0.25);
+          border-radius: 50%;
+          width: 5rem;
+          height: 5rem; }
+        .tech-content .main-container .main-content .main-content-secondary .navigation-menu.navigation-menu--tech ul li a:hover {
+          border-color: var(--color-white); }
+    .tech-content .main-container .main-content .main-content-secondary .tech-description .navigation-text {
+      letter-spacing: 2.36px;
+      color: var(--light-grey);
+      margin-bottom: 1.62rem; }
+    .tech-content .main-container .main-content .main-content-secondary .tech-description .heading-3 {
+      margin-bottom: 3rem; }
+    .tech-content .main-container .main-content .main-content-secondary, .tech-content .main-container .main-content .main-title {
+      padding: 0 var(--padding-main-elements); }
+  .tech-content .main-container .vehicle-content .vehicle-link {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-white) !important;
+    color: var(--color-black) !important; }
   @media only screen and (min-width: 48em) {
     .tech-content {
       background-image: url("../assets/technology/background-technology-tablet.jpg"); }
@@ -664,7 +661,6 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
           padding-left: 0; }
         .tech-content .main-container .main-content .main-content-primary {
           margin: 0;
-          padding: 0;
           grid-area: techImg; }
           .tech-content .main-container .main-content .main-content-primary .tech-hero {
             width: 51.5rem;
