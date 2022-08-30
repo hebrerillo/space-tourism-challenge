@@ -72,7 +72,7 @@
             
             .main-content {
                 grid-template-rows: auto auto auto;
-                grid-template-columns: auto min-content auto;
+                grid-template-columns: auto fit-content(50%) auto;
                 grid-template-areas: "title title title"
                                      ". crewTextAndNav ."
                                      ". crewImage .";

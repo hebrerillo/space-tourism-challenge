@@ -538,7 +538,7 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
         border-bottom: var(--border-bottom-link-width) solid var(--color-white); }
       .crew-content .main-container .main-content {
         grid-template-rows: auto auto auto;
-        grid-template-columns: auto min-content auto;
+        grid-template-columns: auto fit-content(50%) auto;
         grid-template-areas: "title title title" ". crewTextAndNav ." ". crewImage ."; }
         .crew-content .main-container .main-content .main-title {
           grid-area: title; }
