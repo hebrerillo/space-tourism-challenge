@@ -37,6 +37,7 @@ a {
 
 .main-container {
   min-height: 100vh;
+  min-height: calc(var(--vh, 1vh) * 100);
   position: relative;
   overflow: hidden;
   display: grid;
@@ -539,32 +540,35 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
   @media only screen and (min-width: 48em) {
     .crew-content {
       background-image: url("../assets/crew/background-crew-tablet.jpg"); }
-      .crew-content .main-container .navigation-menu.navigation-menu--header a.crew-link {
-        border-bottom: var(--border-bottom-link-width) solid var(--color-white); }
-      .crew-content .main-container .main-content {
-        grid-template-rows: auto auto auto;
-        grid-template-columns: auto fit-content(50%) auto;
-        grid-template-areas: "title title title" ". crewTextAndNav ." ". crewImage ."; }
-        .crew-content .main-container .main-content .main-title {
-          grid-area: title; }
-        .crew-content .main-container .main-content .main-content-primary {
-          grid-area: crewImage;
-          margin-bottom: 0;
-          border-bottom: none; }
-          .crew-content .main-container .main-content .main-content-primary .crew-hero {
-            width: 57rem;
-            height: 71.5rem; }
-        .crew-content .main-container .main-content .main-content-secondary {
-          grid-area: crewTextAndNav;
-          grid-template-rows: auto auto;
-          grid-template-areas: "crewText" "nav";
-          margin-bottom: 5rem;
-          row-gap: 0; }
-          .crew-content .main-container .main-content .main-content-secondary .navigation-menu.navigation-menu--crew {
-            grid-area: nav; }
-          .crew-content .main-container .main-content .main-content-secondary .crew-member-description {
-            grid-area: crewText;
-            margin-bottom: 5.5rem; } }
+      .crew-content .main-container {
+        padding-bottom: 0; }
+        .crew-content .main-container .navigation-menu.navigation-menu--header a.crew-link {
+          border-bottom: var(--border-bottom-link-width) solid var(--color-white); }
+        .crew-content .main-container .main-content {
+          grid-template-rows: auto auto 1fr;
+          grid-template-columns: auto fit-content(50%) auto;
+          grid-template-areas: "title title title" ". crewTextAndNav ." ". crewImage .";
+          align-items: end; }
+          .crew-content .main-container .main-content .main-title {
+            grid-area: title; }
+          .crew-content .main-container .main-content .main-content-primary {
+            grid-area: crewImage;
+            margin-bottom: 0;
+            border-bottom: none; }
+            .crew-content .main-container .main-content .main-content-primary .crew-hero {
+              width: 57rem;
+              height: 71.5rem; }
+          .crew-content .main-container .main-content .main-content-secondary {
+            grid-area: crewTextAndNav;
+            grid-template-rows: auto auto;
+            grid-template-areas: "crewText" "nav";
+            margin-bottom: 5rem;
+            row-gap: 0; }
+            .crew-content .main-container .main-content .main-content-secondary .navigation-menu.navigation-menu--crew {
+              grid-area: nav; }
+            .crew-content .main-container .main-content .main-content-secondary .crew-member-description {
+              grid-area: crewText;
+              margin-bottom: 5.5rem; } }
   @media only screen and (min-width: 90em) {
     .crew-content {
       background-image: url("../assets/crew/background-crew-desktop.jpg"); }

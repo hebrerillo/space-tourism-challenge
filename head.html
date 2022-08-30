@@ -4,4 +4,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet"> 
 <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet"> 
 <link rel="stylesheet" href="css/styles.css">
+<script>
+    /* Using a custom property to get rid of the height of the address bar on mobile phones. This way, the footer is stuck on the bottom of the page and is
+     * not hidden because of the address bar of browsers.
+     Reference: https://css-tricks.com/the-trick-to-viewport-units-on-mobile/ */
+    document.documentElement.style.setProperty('--vh', `${(window.innerHeight * 0.01)}px`);
+    window.addEventListener('resize', () => {
+        document.documentElement.style.setProperty('--vh', `${(window.innerHeight * 0.01)}px`);
+    });
+</script>
 

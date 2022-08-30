@@ -63,7 +63,7 @@
         background-image: url("../assets/crew/background-crew-tablet.jpg");
 
         .main-container {
-
+            padding-bottom: 0;
             .navigation-menu.navigation-menu--header {
                 a.crew-link {
                     border-bottom: var(--border-bottom-link-width) solid var(--color-white);
@@ -71,12 +71,13 @@
             }
             
             .main-content {
-                grid-template-rows: auto auto auto;
+                grid-template-rows: auto auto 1fr;
                 grid-template-columns: auto fit-content(50%) auto;
                 grid-template-areas: "title title title"
                                      ". crewTextAndNav ."
                                      ". crewImage .";
 
+                align-items: end;
                 .main-title {
                     grid-area: title;
                 }
