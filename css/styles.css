@@ -476,7 +476,7 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
         width: 37.5rem;
         height: 37.5rem; }
       .destination-content .main-content-secondary {
-        max-width: 75rem;
+        width: 78%;
         margin: 0 auto; }
         .destination-content .main-content-secondary .destination-info {
           gap: 12.5rem; } }
