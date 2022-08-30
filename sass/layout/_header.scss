@@ -146,8 +146,8 @@
                 padding: 0 17rem 0 12.2rem;
                 width: 83rem;
                 justify-content: space-between;
-                background-color: transparent;
-                background-image: linear-gradient(to right, #242832, #1b1c27);
+                background-color: rgba(255, 255, 255, 0.04);
+                backdrop-filter: blur(1.5rem);
                 li {
                     a {
                         column-gap: 1.3rem;
