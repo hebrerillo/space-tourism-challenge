@@ -87,6 +87,8 @@ a {
     }
 
     .main-container {
+        max-width: 190rem;
+        margin: 0 auto;
         grid-template-columns: var(--grid-header-main-container);
         grid-template-areas: "header header"
                              ".      main";
