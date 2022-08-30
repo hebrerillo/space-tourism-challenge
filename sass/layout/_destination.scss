@@ -122,14 +122,4 @@
             }
         }
     }
-
-    @media only screen and (min-width: $minWidthBigDesktop) {
-        .main-container {
-            .main-content {
-                .main-content-secondary {
-                    width: auto;
-                }
-            }
-        }
-    }
 }
