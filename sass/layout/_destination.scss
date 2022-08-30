@@ -82,7 +82,6 @@
         background-image: url("../assets/destination/background-destination-desktop.jpg");
         .main-container {
 
-            grid-template-rows: min-content min-content;
             .main-content {
                 grid-template-areas: "titleDest ."
                                      "heroDest  destinationText";
@@ -127,10 +126,8 @@
     @media only screen and (min-width: $minWidthBigDesktop) {
         .main-container {
             .main-content {
-                column-gap: 30rem;
-                
                 .main-content-secondary {
-                    width: 80%;
+                    width: auto;
                 }
             }
         }

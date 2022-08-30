@@ -471,37 +471,33 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
   @media only screen and (min-width: 90em) {
     .destination-content {
       background-image: url("../assets/destination/background-destination-desktop.jpg"); }
-      .destination-content .main-container {
-        grid-template-rows: min-content min-content; }
-        .destination-content .main-container .main-content {
-          grid-template-areas: "titleDest ." "heroDest  destinationText"; }
-          .destination-content .main-container .main-content .main-title {
-            grid-area: titleDest; }
-          .destination-content .main-container .main-content .main-content-primary {
-            grid-area: heroDest;
-            padding-top: 2rem; }
-            .destination-content .main-container .main-content .main-content-primary .destination-hero {
-              margin-left: 6rem;
-              width: 44.5rem;
-              height: 44.5rem; }
-          .destination-content .main-container .main-content .main-content-secondary {
-            width: 65%;
-            justify-self: center;
-            grid-area: destinationText;
+      .destination-content .main-container .main-content {
+        grid-template-areas: "titleDest ." "heroDest  destinationText"; }
+        .destination-content .main-container .main-content .main-title {
+          grid-area: titleDest; }
+        .destination-content .main-container .main-content .main-content-primary {
+          grid-area: heroDest;
+          padding-top: 2rem; }
+          .destination-content .main-container .main-content .main-content-primary .destination-hero {
+            margin-left: 6rem;
+            width: 44.5rem;
+            height: 44.5rem; }
+        .destination-content .main-container .main-content .main-content-secondary {
+          width: 65%;
+          justify-self: center;
+          grid-area: destinationText;
+          padding: 0;
+          margin: 0;
+          text-align: left; }
+          .destination-content .main-container .main-content .main-content-secondary .navigation-menu.navigation-menu--destination ul {
+            justify-content: start; }
+          .destination-content .main-container .main-content .main-content-secondary .destination-info {
+            gap: 7.7rem;
             padding: 0;
-            margin: 0;
-            text-align: left; }
-            .destination-content .main-container .main-content .main-content-secondary .navigation-menu.navigation-menu--destination ul {
-              justify-content: start; }
-            .destination-content .main-container .main-content .main-content-secondary .destination-info {
-              gap: 7.7rem;
-              padding: 0;
-              justify-content: start; } }
+            justify-content: start; } }
   @media only screen and (min-width: 112.5em) {
-    .destination-content .main-container .main-content {
-      column-gap: 30rem; }
-      .destination-content .main-container .main-content .main-content-secondary {
-        width: 80%; } }
+    .destination-content .main-container .main-content .main-content-secondary {
+      width: auto; } }
 
 .crew-content {
   background-image: url("../assets/crew/background-crew-mobile.jpg"); }
