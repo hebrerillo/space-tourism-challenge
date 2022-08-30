@@ -3,7 +3,6 @@
     --color-white: #fff;
     --color-black: #0B0D17;
     --light-grey: #D0D6F9;
-    --barlow-condensed-font-family:'Barlow Condensed', sans-serif;
     --color-separator: #383B4B;
     --border-bottom-link-width: 3px;
     --border-bottom-link-hover-color: rgba(255, 255, 255, 0.5);
@@ -14,16 +13,13 @@
 
 html {
     box-sizing: border-box;
+    font-size: 50%;  /*1 rem = 8px;*/
 }
 
 *, *:before, *:after {
     box-sizing: inherit;
     padding: 0;
     margin: 0;
-}
-
-html {
-    font-size: 50%;  /*1 rem = 8px;*/
 }
 
 body {
@@ -62,7 +58,7 @@ a {
 @media only screen and (min-width: $minWidthTabletPortrait) {
 
     :root {
-        --padding-main-elements: 5rem; 
+        --padding-main-elements: 5rem;
     }
 
     body {
@@ -77,6 +73,11 @@ a {
 
 @media only screen and (min-width: $minWidthDesktop) {
 
+    :root {
+        --grid-header-main-container: 11rem 1fr; /* This grid will be used both in the header and in the main container to have their content aligned. */
+        --left-offset: 3rem; /* A left offset to help the aligment to the left of thin line in the header and the main content*/
+    }
+
     html {
         font-size: 62.5%; /*1 rem = 10px*/
     }
@@ -86,31 +87,18 @@ a {
     }
 
     .main-container {
+        grid-template-columns: var(--grid-header-main-container);
+        grid-template-areas: "header header"
+                             ".      main";
         padding: 4rem 0 7rem 0;
-        grid-template-columns: min-content auto;
-        grid-template-areas: "logo        nav"
-            ".           mainContent";
         row-gap: 8.2rem;
-        column-gap: 2.5rem;
-
-        .navigation-menu {
-            .header-separator {
-                flex-grow: 1;
-            }
-        }
 
         .main-content {
+            padding-left: var(--left-offset);
+            grid-area: main;
             grid-template-columns: auto auto;
             grid-template-rows: auto auto;
             align-items: start;
-
-            .main-content-primary {
-                padding-left: 3rem;
-            }
-
-            .main-content-secondary {
-                max-width: none;
-            }
         }
     }
 }

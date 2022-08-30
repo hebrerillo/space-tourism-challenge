@@ -109,10 +109,12 @@
                 grid-template-rows: auto auto;
                 grid-template-areas: "title       title"
                     "navAndText  techImg";
+                padding-left: var(--left-offset);
 
                 .main-title {
                     grid-area: title;
                     margin-bottom: 2.4rem;
+                    padding-left: 0;
                 }
 
                 .main-content-primary {
@@ -127,7 +129,6 @@
 
                 .main-content-secondary {
                     max-width: 110rem;
-                    margin-left: 3rem;
                     align-self: center;
                     justify-self: start;
                     grid-area: navAndText;

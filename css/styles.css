@@ -3,7 +3,6 @@
   --color-white: #fff;
   --color-black: #0B0D17;
   --light-grey: #D0D6F9;
-  --barlow-condensed-font-family:'Barlow Condensed', sans-serif;
   --color-separator: #383B4B;
   --border-bottom-link-width: 3px;
   --border-bottom-link-hover-color: rgba(255, 255, 255, 0.5);
@@ -13,16 +12,14 @@
   /* The padding that the main elements (header, main...) will have*/ }
 
 html {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-size: 50%;
+  /*1 rem = 8px;*/ }
 
 *, *:before, *:after {
   box-sizing: inherit;
   padding: 0;
   margin: 0; }
-
-html {
-  font-size: 50%;
-  /*1 rem = 8px;*/ }
 
 body {
   font-family: 'Barlow', sans-serif;
@@ -61,6 +58,12 @@ a {
     padding: 0rem 0rem 6rem 0rem;
     row-gap: 4.87rem; } }
 @media only screen and (min-width: 90em) {
+  :root {
+    --grid-header-main-container: 11rem 1fr;
+    /* This grid will be used both in the header and in the main container to have their content aligned. */
+    --left-offset: 3rem;
+    /* A left offset to help the aligment to the left of thin line in the header and the main content*/ }
+
   html {
     font-size: 62.5%;
     /*1 rem = 10px*/ }
@@ -69,21 +72,16 @@ a {
     font-size: 1.8rem; }
 
   .main-container {
+    grid-template-columns: var(--grid-header-main-container);
+    grid-template-areas: "header header" ".      main";
     padding: 4rem 0 7rem 0;
-    grid-template-columns: min-content auto;
-    grid-template-areas: "logo        nav" ".           mainContent";
-    row-gap: 8.2rem;
-    column-gap: 2.5rem; }
-    .main-container .navigation-menu .header-separator {
-      flex-grow: 1; }
+    row-gap: 8.2rem; }
     .main-container .main-content {
+      padding-left: var(--left-offset);
+      grid-area: main;
       grid-template-columns: auto auto;
       grid-template-rows: auto auto;
-      align-items: start; }
-      .main-container .main-content .main-content-primary {
-        padding-left: 3rem; }
-      .main-container .main-content .main-content-secondary {
-        max-width: none; } }
+      align-items: start; } }
 .separator {
   height: 1px;
   background-color: var(--color-separator); }
@@ -298,34 +296,43 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
             .main-header .navigation-menu.navigation-menu--header ul a .navigation-text--index {
               display: none; } }
   @media only screen and (min-width: 90em) {
-    .main-header .header__logo img {
-      width: 4.8rem;
-      height: 4.8rem; }
-    .main-header .navigation-menu.navigation-menu--header .header-separator {
-      display: block;
-      width: 47.3rem;
-      position: relative; }
-      .main-header .navigation-menu.navigation-menu--header .header-separator .separator {
-        width: 100%;
-        position: absolute;
-        left: 3rem;
-        z-index: 2;
-        margin: 0; }
-    .main-header .navigation-menu.navigation-menu--header ul {
-      padding: 0 17rem 0 12.2rem;
-      width: 83rem;
-      justify-content: space-between;
-      background-color: transparent;
-      background-image: linear-gradient(to right, #242832, #1b1c27); }
-      .main-header .navigation-menu.navigation-menu--header ul li a {
-        column-gap: 1.3rem;
-        padding: 4.3rem 0; }
-        .main-header .navigation-menu.navigation-menu--header ul li a .navigation-text--index {
-          display: initial; }
-        .main-header .navigation-menu.navigation-menu--header ul li a .navigation-text {
-          font-size: 1.6rem;
-          letter-spacing: 2.7px;
-          font-variant-numeric: normal; } }
+    .main-header {
+      display: grid;
+      grid-template-columns: var(--grid-header-main-container);
+      padding-left: 0;
+      grid-area: header; }
+      .main-header .header__logo {
+        padding-left: 2rem; }
+        .main-header .header__logo img {
+          width: 4.8rem;
+          height: 4.8rem; }
+      .main-header .navigation-menu.navigation-menu--header {
+        flex-grow: 1; }
+        .main-header .navigation-menu.navigation-menu--header .header-separator {
+          flex-grow: 1;
+          position: relative;
+          display: block; }
+          .main-header .navigation-menu.navigation-menu--header .header-separator .separator {
+            width: 100%;
+            position: absolute;
+            left: var(--left-offset);
+            z-index: 2;
+            margin: 0; }
+        .main-header .navigation-menu.navigation-menu--header ul {
+          padding: 0 17rem 0 12.2rem;
+          width: 83rem;
+          justify-content: space-between;
+          background-color: transparent;
+          background-image: linear-gradient(to right, #242832, #1b1c27); }
+          .main-header .navigation-menu.navigation-menu--header ul li a {
+            column-gap: 1.3rem;
+            padding: 4.3rem 0; }
+            .main-header .navigation-menu.navigation-menu--header ul li a .navigation-text--index {
+              display: initial; }
+            .main-header .navigation-menu.navigation-menu--header ul li a .navigation-text {
+              font-size: 1.6rem;
+              letter-spacing: 2.7px;
+              font-variant-numeric: normal; } }
 
 .home-content {
   background-image: url("../assets/home/background-home-mobile.jpg"); }
@@ -407,7 +414,6 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
               height: 27.4rem;
               font-size: 3.2rem; }
           .home-content .main-container .main-content .main-title, .home-content .main-container .main-content .main-content-primary {
-            margin-left: 3rem;
             padding: 0; } }
   @media only screen and (min-width: 112.5em) {
     .home-content .main-container .main-content {
@@ -578,8 +584,7 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
         .crew-content .main-container .main-content .main-content-secondary {
           grid-area: crewTextAndNav;
           text-align: left;
-          justify-items: start;
-          padding-left: 3rem; }
+          justify-items: start; }
           .crew-content .main-container .main-content .main-content-secondary .crew-member-description {
             margin-bottom: 12.5rem; }
             .crew-content .main-container .main-content .main-content-secondary .crew-member-description .heading-4 {
@@ -655,10 +660,12 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
         display: grid;
         grid-template-columns: 1fr auto;
         grid-template-rows: auto auto;
-        grid-template-areas: "title       title" "navAndText  techImg"; }
+        grid-template-areas: "title       title" "navAndText  techImg";
+        padding-left: var(--left-offset); }
         .tech-content .main-container .main-content .main-title {
           grid-area: title;
-          margin-bottom: 2.4rem; }
+          margin-bottom: 2.4rem;
+          padding-left: 0; }
         .tech-content .main-container .main-content .main-content-primary {
           margin: 0;
           padding: 0;
@@ -668,7 +675,6 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
             height: 52.7rem; }
         .tech-content .main-container .main-content .main-content-secondary {
           max-width: 110rem;
-          margin-left: 3rem;
           align-self: center;
           justify-self: start;
           grid-area: navAndText;

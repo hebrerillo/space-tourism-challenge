@@ -100,7 +100,6 @@
 
                 a {
                     padding: 5.37rem 0;
-
                     .navigation-text {
                         font-size: 1.75rem;
                     }
@@ -115,20 +114,29 @@
 
     @media only screen and (min-width: $minWidthDesktop) {
 
-        .header__logo img{
-            width: 4.8rem;
-            height: 4.8rem;
+        display: grid;
+        grid-template-columns: var(--grid-header-main-container);
+        padding-left: 0;
+        grid-area: header;
+
+        .header__logo {
+            padding-left: 2rem;
+            img{
+                width: 4.8rem;
+                height: 4.8rem;
+            }
         }
 
         .navigation-menu.navigation-menu--header {
+            flex-grow: 1;
             .header-separator {
-                display: block;
-                width: 47.3rem;
+                flex-grow: 1;
                 position: relative;
+                display: block;
                 .separator {
                     width: 100%;
                     position: absolute;
-                    left: 3rem;
+                    left: var(--left-offset);
                     z-index: 2;
                     margin: 0;
                 }
