@@ -72,8 +72,6 @@ a {
     font-size: 1.8rem; }
 
   .main-container {
-    max-width: 190rem;
-    margin: 0 auto;
     grid-template-columns: var(--grid-header-main-container);
     grid-template-areas: "header header" ".      main";
     padding: 4rem 0 7rem 0;
@@ -84,6 +82,11 @@ a {
       grid-template-columns: auto auto;
       grid-template-rows: auto auto;
       align-items: start; } }
+@media only screen and (min-width: 112.5em) {
+  .main-container .main-content {
+    max-width: 170rem;
+    margin: 0 auto;
+    padding: 0; } }
 .separator {
   height: 1px;
   background-color: var(--color-separator); }
@@ -422,6 +425,15 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
               font-size: 3.2rem; }
           .home-content .main-container .main-content .main-title, .home-content .main-container .main-content .main-content-primary {
             padding: 0; } }
+  @media only screen and (min-width: 112.5em) {
+    .home-content .main-container .main-content {
+      width: auto;
+      grid-template-columns: 4fr 2fr;
+      column-gap: 22rem; }
+      .home-content .main-container .main-content .main-content-primary {
+        grid-template-columns: auto; }
+      .home-content .main-container .main-content .main-content-secondary {
+        justify-self: start; } }
 
 .destination-content {
   background-image: url("../assets/destination/background-destination-mobile.jpg"); }
@@ -561,11 +573,12 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
     .crew-content {
       background-image: url("../assets/crew/background-crew-desktop.jpg"); }
       .crew-content .main-container .main-content {
-        width: 90%;
+        width: 85%;
         grid-template-rows: auto auto;
         grid-template-columns: auto auto;
         grid-template-areas: "title              crewImage" "crewTextAndNav     crewImage";
-        column-gap: 12rem; }
+        column-gap: 12rem;
+        padding-right: 0; }
         .crew-content .main-container .main-content .main-title {
           margin-bottom: 16rem; }
         .crew-content .main-container .main-content .main-content-primary {

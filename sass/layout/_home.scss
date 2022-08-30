@@ -131,5 +131,23 @@
             }
         }
     }
+
+    @media only screen and (min-width: $minWidthBigDesktop) {
+        .main-container {
+            .main-content{
+                width: auto;
+                grid-template-columns: 4fr 2fr;
+                column-gap: 22rem;
+
+                .main-content-primary {
+                    grid-template-columns: auto;
+                }
+                
+                .main-content-secondary {
+                    justify-self: start;
+                }
+            }
+        }
+    }
 }
 
