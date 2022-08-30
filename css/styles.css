@@ -10,7 +10,8 @@
   --color-bullets-hover: #85868b;
   --padding-main-elements: 3rem;
   /* The horizontal padding that the main elements (header, main...) will have*/
-  --padding-bottom-main-container: 3rem; }
+  --padding-bottom-main-container: 3rem;
+  --paragraph-maximum-width: 87.5rem; }
 
 html {
   box-sizing: border-box;
@@ -62,6 +63,7 @@ a {
     row-gap: 4.87rem; } }
 @media only screen and (min-width: 90em) {
   :root {
+    --paragraph-maximum-width: 70rem;
     --grid-header-main-container: 11rem 1fr;
     /* This grid will be used both in the header and in the main container to have their content aligned. */
     --left-offset: 3rem;
@@ -184,7 +186,11 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
     letter-spacing: 3.38px; }
 
   .navigation-text {
-    letter-spacing: 2.36px; } }
+    letter-spacing: 2.36px; }
+
+  .default-paragraph {
+    width: min(100%, var(--paragraph-maximum-width));
+    margin: 0 auto; } }
 @media only screen and (min-width: 90em) {
   .heading-1 {
     font-size: 15rem; }
@@ -206,7 +212,11 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
     font-size: 1.4rem; }
 
   .navigation-text {
-    font-size: 1.6rem; } }
+    font-size: 1.6rem; }
+
+  .default-paragraph {
+    width: auto;
+    margin: 0; } }
 .navigation-menu ul {
   display: flex;
   flex-direction: column;

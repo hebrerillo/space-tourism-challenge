@@ -10,6 +10,7 @@
     --color-bullets-hover: #85868b;
     --padding-main-elements: 3rem; /* The horizontal padding that the main elements (header, main...) will have*/
     --padding-bottom-main-container: 3rem;
+    --paragraph-maximum-width: 87.5rem;
 }
 
 html {
@@ -76,6 +77,7 @@ a {
 @media only screen and (min-width: $minWidthDesktop) {
 
     :root {
+        --paragraph-maximum-width: 70rem;
         --grid-header-main-container: 11rem 1fr; /* This grid will be used both in the header and in the main container to have their content aligned. */
         --left-offset: 3rem; /* A left offset to help the aligment to the left of thin line in the header and the main content*/
     }
