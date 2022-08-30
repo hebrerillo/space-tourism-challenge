@@ -393,8 +393,10 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
           background-image: none;
           backdrop-filter: blur(10px); }
         .home-content .main-container .main-content {
-          grid-template-columns: 1fr 1fr;
+          width: 85%;
+          grid-template-columns: auto auto;
           grid-template-areas: "title     ." "text       hero";
+          padding-right: 0;
           row-gap: 0; }
           .home-content .main-container .main-content .main-title {
             grid-area: title;
@@ -406,7 +408,7 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
             justify-content: start;
             align-content: start;
             margin-bottom: 0;
-            grid-template-columns: fit-content(70%); }
+            grid-template-columns: min(56%, 70rem); }
             .home-content .main-container .main-content .main-content-primary .heading-1 {
               margin-bottom: 3.5rem; }
           .home-content .main-container .main-content .main-content-secondary {
@@ -418,13 +420,6 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
               font-size: 3.2rem; }
           .home-content .main-container .main-content .main-title, .home-content .main-container .main-content .main-content-primary {
             padding: 0; } }
-  @media only screen and (min-width: 112.5em) {
-    .home-content .main-container .main-content {
-      grid-template-columns: min-content 1fr; }
-      .home-content .main-container .main-content .main-content-primary .main-title {
-        justify-content: center; }
-      .home-content .main-container .main-content .main-content-primary .default-paragraph {
-        min-width: 60rem; } }
 
 .destination-content {
   background-image: url("../assets/destination/background-destination-mobile.jpg"); }

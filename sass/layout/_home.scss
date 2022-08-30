@@ -89,9 +89,12 @@
             }
 
             .main-content {
-                grid-template-columns: 1fr 1fr;
+                width: 85%;
+                grid-template-columns: auto auto;
                 grid-template-areas: "title     ."
                     "text       hero";
+                padding-right: 0;
+
                 row-gap: 0;
                 .main-title {
                     grid-area: title;
@@ -105,7 +108,7 @@
                     justify-content: start;
                     align-content: start;
                     margin-bottom: 0;
-                    grid-template-columns: fit-content(70%);
+                    grid-template-columns: min(56%, 70rem);
 
                     .heading-1 {
                         margin-bottom: 3.5rem;
@@ -124,24 +127,6 @@
 
                 .main-title, .main-content-primary {
                     padding: 0;
-                }
-            }
-        }
-    }
-
-    @media only screen and (min-width: $minWidthBigDesktop) {
-        .main-container {
-            .main-content {
-                grid-template-columns: min-content 1fr;
-                .main-content-primary {
-
-                    .main-title {
-                        justify-content: center;
-                    }
-
-                    .default-paragraph {
-                        min-width: 60rem;
-                    }
                 }
             }
         }
