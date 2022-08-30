@@ -367,21 +367,21 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
         row-gap: 15rem; }
         .home-content .main-container .navigation-menu.navigation-menu--header a.home-link {
           border-bottom: var(--border-bottom-link-width) solid var(--color-white); }
-        .home-content .main-container .main-content .main-title {
+        .home-content .main-container .main-content {
+          grid-template-columns: fit-content(60%);
           justify-content: center; }
-        .home-content .main-container .main-content .main-content-primary {
-          display: grid;
-          grid-template-columns: min-content;
-          justify-content: center;
-          margin-bottom: 20.5rem; }
-        .home-content .main-container .main-content .explore-home-moon {
-          width: 30.25rem;
-          height: 30.25rem;
-          font-size: 4rem;
-          letter-spacing: 2px;
-          box-shadow: 0px 0px 0px 90px transparent; }
-        .home-content .main-container .main-content .explore-home-moon:hover {
-          box-shadow: 0 0 0 10.8rem rgba(255, 255, 255, 0.1); } }
+          .home-content .main-container .main-content .main-title {
+            justify-content: center; }
+          .home-content .main-container .main-content .main-content-primary {
+            margin-bottom: 20.5rem; }
+          .home-content .main-container .main-content .main-content-secondary .explore-home-moon {
+            width: 30.25rem;
+            height: 30.25rem;
+            font-size: 4rem;
+            letter-spacing: 2px;
+            box-shadow: 0px 0px 0px 90px transparent; }
+          .home-content .main-container .main-content .explore-home-moon:hover {
+            box-shadow: 0 0 0 10.8rem rgba(255, 255, 255, 0.1); } }
   @media only screen and (min-width: 90em) {
     .home-content {
       background-image: url("../assets/home/background-home-desktop.jpg");
@@ -393,17 +393,20 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
           background-image: none;
           backdrop-filter: blur(10px); }
         .home-content .main-container .main-content {
+          grid-template-columns: 1fr 1fr;
           grid-template-areas: "title     ." "text       hero";
           row-gap: 0; }
           .home-content .main-container .main-content .main-title {
             grid-area: title;
             justify-content: start; }
           .home-content .main-container .main-content .main-content-primary {
+            display: grid;
             grid-area: text;
             text-align: left;
             justify-content: start;
             align-content: start;
-            margin-bottom: 0; }
+            margin-bottom: 0;
+            grid-template-columns: fit-content(70%); }
             .home-content .main-container .main-content .main-content-primary .heading-1 {
               margin-bottom: 3.5rem; }
           .home-content .main-container .main-content .main-content-secondary {
