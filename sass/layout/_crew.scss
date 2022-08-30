@@ -118,7 +118,7 @@
         background-image: url("../assets/crew/background-crew-desktop.jpg");
 
         .main-container {
-            row-gap: 0;
+            row-gap: 2rem;
             padding-bottom: 0;
             align-items: end;
             .main-content {
@@ -129,7 +129,7 @@
                                      "crewTextAndNav     crewImage";
                 column-gap: 12rem;
                 padding-right: 0;
-                
+                align-items: start;
                 .main-title {
                     margin-bottom: 16rem;
                 }
