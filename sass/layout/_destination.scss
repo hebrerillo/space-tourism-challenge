@@ -9,11 +9,11 @@
         }
     }
 
-    .destination-hero {
-        width: 21.2rem;
-        height: 21.2rem;
+    .main-content-primary {
+        .destination-hero {
+            width: 37%;
+        }
     }
-
 
     .navigation-menu.navigation-menu--destination {
         margin-bottom: 3.75rem;
@@ -63,9 +63,10 @@
             }
         }
 
-        .destination-hero {
-            width: 37.5rem;
-            height: 37.5rem;
+        .main-content-primary {
+            .destination-hero {
+                width: 44%;
+            }
         }
 
         .main-content-secondary {
@@ -84,7 +85,7 @@
 
             .main-content {
                 grid-template-areas: "titleDest ."
-                                     "heroDest  destinationText";
+                    "heroDest  destinationText";
 
                 .main-title {
                     grid-area: titleDest;
@@ -95,8 +96,7 @@
                     padding-top: 2rem;
                     .destination-hero {
                         margin-left: 6rem;
-                        width: 44.5rem;
-                        height: 44.5rem;
+                        width: 88%;
                     }
                 }
 

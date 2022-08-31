@@ -15,7 +15,18 @@
             <main class="main-content">
                 <div class="main-title"><h5 class="heading-5 heading-5--index">01</h5><h5 class="heading-5">pick your destination</h5></div>
                 <section class="main-content-primary">
-                    <img class="destination-hero" alt="moon" src="assets/destination/image-moon.png" />
+                    <picture data-source-target="moon">
+                        <img class="destination-hero" alt="moon" src="assets/destination/image-moon.png" />
+                    </picture>
+                    <picture class="hidden-target-tab" data-source-target="mars">
+                        <img class="destination-hero" alt="mars" src="assets/destination/image-mars.png" />
+                    </picture>
+                    <picture class="hidden-target-tab" data-source-target="europe">
+                        <img class="destination-hero" alt="mars" src="assets/destination/image-europe.png" />
+                    </picture>
+                    <picture class="hidden-target-tab" data-source-target="titan">
+                        <img class="destination-hero" alt="mars" src="assets/destination/image-titan.png" />
+                    </picture>
                 </section>
                 <section class="main-content-secondary">
                     <nav class="navigation-menu navigation-menu--destination">
