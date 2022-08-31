@@ -12,24 +12,52 @@
     <body class="crew-content">
         <div class="main-container">
             <?php include 'header.html'; ?>
-            <main class="main-content commander-content">
+            <main class="main-content">
                 <div class="main-title"><h5 class="heading-5 heading-5--index">02</h5><h5 class="heading-5">meet your crew</h5></div>
-                <section class="main-content-primary">
-                    <img class="crew-hero" alt="Douglas Hurley" src="assets/crew/image-douglas-hurley.png" />
+                <section class="main-content-primary" data-targets-container>
+                    <picture data-source-target="commander">
+                        <img class="crew-hero" alt="Douglas Hurley" src="assets/crew/image-douglas-hurley.png" />
+                    </picture>
+                    <picture class="hidden-target-tab" data-source-target="specialist">
+                        <img class="crew-hero" alt="Mark SHuttleworth" src="assets/crew/image-mark-shuttleworth.png" />
+                    </picture>
+                    <picture class="hidden-target-tab" data-source-target="pilot">
+                        <img class="crew-hero" alt="Victor Glover" src="assets/crew/image-victor-glover.png" />
+                    </picture>
+                    <picture class="hidden-target-tab" data-source-target="engineer">
+                        <img class="crew-hero" alt="Anousheh Ansari" src="assets/crew/image-anousheh-ansari.png" />
+                    </picture>
                 </section>
                 <section class="main-content-secondary">
                     <nav class="navigation-menu navigation-menu--crew">
-                        <ul>
-                            <li><a class="commander-link" href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
+                        <ul data-tabContainer>
+                            <li><a data-tab="commander" class="selected-tab"></a></li>
+                            <li><a data-tab="specialist"></a></li>
+                            <li><a data-tab="pilot"></a></li>
+                            <li><a data-tab="engineer"></a></li>
                         </ul>
                     </nav>
-                    <section class="crew-member-description">
-                        <h4 class="heading-4 heading-4--crew-member-title">commander</h4>
-                        <h4 class="heading-3">douglas hurley</h4>
-                        <p class="default-paragraph">Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.</p>
+                    <section class="crew-member-description" data-targets-container>
+                        <article data-source-target="commander">
+                            <h4 class="heading-4 heading-4--crew-member-title">commander</h4>
+                            <h4 class="heading-3">douglas hurley</h4>
+                            <p class="default-paragraph">Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.</p>
+                        </article>
+                        <article class="hidden-target-tab" data-source-target="specialist">
+                            <h4 class="heading-4 heading-4--crew-member-title">Mission Specialist</h4>
+                            <h4 class="heading-3">Mark SHuttleworth</h4>
+                            <p class="default-paragraph">Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist.</p>
+                        </article>
+                        <article class="hidden-target-tab" data-source-target="pilot">
+                            <h4 class="heading-4 heading-4--crew-member-title">pilot</h4>
+                            <h4 class="heading-3">Victor Glover</h4>
+                            <p class="default-paragraph">Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew member of Expedition 64, and served as a station systems flight engineer.</p>
+                        </article>
+                        <article class="hidden-target-tab" data-source-target="engineer">
+                            <h4 class="heading-4 heading-4--crew-member-title">Flight Engineer</h4>
+                            <h4 class="heading-3">Anousheh Ansari</h4>
+                            <p class="default-paragraph">Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space.</p>
+                        </article>
                     </section>
                 </section>
             </main>
