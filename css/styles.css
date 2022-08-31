@@ -526,9 +526,8 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
   .crew-content .main-container .main-content .main-content-primary {
     border-bottom: 1px solid var(--color-separator);
     margin-bottom: 4rem; }
-    .crew-content .main-container .main-content .main-content-primary .crew-hero {
-      width: 22.14rem;
-      height: 27.75rem; }
+    .crew-content .main-container .main-content .main-content-primary picture .crew-hero {
+      width: 54%; }
   .crew-content .main-container .main-content .main-content-secondary {
     display: grid;
     justify-items: center;
@@ -562,7 +561,7 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
           border-bottom: var(--border-bottom-link-width) solid var(--color-white); }
         .crew-content .main-container .main-content {
           grid-template-rows: auto auto 1fr;
-          grid-template-columns: auto fit-content(50%) auto;
+          grid-template-columns: auto fit-content(75%) auto;
           grid-template-areas: "title title title" ". crewTextAndNav ." ". crewImage .";
           align-items: end; }
           .crew-content .main-container .main-content .main-title {
@@ -571,9 +570,8 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
             grid-area: crewImage;
             margin-bottom: 0;
             border-bottom: none; }
-            .crew-content .main-container .main-content .main-content-primary .crew-hero {
-              width: 57rem;
-              height: 71.5rem; }
+            .crew-content .main-container .main-content .main-content-primary picture .crew-hero {
+              width: 84%; }
           .crew-content .main-container .main-content .main-content-secondary {
             grid-area: crewTextAndNav;
             grid-template-rows: auto auto;
