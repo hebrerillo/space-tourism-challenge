@@ -72,6 +72,7 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
 .default-paragraph {
     color: var(--light-grey);
     line-height: 1.7;
+    max-width: var(--paragraph-maximum-width);
 }
 
 .header-title-section {
@@ -114,11 +115,6 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
 
     .navigation-text {
         letter-spacing: 2.36px;
-    }
-
-    .default-paragraph {
-        width: min(100%, var(--paragraph-maximum-width));
-        margin: 0 auto;
     }
 }
 

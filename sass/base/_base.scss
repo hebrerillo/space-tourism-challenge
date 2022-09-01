@@ -10,7 +10,7 @@
     --color-bullets-hover: #85868b;
     --padding-main-elements: 3rem; /* The horizontal padding that the main elements (header, main...) will have*/
     --padding-bottom-main-container: 3rem;
-    --paragraph-maximum-width: 87.5rem;
+    --paragraph-maximum-width: 75rem;
 }
 
 html {
@@ -54,6 +54,7 @@ a {
     .main-content {
         display: grid;
         align-content: start;
+        justify-items: center;
         padding: 0 var(--padding-main-elements);
     }
 }
@@ -63,6 +64,7 @@ a {
     :root {
         --padding-main-elements: 5rem;
         --padding-bottom-main-container: 6rem;
+        --paragraph-maximum-width: 87.5rem;
     }
 
     body {
@@ -93,7 +95,7 @@ a {
     .main-container {
         grid-template-columns: var(--grid-header-main-container);
         grid-template-areas: "header header"
-                              ".      main";
+            ".      main";
         padding: 4rem 0 7rem 0;
         row-gap: 8.2rem;
 
