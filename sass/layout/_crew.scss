@@ -87,9 +87,10 @@
                     grid-area: crewImage;
                     margin-bottom: 0;
                     border-bottom: none;
+                    justify-self: stretch;
                     picture {
                         .crew-hero {
-                            width: 84%;
+                            width: 66%;
                         }
                     }
                 }

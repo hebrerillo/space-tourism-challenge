@@ -567,9 +567,10 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
           .crew-content .main-container .main-content .pictures-container {
             grid-area: crewImage;
             margin-bottom: 0;
-            border-bottom: none; }
+            border-bottom: none;
+            justify-self: stretch; }
             .crew-content .main-container .main-content .pictures-container picture .crew-hero {
-              width: 84%; }
+              width: 66%; }
           .crew-content .main-container .main-content .navigation-menu.navigation-menu--crew {
             grid-area: crewNav;
             margin-bottom: 7rem; }
