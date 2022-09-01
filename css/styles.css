@@ -83,10 +83,7 @@ a {
     row-gap: 8.2rem; }
     .main-container .main-content {
       padding-left: var(--left-offset);
-      grid-area: main;
-      grid-template-columns: auto auto;
-      grid-template-rows: auto auto;
-      align-items: start; } }
+      grid-area: main; } }
 @media only screen and (min-width: 112.5em) {
   .main-container .main-content {
     max-width: 170rem;

@@ -93,16 +93,13 @@ a {
     .main-container {
         grid-template-columns: var(--grid-header-main-container);
         grid-template-areas: "header header"
-            ".      main";
+                              ".      main";
         padding: 4rem 0 7rem 0;
         row-gap: 8.2rem;
 
         .main-content {
             padding-left: var(--left-offset);
             grid-area: main;
-            grid-template-columns: auto auto;
-            grid-template-rows: auto auto;
-            align-items: start;
         }
     }
 }
