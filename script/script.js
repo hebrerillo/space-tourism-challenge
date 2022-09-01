@@ -32,4 +32,7 @@ const showTarget = function(targetElement) {
     });
 };
 
-tabContainer.addEventListener('click', handleClickedTab);
+if (tabContainer)
+{
+    tabContainer.addEventListener('click', handleClickedTab);
+}
