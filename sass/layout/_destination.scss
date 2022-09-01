@@ -24,10 +24,14 @@
             row-gap: 0;
             flex-direction: row;
 
-            a:not(.active-link) {
+            a:not(.selected-tab) {
                 .navigation-text {
                     color: var(--light-grey);
                 }
+            }
+            
+            a.selected-tab {
+                border-bottom: var(--border-bottom-link-width) solid var(--color-white);
             }
         }
     }

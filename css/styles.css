@@ -465,8 +465,10 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
       column-gap: 3.5rem;
       row-gap: 0;
       flex-direction: row; }
-      .destination-content .navigation-menu.navigation-menu--destination ul a:not(.active-link) .navigation-text {
+      .destination-content .navigation-menu.navigation-menu--destination ul a:not(.selected-tab) .navigation-text {
         color: var(--light-grey); }
+      .destination-content .navigation-menu.navigation-menu--destination ul a.selected-tab {
+        border-bottom: var(--border-bottom-link-width) solid var(--color-white); }
   .destination-content .destination-info {
     display: flex;
     gap: 5.37rem;
