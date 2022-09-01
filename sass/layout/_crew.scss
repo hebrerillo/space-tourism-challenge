@@ -3,6 +3,9 @@
 
     .main-container {
         .main-content {
+            justify-items: center;
+            align-content: start;
+
             .pictures-container {
                 margin-bottom: 4rem;
                 border-bottom: 1px solid var(--color-separator);
@@ -67,18 +70,20 @@
             }
 
             .main-content {
-                grid-template-rows: auto auto 1fr;
-                grid-template-columns: auto fit-content(75%) auto;
-                grid-template-areas: "title title title"
-                    ". crewTextAndNav ."
-                    ". crewImage .";
+                grid-template-rows: 1fr auto auto auto;
+                grid-template-areas: "title"
+                                     "crewText"
+                                     "crewNav"
+                                     "crewImage";
 
                 align-items: end;
                 .main-title {
                     grid-area: title;
+                    justify-self: start;
+                    align-self: start;
                 }
 
-                .main-content-primary {
+                .pictures-container {
                     grid-area: crewImage;
                     margin-bottom: 0;
                     border-bottom: none;
@@ -89,30 +94,29 @@
                     }
                 }
 
-                .main-content-secondary {
-                    grid-area: crewTextAndNav;
-                    grid-template-rows: auto auto;
-                    grid-template-areas: "crewText"
-                        "nav";
-                    margin-bottom: 5rem;
-                    row-gap: 0;
-
-                    .navigation-menu.navigation-menu--crew {
-                        grid-area: nav;
-                        ul {
-                            column-gap: 4rem;
-                            li {
-                                a {
-                                    width: 2rem;
-                                    height: 2rem;
-                                }
+                .navigation-menu.navigation-menu--crew {
+                    grid-area: crewNav;
+                    margin-bottom: 7rem;
+                    ul {
+                        column-gap: 4rem;
+                        li {
+                            a {
+                                width: 2rem;
+                                height: 2rem;
                             }
                         }
                     }
+                }
 
+                .crew-descriptions
+                {
+                    grid-area: crewText;
+                    margin-bottom: 5.5rem;
+                    justify-self: stretch;
                     .crew-member-description {
-                        grid-area: crewText;
-                        margin-bottom: 5.5rem;
+                        .default-paragraph {
+                            width: 65%;
+                        }
                     }
                 }
             }
