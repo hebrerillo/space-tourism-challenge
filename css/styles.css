@@ -458,12 +458,15 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
 
 .destination-content {
   background-image: url("../assets/destination/background-destination-mobile.jpg"); }
-  .destination-content .main-content-secondary {
-    padding-top: 4.5rem; }
-    .destination-content .main-content-secondary .heading-2 {
+  .destination-content .pictures-container {
+    margin-bottom: 3rem; }
+    .destination-content .pictures-container .destination-hero {
+      width: 37%; }
+  .destination-content .destinations article {
+    display: grid;
+    justify-items: center; }
+    .destination-content .destinations article .heading-2 {
       margin-bottom: 3rem; }
-  .destination-content .main-content-primary .destination-hero {
-    width: 37%; }
   .destination-content .navigation-menu.navigation-menu--destination {
     margin-bottom: 3.75rem; }
     .destination-content .navigation-menu.navigation-menu--destination ul {

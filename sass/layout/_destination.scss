@@ -1,17 +1,20 @@
 .destination-content {
     background-image: url("../assets/destination/background-destination-mobile.jpg");
 
-    .main-content-secondary {
-        padding-top: 4.5rem;
-
-        .heading-2 {
-            margin-bottom: 3rem;
+    .pictures-container {
+        margin-bottom: 3rem;
+        .destination-hero {
+            width: 37%;
         }
     }
 
-    .main-content-primary {
-        .destination-hero {
-            width: 37%;
+    .destinations {
+        article {
+            display: grid;
+            justify-items: center;
+            .heading-2 {
+                margin-bottom: 3rem;
+            }
         }
     }
 
@@ -29,7 +32,7 @@
                     color: var(--light-grey);
                 }
             }
-            
+
             a.selected-tab::after {
                 background-color: var(--color-white);
             }
