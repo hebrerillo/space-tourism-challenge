@@ -489,7 +489,8 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
     .destination-content .destination-info .subheading-2 {
       margin-bottom: 2rem; }
   .destination-content .separator {
-    margin: 4rem 0; }
+    margin: 4rem 0;
+    justify-self: stretch; }
   @media only screen and (min-width: 48em) {
     .destination-content {
       background-image: url("../assets/destination/background-destination-tablet.jpg"); }
