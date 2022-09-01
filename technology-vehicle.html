@@ -14,26 +14,46 @@
             <?php include 'header.html'; ?>
             <main class="main-content vehicle-content">
                 <div class="main-title"><h5 class="heading-5 heading-5--index">03</h5><h5 class="heading-5">space launch 101</h5></div>
-                <section class="main-content-primary">
-                    <picture>
+                <section class="main-content-primary" data-targets-container>
+                    <picture data-source-target="vehicle">
                         <source media="(min-width: 1440px)" srcset="assets/technology/image-launch-vehicle-portrait.jpg">
                         <source media="(orientation: landscape)" srcset="assets/technology/image-launch-vehicle-landscape.jpg">
                         <img class="tech-hero" alt="Vehicle" src="assets/technology/image-launch-vehicle-portrait.jpg" />
                     </picture>
+                    <picture data-source-target="spaceport" class="hidden-target-tab">
+                        <source media="(min-width: 1440px)" srcset="assets/technology/image-spaceport-portrait.jpg">
+                        <img class="tech-hero" alt="Vehicle" src="assets/technology/image-spaceport-landscape.jpg" />
+                    </picture>
+                    <picture data-source-target="capsule" class="hidden-target-tab">
+                        <source media="(min-width: 1440px)" srcset="assets/technology/image-space-capsule-portrait.jpg">
+                        <img class="tech-hero" alt="Vehicle" src="assets/technology/image-space-capsule-landscape.jpg" />
+                    </picture>
                 </section>
                 <section class="main-content-secondary">
                     <nav class="navigation-menu navigation-menu--tech">
-                        <ul>
-                            <li><a class="heading-4 vehicle-link" href="#">1</a></li>
-                            <li><a class="heading-4" href="#">2</a></li>
-                            <li><a class="heading-4" href="#">3</a></li>
+                        <ul data-tabContainer>
+                            <li><a data-tab="vehicle" class="heading-4 selected-tab">1</a></li>
+                            <li><a data-tab="spaceport" class="heading-4">2</a></li>
+                            <li><a data-tab="capsule" class="heading-4">3</a></li>
                         </ul>
                     </nav>
-                    <section class="tech-description">
-                        <h4 class="navigation-text">the terminology...</h4>
-                        <h4 class="heading-3">launch vehicle</h4>
-                        <p class="default-paragraph">A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!</p>
-                    </section>
+                    <div data-targets-container>
+                        <article class="tech-description" data-source-target="vehicle">
+                            <h4 class="navigation-text">the terminology...</h4>
+                            <h4 class="heading-3">launch vehicle</h4>
+                            <p class="default-paragraph">A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!</p>
+                        </article>
+                        <article class="tech-description hidden-target-tab" data-source-target="spaceport">
+                            <h4 class="navigation-text">the terminology...</h4>
+                            <h4 class="heading-3">spaceport</h4>
+                            <p class="default-paragraph">A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch.</p>
+                        </article>
+                        <article class="tech-description hidden-target-tab" data-source-target="capsule">
+                            <h4 class="navigation-text">the terminology...</h4>
+                            <h4 class="heading-3">space capsule</h4>
+                            <p class="default-paragraph">A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained.</p>
+                        </article>
+                    </div>
                 </section>
             </main>
         </div>

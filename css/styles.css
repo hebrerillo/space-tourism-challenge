@@ -655,6 +655,10 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
           height: 5rem; }
         .tech-content .main-container .main-content .main-content-secondary .navigation-menu.navigation-menu--tech ul li a:hover {
           border-color: var(--color-white); }
+        .tech-content .main-container .main-content .main-content-secondary .navigation-menu.navigation-menu--tech ul li a.selected-tab {
+          background-color: var(--color-white);
+          border: 1px solid var(--color-white);
+          color: var(--color-black); }
     .tech-content .main-container .main-content .main-content-secondary .tech-description .navigation-text {
       letter-spacing: 2.36px;
       color: var(--light-grey);
@@ -663,10 +667,6 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
       margin-bottom: 3rem; }
     .tech-content .main-container .main-content .main-content-secondary, .tech-content .main-container .main-content .main-title {
       padding: 0 var(--padding-main-elements); }
-  .tech-content .main-container .vehicle-content .vehicle-link {
-    background-color: var(--color-white);
-    border: 1px solid var(--color-white) !important;
-    color: var(--color-black) !important; }
   @media only screen and (min-width: 48em) {
     .tech-content {
       background-image: url("../assets/technology/background-technology-tablet.jpg"); }
