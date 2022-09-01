@@ -498,39 +498,45 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
         border-bottom: var(--border-bottom-link-width) solid var(--color-white); }
       .destination-content .navigation-menu.navigation-menu--destination .navigation-text {
         letter-spacing: 2.7px; }
-      .destination-content .main-content-primary .destination-hero {
+      .destination-content .pictures-container .destination-hero {
         width: 44%; }
-      .destination-content .main-content-secondary {
-        width: 78%;
-        margin: 0 auto; }
-        .destination-content .main-content-secondary .destination-info {
-          gap: 12.5rem; } }
+      .destination-content .destinations .destination-info {
+        gap: 12.5rem; } }
   @media only screen and (min-width: 90em) {
     .destination-content {
       background-image: url("../assets/destination/background-destination-desktop.jpg"); }
       .destination-content .main-container .main-content {
-        grid-template-areas: "titleDest ." "heroDest  destinationText"; }
+        grid-template-columns: auto auto;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: "titleDest ." "heroDest  destinationNav" "heroDest  destinationText";
+        column-gap: 15rem;
+        align-content: center; }
         .destination-content .main-container .main-content .main-title {
           grid-area: titleDest; }
-        .destination-content .main-container .main-content .main-content-primary {
+        .destination-content .main-container .main-content .pictures-container {
           grid-area: heroDest;
-          padding-top: 2rem; }
-          .destination-content .main-container .main-content .main-content-primary .destination-hero {
+          padding-top: 0;
+          align-self: center;
+          margin-bottom: 0; }
+          .destination-content .main-container .main-content .pictures-container .destination-hero {
             margin-left: 6rem;
-            width: 88%; }
-        .destination-content .main-container .main-content .main-content-secondary {
+            width: auto; }
+        .destination-content .main-container .main-content .navigation-menu.navigation-menu--destination {
+          grid-area: destinationNav; }
+          .destination-content .main-container .main-content .navigation-menu.navigation-menu--destination ul {
+            justify-content: start; }
+        .destination-content .main-container .main-content .destinations {
           width: 65%;
-          justify-self: center;
           grid-area: destinationText;
           padding: 0;
           margin: 0;
           text-align: left; }
-          .destination-content .main-container .main-content .main-content-secondary .navigation-menu.navigation-menu--destination ul {
-            justify-content: start; }
-          .destination-content .main-container .main-content .main-content-secondary .destination-info {
-            gap: 7.7rem;
-            padding: 0;
-            justify-content: start; } }
+          .destination-content .main-container .main-content .destinations article {
+            justify-items: start; }
+            .destination-content .main-container .main-content .destinations article .destination-info {
+              gap: 7.7rem;
+              padding: 0;
+              justify-content: start; } }
 
 .crew-content {
   background-image: url("../assets/crew/background-crew-mobile.jpg"); }
