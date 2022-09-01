@@ -118,6 +118,7 @@
         grid-template-columns: var(--grid-header-main-container);
         padding-left: 0;
         grid-area: header;
+        height: auto;
 
         .header__logo {
             padding-left: 2rem;
@@ -128,7 +129,7 @@
         }
 
         .navigation-menu.navigation-menu--header {
-            flex-grow: 1;
+            align-self: stretch;
             .header-separator {
                 flex-grow: 1;
                 position: relative;
@@ -146,12 +147,13 @@
                 padding: 0 17rem 0 12.2rem;
                 width: 83rem;
                 justify-content: space-between;
+                align-self: stretch;
                 background-color: rgba(255, 255, 255, 0.04);
                 backdrop-filter: blur(1.5rem);
                 li {
                     a {
                         column-gap: 1.3rem;
-                        padding: 4.3rem 0;
+                        padding: 0;
 
                         .navigation-text--index {
                             display: initial;

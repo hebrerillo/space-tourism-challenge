@@ -91,9 +91,10 @@ a {
     }
 
     .main-container {
+        grid-template-rows: 9.6rem 1fr;
         grid-template-columns: var(--grid-header-main-container);
         grid-template-areas: "header header"
-            ".      main";
+                             ".      main";
         padding: 4rem 0 7rem 0;
         row-gap: 8.2rem;
 

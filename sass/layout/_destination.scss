@@ -30,8 +30,8 @@
                 }
             }
             
-            a.selected-tab {
-                border-bottom: var(--border-bottom-link-width) solid var(--color-white);
+            a.selected-tab::after {
+                background-color: var(--color-white);
             }
         }
     }
