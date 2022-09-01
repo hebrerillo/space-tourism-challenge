@@ -55,6 +55,14 @@
         .header-separator {
             display: none;
         }
+
+        ul {
+            li {
+                a::after {
+                    display: none;
+                }
+            }
+        }
     }
 
     #checkbox-right-menu:checked ~ .navigation-menu.navigation-menu--header {
@@ -97,15 +105,20 @@
                 flex-direction: row;
                 justify-content: space-evenly;
                 row-gap: 0;
+                li {
+                    a {
+                        padding: 5.37rem 0;
+                        .navigation-text {
+                            font-size: 1.75rem;
+                        }
 
-                a {
-                    padding: 5.37rem 0;
-                    .navigation-text {
-                        font-size: 1.75rem;
+                        .navigation-text--index {
+                            display: none;
+                        }
                     }
-
-                    .navigation-text--index {
-                        display: none;
+                    
+                    a::after {
+                        display: block;
                     }
                 }
             }
