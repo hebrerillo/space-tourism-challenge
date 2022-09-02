@@ -41,8 +41,8 @@
             row-gap: 15rem;
 
             .navigation-menu.navigation-menu--header {
-                a.home-link {
-                    border-bottom: var(--border-bottom-link-width) solid var(--color-white);
+                a.home-link::after {
+                    background-color: var(--color-white);
                 }
             }
 
@@ -87,8 +87,9 @@
                 grid-template-areas: "title     ."
                     "text       hero";
                 padding-right: 0;
-
+                justify-content: normal;
                 row-gap: 0;
+
                 .main-title {
                     grid-area: title;
                     justify-content: start;
