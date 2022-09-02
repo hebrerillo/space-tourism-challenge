@@ -61,13 +61,9 @@ a {
 
   .main-container {
     row-gap: 4.87rem; } }
-@media only screen and (min-width: 90em) {
+@media only screen and (min-width: 68.75em) {
   :root {
-    --paragraph-maximum-width: 70rem;
-    --grid-header-main-container: 11rem 1fr;
-    /* This grid will be used both in the header and in the main container to have their content aligned. */
-    --left-offset: 3rem;
-    /* A left offset to help the aligment to the left of thin line in the header and the main content*/ }
+    --paragraph-maximum-width: 70rem; }
 
   html {
     font-size: 62.5%;
@@ -78,10 +74,18 @@ a {
 
   .main-container {
     grid-template-rows: 9.6rem 1fr;
-    grid-template-columns: var(--grid-header-main-container);
-    grid-template-areas: "header header" ".      main";
     padding: 4rem 0 7rem 0;
-    row-gap: 8.2rem; }
+    row-gap: 8.2rem; } }
+@media only screen and (min-width: 90em) {
+  :root {
+    --grid-header-main-container: 11rem 1fr;
+    /* This grid will be used both in the header and in the main container to have their content aligned. */
+    --left-offset: 3rem;
+    /* A left offset to help the aligment to the left of thin line in the header and the main content*/ }
+
+  .main-container {
+    grid-template-columns: var(--grid-header-main-container);
+    grid-template-areas: "header header" ".      main"; }
     .main-container .main-content {
       padding-left: var(--left-offset);
       grid-area: main; } }

@@ -74,12 +74,10 @@ a {
     }
 }
 
-@media only screen and (min-width: $minWidthDesktop) {
+@media only screen and (min-width: $minWidthSmallDesktop) {
 
     :root {
         --paragraph-maximum-width: 70rem;
-        --grid-header-main-container: 11rem 1fr; /* This grid will be used both in the header and in the main container to have their content aligned. */
-        --left-offset: 3rem; /* A left offset to help the aligment to the left of thin line in the header and the main content*/
     }
 
     html {
@@ -92,11 +90,22 @@ a {
 
     .main-container {
         grid-template-rows: 9.6rem 1fr;
+        padding: 4rem 0 7rem 0;
+        row-gap: 8.2rem;
+    }
+}
+
+@media only screen and (min-width: $minWidthDesktop) {
+
+    :root {
+        --grid-header-main-container: 11rem 1fr; /* This grid will be used both in the header and in the main container to have their content aligned. */
+        --left-offset: 3rem; /* A left offset to help the aligment to the left of thin line in the header and the main content*/
+    }
+
+    .main-container {
         grid-template-columns: var(--grid-header-main-container);
         grid-template-areas: "header header"
                              ".      main";
-        padding: 4rem 0 7rem 0;
-        row-gap: 8.2rem;
 
         .main-content {
             padding-left: var(--left-offset);
