@@ -77,24 +77,33 @@
             }
 
             .main-content {
-                .main-content-primary {
+                .pictures-container {
                     margin-bottom: 6.7rem;
                     .tech-hero {
                         height: 40vw;
                     }
                 }
 
-                .main-content-secondary {
-                    margin: 0;
-                    padding: 0 20rem;
-
-                    .navigation-menu.navigation-menu--tech {
-                        margin-bottom: 5rem;
+                .navigation-menu.navigation-menu--tech {
+                    margin-bottom: 5rem;
+                    ul {
+                        li {
+                            a {
+                                width: 7.5rem;
+                                height: 7.5rem;
+                            }
+                        }
                     }
+                }
 
-                    .tech-description .navigation-text {
+                .tech-description  {
+                    .navigation-text{
                         letter-spacing: 2.7px;
                         margin-bottom: 2rem;
+                    }
+                    
+                    .default-paragraph {
+                        width: 67%;
                     }
                 }
             }

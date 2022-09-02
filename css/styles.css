@@ -697,18 +697,20 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
       background-image: url("../assets/technology/background-technology-tablet.jpg"); }
       .tech-content .main-container .navigation-menu.navigation-menu--header a.tech-link {
         border-bottom: var(--border-bottom-link-width) solid var(--color-white); }
-      .tech-content .main-container .main-content .main-content-primary {
+      .tech-content .main-container .main-content .pictures-container {
         margin-bottom: 6.7rem; }
-        .tech-content .main-container .main-content .main-content-primary .tech-hero {
+        .tech-content .main-container .main-content .pictures-container .tech-hero {
           height: 40vw; }
-      .tech-content .main-container .main-content .main-content-secondary {
-        margin: 0;
-        padding: 0 20rem; }
-        .tech-content .main-container .main-content .main-content-secondary .navigation-menu.navigation-menu--tech {
-          margin-bottom: 5rem; }
-        .tech-content .main-container .main-content .main-content-secondary .tech-description .navigation-text {
-          letter-spacing: 2.7px;
-          margin-bottom: 2rem; } }
+      .tech-content .main-container .main-content .navigation-menu.navigation-menu--tech {
+        margin-bottom: 5rem; }
+        .tech-content .main-container .main-content .navigation-menu.navigation-menu--tech ul li a {
+          width: 7.5rem;
+          height: 7.5rem; }
+      .tech-content .main-container .main-content .tech-description .navigation-text {
+        letter-spacing: 2.7px;
+        margin-bottom: 2rem; }
+      .tech-content .main-container .main-content .tech-description .default-paragraph {
+        width: 67%; } }
   @media only screen and (min-width: 90em) {
     .tech-content {
       background-image: url("../assets/technology/background-technology-desktop.jpg"); }
