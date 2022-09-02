@@ -78,6 +78,7 @@ a {
 
     :root {
         --paragraph-maximum-width: 70rem;
+        --left-offset: 3rem; /* A left offset to help the aligment to the left of thin line in the header and the main content*/
     }
 
     html {
@@ -99,7 +100,6 @@ a {
 
     :root {
         --grid-header-main-container: 11rem 1fr; /* This grid will be used both in the header and in the main container to have their content aligned. */
-        --left-offset: 3rem; /* A left offset to help the aligment to the left of thin line in the header and the main content*/
     }
 
     .main-container {

@@ -124,17 +124,10 @@
             }
         }
     }
-
-    @media only screen and (min-width: $minWidthDesktop) {
-
-        display: grid;
-        grid-template-columns: var(--grid-header-main-container);
-        padding-left: 0;
-        grid-area: header;
+    
+    @media only screen and (min-width: $minWidthSmallDesktop) {
         height: auto;
-
         .header__logo {
-            padding-left: 2rem;
             img{
                 width: 4.8rem;
                 height: 4.8rem;
@@ -143,6 +136,7 @@
 
         .navigation-menu.navigation-menu--header {
             align-self: stretch;
+            flex-grow: 1;
             .header-separator {
                 flex-grow: 1;
                 position: relative;
@@ -180,6 +174,17 @@
                     }
                 }
             }
+        }
+    }
+
+    @media only screen and (min-width: $minWidthDesktop) {
+        display: grid;
+        grid-template-columns: var(--grid-header-main-container);
+        padding-left: 0;
+        grid-area: header;
+
+        .header__logo {
+            padding-left: 2rem;
         }
     }
 }
