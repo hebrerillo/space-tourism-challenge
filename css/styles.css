@@ -210,11 +210,7 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
     font-size: 1.4rem; }
 
   .navigation-text {
-    font-size: 1.6rem; }
-
-  .default-paragraph {
-    width: auto;
-    margin: 0; } }
+    font-size: 1.6rem; } }
 .navigation-menu ul {
   display: flex;
   flex-direction: column;
@@ -397,8 +393,8 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
       background-image: url("../assets/home/background-home-tablet.jpg"); }
       .home-content .main-container {
         row-gap: 15rem; }
-        .home-content .main-container .navigation-menu.navigation-menu--header a.home-link {
-          border-bottom: var(--border-bottom-link-width) solid var(--color-white); }
+        .home-content .main-container .navigation-menu.navigation-menu--header a.home-link::after {
+          background-color: var(--color-white); }
         .home-content .main-container .main-content {
           grid-template-columns: fit-content(60%);
           justify-content: center; }
@@ -425,6 +421,7 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
           grid-template-columns: auto auto;
           grid-template-areas: "title     ." "text       hero";
           padding-right: 0;
+          justify-content: normal;
           row-gap: 0; }
           .home-content .main-container .main-content .main-title {
             grid-area: title;
