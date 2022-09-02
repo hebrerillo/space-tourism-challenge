@@ -61,7 +61,7 @@ a {
 
   .main-container {
     row-gap: 4.87rem; } }
-@media only screen and (min-width: 68.75em) {
+@media only screen and (min-width: 64em) {
   :root {
     --paragraph-maximum-width: 70rem;
     --left-offset: 3rem;
@@ -323,7 +323,7 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
               display: none; }
           .main-header .navigation-menu.navigation-menu--header ul li a::after {
             display: block; } }
-  @media only screen and (min-width: 68.75em) {
+  @media only screen and (min-width: 64em) {
     .main-header {
       height: auto; }
       .main-header .header__logo img {
@@ -617,28 +617,27 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
             justify-self: stretch; }
             .crew-content .main-container .main-content .crew-descriptions .crew-member-description .default-paragraph {
               width: 65%; } }
-  @media only screen and (min-width: 90em) {
+  @media only screen and (min-width: 64em) {
     .crew-content {
       background-image: url("../assets/crew/background-crew-desktop.jpg"); }
       .crew-content .main-container {
-        row-gap: 2rem;
-        padding-bottom: 0; }
+        row-gap: 2rem; }
         .crew-content .main-container .main-content {
-          width: 90%;
           grid-template-rows: 1fr auto auto;
           grid-template-columns: auto auto;
           grid-template-areas: "title              crewImage" "crewText           crewImage" "crewNav            crewImage";
-          align-content: stretch;
-          column-gap: 12rem;
-          padding-right: 0; }
+          column-gap: 5rem; }
           .crew-content .main-container .main-content .main-title {
             margin-bottom: 0; }
           .crew-content .main-container .main-content .pictures-container {
             justify-self: center;
             align-self: end; }
-            .crew-content .main-container .main-content .pictures-container picture .crew-hero {
-              width: auto;
-              height: auto; }
+            .crew-content .main-container .main-content .pictures-container picture {
+              display: flex;
+              justify-content: end; }
+              .crew-content .main-container .main-content .pictures-container picture .crew-hero {
+                width: 80%;
+                display: block; }
           .crew-content .main-container .main-content .crew-descriptions {
             text-align: left;
             margin-bottom: 12.5rem; }
@@ -654,6 +653,15 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
             .crew-content .main-container .main-content .navigation-menu.navigation-menu--crew ul li a {
               width: 1.6rem;
               height: 1.6rem; } }
+  @media only screen and (min-width: 90em) {
+    .crew-content .main-container .main-content {
+      column-gap: 12rem;
+      width: 90%;
+      padding-right: 0; }
+      .crew-content .main-container .main-content .pictures-container picture {
+        display: inline; }
+        .crew-content .main-container .main-content .pictures-container picture .crew-hero {
+          width: auto; } }
 
 .tech-content {
   background-image: url("../assets/technology/background-technology-mobile.jpg"); }

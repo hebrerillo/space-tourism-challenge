@@ -128,24 +128,17 @@
         }
     }
 
-    @media only screen and (min-width: $minWidthDesktop) {
+    @media only screen and (min-width: $minWidthSmallDesktop) { 
         background-image: url("../assets/crew/background-crew-desktop.jpg");
-
         .main-container {
             row-gap: 2rem;
-            padding-bottom: 0;
-
             .main-content {
-                width: 90%;
                 grid-template-rows: 1fr auto auto;
                 grid-template-columns: auto auto;
                 grid-template-areas: "title              crewImage"
                                      "crewText           crewImage"
                                      "crewNav            crewImage";
-                align-content: stretch;
-                column-gap: 12rem;
-                padding-right: 0;
-
+                column-gap: 5rem;
                 .main-title {
                     margin-bottom: 0;
                 }
@@ -154,9 +147,11 @@
                     justify-self: center;
                     align-self: end;
                     picture {
+                        display: flex;
+                        justify-content: end;
                         .crew-hero {
-                            width: auto;
-                            height: auto;
+                            width: 80%;
+                            display: block;
                         }
                     }
                 }
@@ -185,6 +180,25 @@
                                 width: 1.6rem;
                                 height: 1.6rem;
                             }
+                        }
+                    }
+                }                
+            }
+        }
+    }
+    
+    @media only screen and (min-width: $minWidthDesktop) {
+        .main-container {
+            .main-content {
+                column-gap: 12rem;
+                width: 90%;
+                padding-right: 0;
+                
+                .pictures-container {
+                    picture {
+                        display: inline;
+                        .crew-hero {
+                            width: auto;
                         }
                     }
                 }
