@@ -237,9 +237,11 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
       position: absolute;
       bottom: 0;
       width: 100%;
-      height: var(--border-bottom-link-width); }
+      height: var(--border-bottom-link-width);
+      display: none; }
     .navigation-menu ul li a:hover::after {
-      background-color: var(--border-bottom-link-hover-color); }
+      background-color: var(--border-bottom-link-hover-color);
+      display: block; }
     .navigation-menu ul li .active-link .navigation-text {
       color: var(--color-white); }
 
@@ -282,8 +284,8 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
     padding: 15rem 0 0 3rem; }
     .main-header .navigation-menu.navigation-menu--header .header-separator {
       display: none; }
-    .main-header .navigation-menu.navigation-menu--header ul li a::after {
-      display: none; }
+    .main-header .navigation-menu.navigation-menu--header ul li a:hover::after {
+      background-color: transparent; }
   .main-header #checkbox-right-menu:checked ~ .navigation-menu.navigation-menu--header {
     transform: translateX(0); }
   @media only screen and (min-width: 48em) {
@@ -321,8 +323,8 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
               font-size: 1.75rem; }
             .main-header .navigation-menu.navigation-menu--header ul li a .navigation-text--index {
               display: none; }
-          .main-header .navigation-menu.navigation-menu--header ul li a::after {
-            display: block; } }
+          .main-header .navigation-menu.navigation-menu--header ul li a:hover::after {
+            background-color: var(--border-bottom-link-hover-color); } }
   @media only screen and (min-width: 64em) {
     .main-header {
       height: auto; }
@@ -401,7 +403,8 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
       .home-content .main-container {
         row-gap: 15rem; }
         .home-content .main-container .navigation-menu.navigation-menu--header a.home-link::after {
-          background-color: var(--color-white); }
+          background-color: var(--color-white) !important;
+          display: block; }
         .home-content .main-container .main-content {
           grid-template-columns: fit-content(60%);
           justify-content: center; }
@@ -501,7 +504,8 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
     .destination-content {
       background-image: url("../assets/destination/background-destination-tablet.jpg"); }
       .destination-content .navigation-menu.navigation-menu--header a.destination-link::after {
-        background-color: var(--color-white); }
+        background-color: var(--color-white) !important;
+        display: block; }
       .destination-content .navigation-menu.navigation-menu--destination .navigation-text {
         letter-spacing: 2.7px; }
       .destination-content .pictures-container .destination-hero {
@@ -587,7 +591,8 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
       .crew-content .main-container {
         padding-bottom: 0; }
         .crew-content .main-container .navigation-menu.navigation-menu--header a.crew-link::after {
-          background-color: var(--color-white); }
+          background-color: var(--color-white) !important;
+          display: block; }
         .crew-content .main-container .main-content {
           grid-template-rows: 1fr auto auto auto;
           grid-template-areas: "title" "crewText" "crewNav" "crewImage";
@@ -710,7 +715,8 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
     .tech-content {
       background-image: url("../assets/technology/background-technology-tablet.jpg"); }
       .tech-content .main-container .navigation-menu.navigation-menu--header a.tech-link::after {
-        background-color: var(--color-white); }
+        background-color: var(--color-white) !important;
+        display: block; }
       .tech-content .main-container .main-content .pictures-container {
         margin-bottom: 6.7rem; }
         .tech-content .main-container .main-content .pictures-container .tech-hero {

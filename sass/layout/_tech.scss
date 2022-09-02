@@ -74,7 +74,8 @@
 
             .navigation-menu.navigation-menu--header {
                 a.tech-link::after {
-                    background-color: var(--color-white);
+                    background-color: var(--color-white) !important;
+                    display: block;
                 }
             }
 

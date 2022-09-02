@@ -58,8 +58,8 @@
 
         ul {
             li {
-                a::after {
-                    display: none;
+                a:hover::after {
+                    background-color: transparent;
                 }
             }
         }
@@ -116,15 +116,15 @@
                             display: none;
                         }
                     }
-                    
-                    a::after {
-                        display: block;
+
+                    a:hover::after {
+                        background-color: var(--border-bottom-link-hover-color);
                     }
                 }
             }
         }
     }
-    
+
     @media only screen and (min-width: $minWidthSmallDesktop) {
         height: auto;
         .header__logo {

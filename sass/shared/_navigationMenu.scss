@@ -27,10 +27,12 @@
                 bottom: 0;
                 width: 100%;
                 height: var(--border-bottom-link-width);
+                display: none;
             }
 
             a:hover::after {
                 background-color: var(--border-bottom-link-hover-color);
+                display: block;
             }
 
             .active-link .navigation-text {
