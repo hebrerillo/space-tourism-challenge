@@ -1,17 +1,20 @@
 .destination-content {
     background-image: url("../assets/destination/background-destination-mobile.jpg");
 
-    .main-content-secondary {
-        padding-top: 4.5rem;
-
-        .heading-2 {
-            margin-bottom: 3rem;
+    .pictures-container {
+        margin-bottom: 3rem;
+        .destination-hero {
+            width: 37%;
         }
     }
 
-    .main-content-primary {
-        .destination-hero {
-            width: 37%;
+    .destinations {
+        article {
+            display: grid;
+            justify-items: center;
+            .heading-2 {
+                margin-bottom: 3rem;
+            }
         }
     }
 
@@ -29,9 +32,9 @@
                     color: var(--light-grey);
                 }
             }
-            
-            a.selected-tab {
-                border-bottom: var(--border-bottom-link-width) solid var(--color-white);
+
+            a.selected-tab::after {
+                background-color: var(--color-white);
             }
         }
     }
@@ -50,6 +53,7 @@
 
     .separator {
         margin: 4rem 0;
+        justify-self: stretch;
     }
 
     @media only screen and (min-width: $minWidthTabletPortrait) {
@@ -67,16 +71,13 @@
             }
         }
 
-        .main-content-primary {
+        .pictures-container {
             .destination-hero {
                 width: 44%;
             }
         }
 
-        .main-content-secondary {
-            width: 78%;
-            margin: 0 auto;
-
+        .destinations {
             .destination-info {
                 gap: 12.5rem;
             }
@@ -88,39 +89,49 @@
         .main-container {
 
             .main-content {
+                grid-template-columns: auto auto;
+                grid-template-rows: repeat(3, auto);
                 grid-template-areas: "titleDest ."
-                    "heroDest  destinationText";
-
+                                     "heroDest  destinationNav"
+                                     "heroDest  destinationText";
+                column-gap: 15rem;
+                align-content: center;
                 .main-title {
                     grid-area: titleDest;
                 }
 
-                .main-content-primary {
+                .pictures-container {
                     grid-area: heroDest;
-                    padding-top: 2rem;
+                    padding-top: 0;
+                    align-self: center;
+                    margin-bottom: 0;
                     .destination-hero {
                         margin-left: 6rem;
-                        width: 88%;
+                        width: auto;
                     }
                 }
 
-                .main-content-secondary {
+                .navigation-menu.navigation-menu--destination {
+                    grid-area: destinationNav;
+                    ul {
+                        justify-content: start;
+                    }
+                }
+
+                .destinations {
                     width: 65%;
-                    justify-self: center;
                     grid-area: destinationText;
                     padding: 0;
                     margin:0;
                     text-align: left;
-                    .navigation-menu.navigation-menu--destination {
-                        ul {
+
+                    article {
+                        justify-items: start;
+                        .destination-info {
+                            gap: 7.7rem;
+                            padding: 0;
                             justify-content: start;
                         }
-                    }
-
-                    .destination-info {
-                        gap: 7.7rem;
-                        padding: 0;
-                        justify-content: start;
                     }
                 }
             }

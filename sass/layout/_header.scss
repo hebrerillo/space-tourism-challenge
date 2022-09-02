@@ -55,6 +55,14 @@
         .header-separator {
             display: none;
         }
+
+        ul {
+            li {
+                a::after {
+                    display: none;
+                }
+            }
+        }
     }
 
     #checkbox-right-menu:checked ~ .navigation-menu.navigation-menu--header {
@@ -97,15 +105,20 @@
                 flex-direction: row;
                 justify-content: space-evenly;
                 row-gap: 0;
+                li {
+                    a {
+                        padding: 5.37rem 0;
+                        .navigation-text {
+                            font-size: 1.75rem;
+                        }
 
-                a {
-                    padding: 5.37rem 0;
-                    .navigation-text {
-                        font-size: 1.75rem;
+                        .navigation-text--index {
+                            display: none;
+                        }
                     }
-
-                    .navigation-text--index {
-                        display: none;
+                    
+                    a::after {
+                        display: block;
                     }
                 }
             }
@@ -118,6 +131,7 @@
         grid-template-columns: var(--grid-header-main-container);
         padding-left: 0;
         grid-area: header;
+        height: auto;
 
         .header__logo {
             padding-left: 2rem;
@@ -128,7 +142,7 @@
         }
 
         .navigation-menu.navigation-menu--header {
-            flex-grow: 1;
+            align-self: stretch;
             .header-separator {
                 flex-grow: 1;
                 position: relative;
@@ -146,12 +160,13 @@
                 padding: 0 17rem 0 12.2rem;
                 width: 83rem;
                 justify-content: space-between;
+                align-self: stretch;
                 background-color: rgba(255, 255, 255, 0.04);
                 backdrop-filter: blur(1.5rem);
                 li {
                     a {
                         column-gap: 1.3rem;
-                        padding: 4.3rem 0;
+                        padding: 0;
 
                         .navigation-text--index {
                             display: initial;
