@@ -60,8 +60,8 @@
         background-image: url("../assets/destination/background-destination-tablet.jpg");
 
         .navigation-menu.navigation-menu--header {
-            a.destination-link {
-                border-bottom: var(--border-bottom-link-width) solid var(--color-white);
+            a.destination-link::after {
+                background-color: var(--color-white);
             }
         }
 
