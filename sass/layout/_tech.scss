@@ -113,7 +113,7 @@
         }
     }
 
-    @media only screen and (min-width: $minWidthDesktop) {
+    @media only screen and (min-width: $minWidthSmallDesktop) {
         background-image: url("../assets/technology/background-technology-desktop.jpg");
         .main-container {
             .main-content {
@@ -122,21 +122,26 @@
                 grid-template-rows: auto auto;
                 grid-template-areas: "title       title      title"
                                      "techNav     techText   techImg";
-                column-gap: 7rem;
-                padding-left: var(--left-offset);
+                column-gap: 3rem;
+                padding-left: var(--padding-main-elements);
 
                 .main-title {
                     grid-area: title;
                     margin-bottom: 2.4rem;
-                    padding-left: 0;
+                    padding: 0;
                 }
 
                 .pictures-container {
                     grid-area: techImg;
+                    align-self: center;
                     margin: 0;
-                    .tech-hero {
-                        width: 51.5rem;
-                        height: 52.7rem;
+                    picture {
+                        display: flex;
+                        justify-content: end;
+                        .tech-hero {
+                            width: 100%;
+                            height: auto;
+                        }
                     }
                 }
 
@@ -151,8 +156,8 @@
                         row-gap: 3rem;
 
                         li a {
-                            width: 8rem;
-                            height: 8rem;
+                            width: 5rem;
+                            height: 5rem;
                         }
                     }
                 }
@@ -175,6 +180,35 @@
 
                         .default-paragraph {
                             width: 80%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-width: $minWidthDesktop) {
+
+        .main-container {
+            .main-content {
+                column-gap: 7rem;
+                padding-left: var(--left-offset);
+
+                .pictures-container {
+                    align-self: normal;
+                    picture {
+                        .tech-hero {
+                            width: 51.5rem;
+                            height: 52.7rem;
+                        }
+                    }
+                }
+
+                .navigation-menu.navigation-menu--tech {
+                    ul {
+                        li a {
+                            width: 8rem;
+                            height: 8rem;
                         }
                     }
                 }

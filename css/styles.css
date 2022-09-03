@@ -739,7 +739,7 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
         margin-bottom: 2rem; }
       .tech-content .main-container .main-content .tech-description .default-paragraph {
         width: 67%; } }
-  @media only screen and (min-width: 90em) {
+  @media only screen and (min-width: 64em) {
     .tech-content {
       background-image: url("../assets/technology/background-technology-desktop.jpg"); }
       .tech-content .main-container .main-content {
@@ -747,18 +747,22 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
         grid-template-columns: min-content auto auto;
         grid-template-rows: auto auto;
         grid-template-areas: "title       title      title" "techNav     techText   techImg";
-        column-gap: 7rem;
-        padding-left: var(--left-offset); }
+        column-gap: 3rem;
+        padding-left: var(--padding-main-elements); }
         .tech-content .main-container .main-content .main-title {
           grid-area: title;
           margin-bottom: 2.4rem;
-          padding-left: 0; }
+          padding: 0; }
         .tech-content .main-container .main-content .pictures-container {
           grid-area: techImg;
+          align-self: center;
           margin: 0; }
-          .tech-content .main-container .main-content .pictures-container .tech-hero {
-            width: 51.5rem;
-            height: 52.7rem; }
+          .tech-content .main-container .main-content .pictures-container picture {
+            display: flex;
+            justify-content: end; }
+            .tech-content .main-container .main-content .pictures-container picture .tech-hero {
+              width: 100%;
+              height: auto; }
         .tech-content .main-container .main-content .navigation-menu.navigation-menu--tech {
           grid-area: techNav;
           margin-bottom: 0;
@@ -769,8 +773,8 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
             column-gap: 0;
             row-gap: 3rem; }
             .tech-content .main-container .main-content .navigation-menu.navigation-menu--tech ul li a {
-              width: 8rem;
-              height: 8rem; }
+              width: 5rem;
+              height: 5rem; }
         .tech-content .main-container .main-content .techs-container {
           grid-area: techText;
           align-self: center;
@@ -784,5 +788,17 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
               margin-bottom: 2rem; }
             .tech-content .main-container .main-content .techs-container .tech-description .default-paragraph {
               width: 80%; } }
+  @media only screen and (min-width: 90em) {
+    .tech-content .main-container .main-content {
+      column-gap: 7rem;
+      padding-left: var(--left-offset); }
+      .tech-content .main-container .main-content .pictures-container {
+        align-self: normal; }
+        .tech-content .main-container .main-content .pictures-container picture .tech-hero {
+          width: 51.5rem;
+          height: 52.7rem; }
+      .tech-content .main-container .main-content .navigation-menu.navigation-menu--tech ul li a {
+        width: 8rem;
+        height: 8rem; } }
 
 /*# sourceMappingURL=styles.css.map */
