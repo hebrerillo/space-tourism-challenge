@@ -85,30 +85,26 @@
         }
     }
 
-    @media only screen and (min-width: $minWidthDesktop) {
+    @media only screen and (min-width: $minWidthSmallDesktop) { 
         background-image: url("../assets/destination/background-destination-desktop.jpg");
+        
         .main-container {
-
             .main-content {
                 grid-template-columns: auto auto;
                 grid-template-rows: repeat(3, auto);
                 grid-template-areas: "titleDest ."
                                      "heroDest  destinationNav"
                                      "heroDest  destinationText";
-                column-gap: 15rem;
-                align-content: center;
-                .main-title {
-                    grid-area: titleDest;
-                }
+                column-gap: 5rem;
 
                 .pictures-container {
                     grid-area: heroDest;
                     padding-top: 0;
-                    align-self: center;
+                    align-self: start;
                     margin-bottom: 0;
                     .destination-hero {
                         margin-left: 6rem;
-                        width: auto;
+                        width: 85%;
                     }
                 }
 
@@ -120,7 +116,6 @@
                 }
 
                 .destinations {
-                    width: 65%;
                     grid-area: destinationText;
                     padding: 0;
                     margin:0;
@@ -134,6 +129,30 @@
                             justify-content: start;
                         }
                     }
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-width: $minWidthDesktop) {
+        .main-container {
+
+            .main-content {
+                column-gap: 15rem;
+                align-content: center;
+                .main-title {
+                    grid-area: titleDest;
+                }
+                
+                .pictures-container {
+                    align-self: center;
+                    .destination-hero {
+                        width: auto;
+                    }
+                }
+                
+                .destinations {
+                    width: 65%;
                 }
             }
         }
