@@ -379,9 +379,9 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
         margin-bottom: 4.3rem; }
         .home-content .main-container .main-content .main-title .heading-5 {
           color: var(--light-grey); }
-      .home-content .main-container .main-content .main-content-primary {
+      .home-content .main-container .main-content .home-text {
         margin-bottom: 10.7rem; }
-        .home-content .main-container .main-content .main-content-primary .heading-1 {
+        .home-content .main-container .main-content .home-text .heading-1 {
           margin-bottom: 6rem; }
       .home-content .main-container .main-content .explore-home-moon {
         width: 18.75rem;
@@ -410,9 +410,9 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
           justify-content: center; }
           .home-content .main-container .main-content .main-title {
             justify-content: center; }
-          .home-content .main-container .main-content .main-content-primary {
+          .home-content .main-container .main-content .home-text {
             margin-bottom: 20.5rem; }
-          .home-content .main-container .main-content .main-content-secondary .explore-home-moon {
+          .home-content .main-container .main-content .explore-home-moon {
             width: 30.25rem;
             height: 30.25rem;
             font-size: 4rem;
@@ -436,7 +436,7 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
           .home-content .main-container .main-content .main-title {
             grid-area: title;
             justify-content: start; }
-          .home-content .main-container .main-content .main-content-primary {
+          .home-content .main-container .main-content .home-text {
             display: grid;
             grid-area: text;
             text-align: left;
@@ -444,25 +444,24 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
             align-content: start;
             margin-bottom: 0;
             grid-template-columns: min(56%, 70rem); }
-            .home-content .main-container .main-content .main-content-primary .heading-1 {
+            .home-content .main-container .main-content .home-text .heading-1 {
               margin-bottom: 3.5rem; }
-          .home-content .main-container .main-content .main-content-secondary {
+          .home-content .main-container .main-content .explore-home-moon {
             grid-area: hero;
-            align-self: end; }
-            .home-content .main-container .main-content .main-content-secondary .explore-home-moon {
-              width: 27.4rem;
-              height: 27.4rem;
-              font-size: 3.2rem; }
-          .home-content .main-container .main-content .main-title, .home-content .main-container .main-content .main-content-primary {
+            align-self: end;
+            width: 27.4rem;
+            height: 27.4rem;
+            font-size: 3.2rem; }
+          .home-content .main-container .main-content .main-title, .home-content .main-container .main-content .home-text {
             padding: 0; } }
   @media only screen and (min-width: 106.25em) {
     .home-content .main-container .main-content {
       width: auto;
       grid-template-columns: 4fr 2fr;
       column-gap: 22rem; }
-      .home-content .main-container .main-content .main-content-primary {
+      .home-content .main-container .main-content .home-text {
         grid-template-columns: auto; }
-      .home-content .main-container .main-content .main-content-secondary {
+      .home-content .main-container .main-content .explore-home-moon {
         justify-self: start; } }
 
 .destination-content {
