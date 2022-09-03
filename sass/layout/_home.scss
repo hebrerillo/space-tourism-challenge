@@ -75,15 +75,15 @@
         }
     }
 
-    @media only screen and (min-width: $minWidthDesktop) {
+    @media only screen and (min-width: $minWidthSmallDesktop) {
         background-image: url("../assets/home/background-home-desktop.jpg");
-        background-position: center center;
+        background-position: center center;      
 
         .main-container {
-            row-gap: 24.8rem;
+            row-gap: 10rem;
 
             .main-content {
-                width: 85%;
+                width: 95%;
                 grid-template-columns: auto auto;
                 grid-template-areas: "title     ."
                                      "text       hero";
@@ -93,33 +93,56 @@
 
                 .main-title {
                     grid-area: title;
-                    justify-content: start;
+                    justify-self: start;
                 }
 
                 .home-text {
                     display: grid;
                     grid-area: text;
                     text-align: left;
-                    justify-content: start;
-                    align-content: start;
                     margin-bottom: 0;
-                    grid-template-columns: min(56%, 70rem);
 
                     .heading-1 {
                         margin-bottom: 3.5rem;
+                    }
+                    
+                    .default-paragraph {
+                        width: 80%;
                     }
                 }
 
                 .explore-home-moon {
                     grid-area: hero;
                     align-self: end;
-                    width: 27.4rem;
-                    height: 27.4rem;
-                    font-size: 3.2rem;
+                    width: 20rem;
+                    height: 20rem;
+                    font-size: 2.2rem;
                 }
 
                 .main-title, .home-text {
                     padding: 0;
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-width: $minWidthDesktop) {
+
+        .main-container {
+            row-gap: 24.8rem;
+            .main-content {
+                width: 85%;
+                .home-text {
+                    grid-template-columns: min(56%, 70rem);
+                    .default-paragraph {
+                        width: auto;
+                    }
+                }
+
+                .explore-home-moon {
+                    width: 27.4rem;
+                    height: 27.4rem;
+                    font-size: 3.2rem;
                 }
             }
         }

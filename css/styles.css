@@ -420,14 +420,14 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
             box-shadow: 0px 0px 0px 90px transparent; }
           .home-content .main-container .main-content .explore-home-moon:hover {
             box-shadow: 0 0 0 10.8rem rgba(255, 255, 255, 0.1); } }
-  @media only screen and (min-width: 90em) {
+  @media only screen and (min-width: 64em) {
     .home-content {
       background-image: url("../assets/home/background-home-desktop.jpg");
       background-position: center center; }
       .home-content .main-container {
-        row-gap: 24.8rem; }
+        row-gap: 10rem; }
         .home-content .main-container .main-content {
-          width: 85%;
+          width: 95%;
           grid-template-columns: auto auto;
           grid-template-areas: "title     ." "text       hero";
           padding-right: 0;
@@ -435,25 +435,37 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
           row-gap: 0; }
           .home-content .main-container .main-content .main-title {
             grid-area: title;
-            justify-content: start; }
+            justify-self: start; }
           .home-content .main-container .main-content .home-text {
             display: grid;
             grid-area: text;
             text-align: left;
-            justify-content: start;
-            align-content: start;
-            margin-bottom: 0;
-            grid-template-columns: min(56%, 70rem); }
+            margin-bottom: 0; }
             .home-content .main-container .main-content .home-text .heading-1 {
               margin-bottom: 3.5rem; }
+            .home-content .main-container .main-content .home-text .default-paragraph {
+              width: 80%; }
           .home-content .main-container .main-content .explore-home-moon {
             grid-area: hero;
             align-self: end;
-            width: 27.4rem;
-            height: 27.4rem;
-            font-size: 3.2rem; }
+            width: 20rem;
+            height: 20rem;
+            font-size: 2.2rem; }
           .home-content .main-container .main-content .main-title, .home-content .main-container .main-content .home-text {
             padding: 0; } }
+  @media only screen and (min-width: 90em) {
+    .home-content .main-container {
+      row-gap: 24.8rem; }
+      .home-content .main-container .main-content {
+        width: 85%; }
+        .home-content .main-container .main-content .home-text {
+          grid-template-columns: min(56%, 70rem); }
+          .home-content .main-container .main-content .home-text .default-paragraph {
+            width: auto; }
+        .home-content .main-container .main-content .explore-home-moon {
+          width: 27.4rem;
+          height: 27.4rem;
+          font-size: 3.2rem; } }
   @media only screen and (min-width: 106.25em) {
     .home-content .main-container .main-content {
       width: auto;
