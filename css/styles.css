@@ -808,15 +808,16 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
               width: 80%; } }
   @media only screen and (min-width: 90em) {
     .tech-content .main-container .main-content {
+      align-content: start;
       column-gap: 7rem;
       padding-left: var(--left-offset); }
-      .tech-content .main-container .main-content .pictures-container {
-        align-self: normal; }
-        .tech-content .main-container .main-content .pictures-container picture .tech-hero {
-          width: 51.5rem;
-          height: 52.7rem; }
+      .tech-content .main-container .main-content .pictures-container picture .tech-hero {
+        width: 51.5rem;
+        height: 52.7rem; }
       .tech-content .main-container .main-content .navigation-menu.navigation-menu--tech ul li a {
         width: 8rem;
-        height: 8rem; } }
+        height: 8rem; }
+      .tech-content .main-container .main-content .techs-container .tech-description .default-paragraph {
+        width: auto; } }
 
 /*# sourceMappingURL=styles.css.map */
