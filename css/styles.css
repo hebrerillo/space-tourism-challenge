@@ -89,11 +89,12 @@ a {
     .main-container .main-content {
       padding-left: var(--left-offset);
       grid-area: main; } }
-@media only screen and (min-width: 106.25em) {
-  .main-container .main-content {
-    max-width: 170rem;
-    margin: 0 auto;
-    padding: 0; } }
+@media only screen and (min-width: 112.5em) {
+  .main-container {
+    grid-template-columns: 1fr minmax(auto, 160rem) 1fr;
+    grid-template-areas: "header header header" ".      main   ."; }
+    .main-container .main-content {
+      padding: 0; } }
 .separator {
   height: 1px;
   background-color: var(--color-separator); }
@@ -466,7 +467,7 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
           width: 27.4rem;
           height: 27.4rem;
           font-size: 3.2rem; } }
-  @media only screen and (min-width: 106.25em) {
+  @media only screen and (min-width: 112.5em) {
     .home-content .main-container .main-content {
       width: auto;
       grid-template-columns: 4fr 2fr;

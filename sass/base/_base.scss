@@ -118,9 +118,11 @@ a {
 @media only screen and (min-width: $minWidthBigDesktop) {
 
     .main-container {
+        grid-template-columns: 1fr minmax(auto, 160rem) 1fr;
+        grid-template-areas: "header header header"
+                             ".      main   .";
+
         .main-content{
-            max-width: 170rem;
-            margin: 0 auto;
             padding: 0;
         }
     }
