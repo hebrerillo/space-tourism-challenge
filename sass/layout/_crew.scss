@@ -211,6 +211,13 @@
         .main-container {
             .main-content {
                 width: auto;
+                .crew-descriptions {
+                    .crew-member-description {
+                        .default-paragraph {
+                            width: auto;
+                        }
+                    }
+                }
             }
         }
     }

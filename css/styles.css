@@ -692,7 +692,9 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
           width: auto; } }
   @media only screen and (min-width: 112.5em) {
     .crew-content .main-container .main-content {
-      width: auto; } }
+      width: auto; }
+      .crew-content .main-container .main-content .crew-descriptions .crew-member-description .default-paragraph {
+        width: auto; } }
 
 .tech-content {
   background-image: url("../assets/technology/background-technology-mobile.jpg"); }
