@@ -564,7 +564,7 @@ h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
       .destination-content .main-container .main-content .pictures-container {
         align-self: center; }
         .destination-content .main-container .main-content .pictures-container .destination-hero {
-          width: auto; }
+          width: 85%; }
       .destination-content .main-container .main-content .destinations {
         width: 65%; } }
   @media only screen and (min-width: 112.5em) {
