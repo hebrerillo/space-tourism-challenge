@@ -157,4 +157,14 @@
             }
         }
     }
+
+    @media only screen and (min-width: $minWidthBigDesktop) {
+        .main-container {
+            .main-content {
+                .destinations {
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
