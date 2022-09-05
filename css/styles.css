@@ -102,7 +102,7 @@ a {
 .hidden-target-tab {
   display: none !important; }
 
-h1, h2, h3, h4, h5, h6, .navigation-text, .subheading-1, .subheading-2 {
+.heading-1, .heading-2, .heading-3, .heading-4, .heading-5, .heading-5--index, .navigation-text, .subheading-1, .subheading-2 {
   text-transform: uppercase; }
 
 .main-title {
