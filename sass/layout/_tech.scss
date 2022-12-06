@@ -119,11 +119,12 @@
             .main-content {
                 display: grid;
                 grid-template-columns: min-content auto auto;
-                grid-template-rows: auto auto;
+                grid-template-rows: auto 1fr;
                 grid-template-areas: "title       title      title"
                     "techNav     techText   techImg";
                 column-gap: 3rem;
                 padding-left: var(--padding-main-elements);
+                align-items: start;
 
                 .main-title {
                     grid-area: title;
