@@ -561,7 +561,7 @@ a {
           .destination-content .main-container .main-content .destinations article {
             justify-items: start; }
             .destination-content .main-container .main-content .destinations article .destination-info {
-              gap: 7.7rem;
+              gap: 6rem;
               padding: 0;
               justify-content: start; } }
   @media only screen and (min-width: 90em) {
