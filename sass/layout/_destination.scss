@@ -90,8 +90,8 @@
         
         .main-container {
             .main-content {
-                grid-template-columns: auto auto;
-                grid-template-rows: repeat(3, auto);
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: auto auto 1fr;
                 grid-template-areas: "titleDest ."
                                      "heroDest  destinationNav"
                                      "heroDest  destinationText";
@@ -102,9 +102,13 @@
                     padding-top: 0;
                     align-self: start;
                     margin-bottom: 0;
-                    .destination-hero {
-                        margin-left: 6rem;
-                        width: 85%;
+                    width: 85%;
+                    picture {
+                        display: block;
+                        .destination-hero {
+                            width: 100%;
+                            max-width: 44.5rem;
+                        }
                     }
                 }
 
@@ -139,13 +143,12 @@
 
             .main-content {
                 column-gap: 15rem;
-                align-content: center;
+                align-content: start;
                 .main-title {
                     grid-area: titleDest;
                 }
                 
                 .pictures-container {
-                    align-self: center;
                     .destination-hero {
                         width: 85%;
                     }

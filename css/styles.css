@@ -528,18 +528,21 @@ a {
     .destination-content {
       background-image: url("../assets/destination/background-destination-desktop.jpg"); }
       .destination-content .main-container .main-content {
-        grid-template-columns: auto auto;
-        grid-template-rows: repeat(3, auto);
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto 1fr;
         grid-template-areas: "titleDest ." "heroDest  destinationNav" "heroDest  destinationText";
         column-gap: 5rem; }
         .destination-content .main-container .main-content .pictures-container {
           grid-area: heroDest;
           padding-top: 0;
           align-self: start;
-          margin-bottom: 0; }
-          .destination-content .main-container .main-content .pictures-container .destination-hero {
-            margin-left: 6rem;
-            width: 85%; }
+          margin-bottom: 0;
+          width: 85%; }
+          .destination-content .main-container .main-content .pictures-container picture {
+            display: block; }
+            .destination-content .main-container .main-content .pictures-container picture .destination-hero {
+              width: 100%;
+              max-width: 44.5rem; }
         .destination-content .main-container .main-content .navigation-menu.navigation-menu--destination {
           grid-area: destinationNav; }
           .destination-content .main-container .main-content .navigation-menu.navigation-menu--destination ul {
@@ -558,13 +561,11 @@ a {
   @media only screen and (min-width: 90em) {
     .destination-content .main-container .main-content {
       column-gap: 15rem;
-      align-content: center; }
+      align-content: start; }
       .destination-content .main-container .main-content .main-title {
         grid-area: titleDest; }
-      .destination-content .main-container .main-content .pictures-container {
-        align-self: center; }
-        .destination-content .main-container .main-content .pictures-container .destination-hero {
-          width: 85%; }
+      .destination-content .main-container .main-content .pictures-container .destination-hero {
+        width: 85%; }
       .destination-content .main-container .main-content .destinations {
         width: 65%; } }
   @media only screen and (min-width: 112.5em) {
