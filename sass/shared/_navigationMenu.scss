@@ -30,7 +30,7 @@
                 display: none;
             }
 
-            a:hover::after {
+            a:hover::after, a.selected-tab::after {
                 background-color: var(--border-bottom-link-hover-color);
                 display: block;
             }

@@ -240,7 +240,7 @@ a {
       width: 100%;
       height: var(--border-bottom-link-width);
       display: none; }
-    .navigation-menu ul li a:hover::after {
+    .navigation-menu ul li a:hover::after, .navigation-menu ul li a.selected-tab::after {
       background-color: var(--border-bottom-link-hover-color);
       display: block; }
     .navigation-menu ul li .active-link .navigation-text {
