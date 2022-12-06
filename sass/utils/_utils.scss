@@ -9,6 +9,15 @@
     background-color: var(--color-separator);
 }
 
+.target-tab {
+    transition: opacity .3s;
+}
+
+.hiding-target-tab {
+    opacity: 0;
+}
+
 .hidden-target-tab {
     display: none !important;
 }
+
