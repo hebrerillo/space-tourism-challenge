@@ -135,17 +135,16 @@
             row-gap: 2rem;
             .main-content {
                 grid-template-rows: 1fr auto auto;
-                grid-template-columns: auto auto;
+                grid-template-columns: 53% 47%;
                 grid-template-areas: "title              crewImage"
                                      "crewText           crewImage"
                                      "crewNav            crewImage";
-                column-gap: 5rem;
                 .main-title {
                     margin-bottom: 0;
                 }
 
                 .pictures-container {
-                    justify-self: center;
+                    justify-self: end;
                     align-self: end;
                     picture {
                         display: flex;
@@ -191,7 +190,6 @@
     @media only screen and (min-width: $minWidthDesktop) {
         .main-container {
             .main-content {
-                column-gap: 12rem;
                 width: 90%;
                 padding-right: 0;
                 

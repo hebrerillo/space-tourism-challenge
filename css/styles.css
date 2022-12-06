@@ -652,13 +652,12 @@ a {
         row-gap: 2rem; }
         .crew-content .main-container .main-content {
           grid-template-rows: 1fr auto auto;
-          grid-template-columns: auto auto;
-          grid-template-areas: "title              crewImage" "crewText           crewImage" "crewNav            crewImage";
-          column-gap: 5rem; }
+          grid-template-columns: 53% 47%;
+          grid-template-areas: "title              crewImage" "crewText           crewImage" "crewNav            crewImage"; }
           .crew-content .main-container .main-content .main-title {
             margin-bottom: 0; }
           .crew-content .main-container .main-content .pictures-container {
-            justify-self: center;
+            justify-self: end;
             align-self: end; }
             .crew-content .main-container .main-content .pictures-container picture {
               display: flex;
@@ -683,7 +682,6 @@ a {
               height: 1.6rem; } }
   @media only screen and (min-width: 90em) {
     .crew-content .main-container .main-content {
-      column-gap: 12rem;
       width: 90%;
       padding-right: 0; }
       .crew-content .main-container .main-content .pictures-container picture {
