@@ -54,6 +54,7 @@ a {
     .main-content {
         display: grid;
         padding: 0 var(--padding-main-elements);
+        align-content: start;
     }
 }
 
