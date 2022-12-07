@@ -547,8 +547,7 @@ a {
           .destination-content .main-container .main-content .pictures-container picture {
             display: block; }
             .destination-content .main-container .main-content .pictures-container picture .destination-hero {
-              width: 100%;
-              max-width: 44.5rem; }
+              width: min(100%, 44.5rem); }
         .destination-content .main-container .main-content .navigation-menu.navigation-menu--destination {
           grid-area: destinationNav; }
           .destination-content .main-container .main-content .navigation-menu.navigation-menu--destination ul {

@@ -106,8 +106,7 @@
                     picture {
                         display: block;
                         .destination-hero {
-                            width: 100%;
-                            max-width: 44.5rem;
+                            width: min(100%, 44.5rem);
                         }
                     }
                 }
