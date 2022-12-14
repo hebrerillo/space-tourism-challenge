@@ -586,7 +586,7 @@ a {
       margin-bottom: 4rem;
       border-bottom: 1px solid var(--color-separator); }
       .crew-content .main-container .main-content .pictures-container picture .crew-hero {
-        width: 54%; }
+        height: 63vw; }
     .crew-content .main-container .main-content .navigation-menu.navigation-menu--crew {
       margin-bottom: 4rem; }
       .crew-content .main-container .main-content .navigation-menu.navigation-menu--crew ul {
@@ -637,7 +637,7 @@ a {
             border-bottom: none;
             justify-self: stretch; }
             .crew-content .main-container .main-content .pictures-container picture .crew-hero {
-              width: 66%; }
+              height: 75vw; }
           .crew-content .main-container .main-content .navigation-menu.navigation-menu--crew {
             grid-area: crewNav;
             margin-bottom: 7rem; }
