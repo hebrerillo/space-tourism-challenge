@@ -671,6 +671,7 @@ a {
               justify-content: end; }
               .crew-content .main-container .main-content .pictures-container picture .crew-hero {
                 width: 80%;
+                height: auto;
                 display: block; }
           .crew-content .main-container .main-content .crew-descriptions {
             text-align: left;
